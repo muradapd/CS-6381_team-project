@@ -1,0 +1,19 @@
+2023-02-28 15:12:27,131 - SubAppln - INFO - Subscriber app configured.
+2023-02-28 15:12:27,131 - SubAppln - INFO - Registering app with discovery service.
+2023-02-28 15:12:27,133 - SubAppln - INFO - Subscriber app registered.
+2023-02-28 15:12:27,133 - SubAppln - INFO - Waiting for all ready from discovery service.
+2023-02-28 15:12:27,134 - SubAppln - INFO - All sub and pub apps registered and ready.
+2023-02-28 15:12:27,134 - SubAppln - INFO - Locating all publishers for our topics.
+2023-02-28 15:12:27,135 - SubAppln - INFO - Subscribing to relevant publishers.
+2023-02-28 15:12:27,135 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.2:5566
+2023-02-28 15:12:27,135 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.4:5566
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: humidity:15.041918618405305
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: humidity:91.65551790595926
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: humidity:91.60762905566419
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: humidity:48.03981782580423
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: humidity:96.24692454423423
+2023-02-28 15:12:28,144 - SubAppln - INFO - Message from publisher: humidity:54.716065328618676
+2023-02-28 15:12:28,144 - SubAppln - INFO - Message from publisher: humidity:74.13051755649298
+2023-02-28 15:12:28,144 - SubAppln - INFO - Message from publisher: humidity:22.155142949685974
+2023-02-28 15:12:28,144 - SubAppln - INFO - Message from publisher: humidity:74.35909018559931
+2023-02-28 15:12:28,144 - SubAppln - INFO - Message from publisher: humidity:55.14343169886022

@@ -1,0 +1,13 @@
+2023-02-28 15:11:35,491 - SubAppln - INFO - Subscriber app configured.
+2023-02-28 15:11:35,491 - SubAppln - INFO - Registering app with discovery service.
+2023-02-28 15:11:35,494 - SubAppln - INFO - Subscriber app registered.
+2023-02-28 15:11:35,494 - SubAppln - INFO - Waiting for all ready from discovery service.
+2023-02-28 15:11:35,494 - SubAppln - INFO - All sub and pub apps registered and ready.
+2023-02-28 15:11:35,494 - SubAppln - INFO - Locating all publishers for our topics.
+2023-02-28 15:11:35,495 - SubAppln - INFO - Subscribing to relevant publishers.
+2023-02-28 15:11:35,495 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.2:5588
+2023-02-28 15:11:37,487 - SubAppln - INFO - Message from publisher: pressure:962
+2023-02-28 15:11:37,487 - SubAppln - INFO - Message from publisher: pressure:946
+2023-02-28 15:11:37,487 - SubAppln - INFO - Message from publisher: pressure:981
+2023-02-28 15:11:37,487 - SubAppln - INFO - Message from publisher: pressure:999
+2023-02-28 15:11:37,488 - SubAppln - INFO - Message from publisher: pressure:892

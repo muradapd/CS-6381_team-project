@@ -1,0 +1,20 @@
+2023-02-28 15:12:21,160 - SubAppln - INFO - Discovery app configured.
+2023-02-28 15:12:21,160 - SubAppln - INFO - Listening for registration requests...
+2023-02-28 15:12:22,132 - SubAppln - INFO - New registration request from: pub1 - 10.0.0.2:5566
+2023-02-28 15:12:22,132 - SubAppln - INFO - Registration request handled successfully.
+2023-02-28 15:12:23,121 - SubAppln - INFO - New registration request from: pub2 - 10.0.0.3:5566
+2023-02-28 15:12:23,121 - SubAppln - INFO - Registration request handled successfully.
+2023-02-28 15:12:24,139 - SubAppln - INFO - New registration request from: pub3 - 10.0.0.4:5566
+2023-02-28 15:12:24,139 - SubAppln - INFO - Registration request handled successfully.
+2023-02-28 15:12:25,112 - SubAppln - INFO - New registration request from: sub1 - 10.0.0.5:5577
+2023-02-28 15:12:25,112 - SubAppln - INFO - Registration request handled successfully.
+2023-02-28 15:12:26,128 - SubAppln - INFO - New registration request from: sub2 - 10.0.0.6:5577
+2023-02-28 15:12:26,128 - SubAppln - INFO - Registration request handled successfully.
+2023-02-28 15:12:27,133 - SubAppln - INFO - New registration request from: sub3 - 10.0.0.7:5577
+2023-02-28 15:12:27,133 - SubAppln - INFO - Registration request handled successfully.
+2023-02-28 15:12:27,134 - SubAppln - INFO - All ready message sent.
+2023-02-28 15:12:27,140 - SubAppln - INFO - All ready message sent.
+2023-02-28 15:12:27,143 - SubAppln - INFO - All ready message sent.
+2023-02-28 15:12:28,117 - SubAppln - INFO - All ready message sent.
+2023-02-28 15:12:28,128 - SubAppln - INFO - All ready message sent.
+2023-02-28 15:12:28,132 - SubAppln - INFO - All ready message sent.

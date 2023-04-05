@@ -1,0 +1,7 @@
+2023-02-28 15:11:31,491 - PubAppln - INFO - Publisher app configured.
+2023-02-28 15:11:31,491 - PubAppln - INFO - Registering app with discovery service.
+2023-02-28 15:11:31,493 - PubAppln - INFO - Publisher app registered.
+2023-02-28 15:11:31,493 - PubAppln - INFO - Waiting for all ready from discovery service.
+2023-02-28 15:11:35,499 - PubAppln - INFO - All sub and pub apps registered and ready.
+2023-02-28 15:11:36,500 - PubAppln - INFO - Disseminating info on our topics.
+2023-02-28 15:11:36,500 - PubAppln - INFO - Dissemination finished. Exiting.

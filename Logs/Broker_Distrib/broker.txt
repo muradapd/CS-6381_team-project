@@ -1,0 +1,70 @@
+2023-02-28 17:47:39,844 - PubAppln - INFO - Broker app configured.
+2023-02-28 17:47:39,844 - PubAppln - INFO - Registering app with discovery service.
+2023-02-28 17:47:39,852 - PubAppln - INFO - Broker app registered.
+2023-02-28 17:47:39,852 - PubAppln - INFO - Waiting for all ready from discovery service.
+2023-02-28 17:47:47,749 - PubAppln - INFO - All sub and pub apps registered and ready.
+2023-02-28 17:47:49,590 - PubAppln - INFO - Locating all registered publishers.
+2023-02-28 17:47:49,597 - PubAppln - INFO - Subscribing to all registered publishers.
+2023-02-28 17:47:49,597 - PubAppln - INFO - Subscribed to publisher: tcp://10.0.0.6:5566
+2023-02-28 17:47:49,597 - PubAppln - INFO - Subscribed to publisher: tcp://10.0.0.7:5566
+2023-02-28 17:47:49,597 - PubAppln - INFO - Subscribed to publisher: tcp://10.0.0.8:5566
+2023-02-28 17:47:50,611 - PubAppln - INFO - Passing on message from publisher: pressure:962
+2023-02-28 17:47:50,611 - PubAppln - INFO - Passing on message from publisher: humidity:38.888908200866965
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: location:Africa
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: pressure:969
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: humidity:72.0224644258202
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: location:Australia
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: pressure:882
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: humidity:18.612553425161664
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: location:Europe
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: pressure:1032
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: humidity:54.74989192787352
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: location:Asia
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: pressure:991
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: humidity:61.676298256605705
+2023-02-28 17:47:50,612 - PubAppln - INFO - Passing on message from publisher: location:Australia
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: weather:sunny
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: pressure:1058
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: sound:41
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: light:1100
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: location:Africa
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: humidity:46.84510933494669
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: airquality:poor
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: temperature:49
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: altitude:27344
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: weather:icy
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: pressure:893
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: sound:56
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: light:1100
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: location:America
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: humidity:89.99375903065796
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: airquality:good
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: temperature:-36
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: altitude:13718
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: weather:foggy
+2023-02-28 17:47:50,707 - PubAppln - INFO - Passing on message from publisher: pressure:997
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: sound:31
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: light:1600
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: location:Asia
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: humidity:64.69829498238029
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: airquality:poor
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: temperature:70
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: altitude:30946
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: weather:foggy
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: pressure:905
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: sound:68
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: light:450
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: location:Australia
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: humidity:24.02763385072997
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: airquality:smog
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: temperature:-6
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: altitude:2470
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: weather:icy
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: pressure:895
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: sound:89
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: light:1600
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: location:Africa
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: humidity:95.51838725333958
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: airquality:good
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: temperature:-18
+2023-02-28 17:47:50,708 - PubAppln - INFO - Passing on message from publisher: altitude:5909

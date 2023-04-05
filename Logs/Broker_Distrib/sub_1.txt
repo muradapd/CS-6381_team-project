@@ -1,0 +1,34 @@
+2023-02-28 17:47:43,837 - SubAppln - INFO - Subscriber app configured.
+2023-02-28 17:47:43,837 - SubAppln - INFO - App: sub1 - 10.0.0.9:5577; Topiclist: ['temperature', 'pressure', 'sound', 'weather']
+2023-02-28 17:47:43,837 - SubAppln - INFO - Registering app with discovery service.
+2023-02-28 17:47:43,849 - SubAppln - INFO - Subscriber app registered.
+2023-02-28 17:47:43,849 - SubAppln - INFO - Waiting for all ready from discovery service.
+2023-02-28 17:47:48,269 - SubAppln - INFO - All sub and pub apps registered and ready.
+2023-02-28 17:47:48,690 - SubAppln - INFO - Locating all publishers for our topics.
+2023-02-28 17:47:48,691 - SubAppln - INFO - Subscribing to relevant publishers.
+2023-02-28 17:47:48,691 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.5:5588
+2023-02-28 17:47:50,612 - SubAppln - INFO - Message from publisher: pressure:962
+2023-02-28 17:47:50,612 - SubAppln - INFO - Message from publisher: pressure:969
+2023-02-28 17:47:50,612 - SubAppln - INFO - Message from publisher: pressure:882
+2023-02-28 17:47:50,612 - SubAppln - INFO - Message from publisher: pressure:1032
+2023-02-28 17:47:50,612 - SubAppln - INFO - Message from publisher: pressure:991
+2023-02-28 17:47:50,707 - SubAppln - INFO - Message from publisher: weather:sunny
+2023-02-28 17:47:50,707 - SubAppln - INFO - Message from publisher: pressure:1058
+2023-02-28 17:47:50,707 - SubAppln - INFO - Message from publisher: sound:41
+2023-02-28 17:47:50,707 - SubAppln - INFO - Message from publisher: temperature:49
+2023-02-28 17:47:50,707 - SubAppln - INFO - Message from publisher: weather:icy
+2023-02-28 17:47:50,707 - SubAppln - INFO - Message from publisher: pressure:893
+2023-02-28 17:47:50,707 - SubAppln - INFO - Message from publisher: sound:56
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: temperature:-36
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: weather:foggy
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: pressure:997
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: sound:31
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: temperature:70
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: weather:foggy
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: pressure:905
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: sound:68
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: temperature:-6
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: weather:icy
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: pressure:895
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: sound:89
+2023-02-28 17:47:50,708 - SubAppln - INFO - Message from publisher: temperature:-18

@@ -1,0 +1,70 @@
+2023-02-28 15:12:25,110 - SubAppln - INFO - Subscriber app configured.
+2023-02-28 15:12:25,110 - SubAppln - INFO - Registering app with discovery service.
+2023-02-28 15:12:25,112 - SubAppln - INFO - Subscriber app registered.
+2023-02-28 15:12:25,112 - SubAppln - INFO - Waiting for all ready from discovery service.
+2023-02-28 15:12:28,117 - SubAppln - INFO - All sub and pub apps registered and ready.
+2023-02-28 15:12:28,117 - SubAppln - INFO - Locating all publishers for our topics.
+2023-02-28 15:12:28,117 - SubAppln - INFO - Subscribing to relevant publishers.
+2023-02-28 15:12:28,118 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.2:5566
+2023-02-28 15:12:28,118 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.3:5566
+2023-02-28 15:12:28,118 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.4:5566
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: location:Asia
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: airquality:good
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: pressure:996
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: weather:sunny
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: humidity:15.041918618405305
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: location:Asia
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: pressure:1084
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: weather:icy
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: humidity:91.65551790595926
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: location:Africa
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: pressure:871
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: weather:rainy
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: humidity:91.60762905566419
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: location:Asia
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: pressure:1065
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: weather:foggy
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: humidity:48.03981782580423
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: location:Australia
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: pressure:974
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: weather:sunny
+2023-02-28 15:12:28,142 - SubAppln - INFO - Message from publisher: humidity:96.24692454423423
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: sound:44
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: pressure:1017
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: humidity:54.716065328618676
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: weather:foggy
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: sound:73
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: pressure:970
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: humidity:74.13051755649298
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: weather:sunny
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: sound:79
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: airquality:good
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: pressure:886
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: humidity:22.155142949685974
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: weather:sunny
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: sound:69
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: pressure:1063
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: humidity:74.35909018559931
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: weather:rainy
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: sound:94
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: airquality:good
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: pressure:998
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: humidity:55.14343169886022
+2023-02-28 15:12:28,145 - SubAppln - INFO - Message from publisher: weather:foggy
+2023-02-28 15:12:29,130 - SubAppln - INFO - Message from publisher: pressure:946
+2023-02-28 15:12:29,130 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-02-28 15:12:29,130 - SubAppln - INFO - Message from publisher: pressure:975
+2023-02-28 15:12:29,130 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-02-28 15:12:29,130 - SubAppln - INFO - Message from publisher: pressure:1039
+2023-02-28 15:12:29,130 - SubAppln - INFO - Message from publisher: airquality:good
+2023-02-28 15:12:29,130 - SubAppln - INFO - Message from publisher: pressure:917
+2023-02-28 15:12:29,130 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-02-28 15:12:29,130 - SubAppln - INFO - Message from publisher: pressure:877
+2023-02-28 15:12:29,130 - SubAppln - INFO - Message from publisher: airquality:poor
