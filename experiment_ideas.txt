@@ -1,0 +1,6 @@
+- Time for the DHT ring to fully update when a new node joins
+- Time for the ring to fully update when a node leaves
+- Time it takes to register with the ring when there are 1, 5, 10 nodes
+- Time it takes to perform lookup on the ring when there are 5, 10, 20 nodes
+- Measure how evenly the pubs/subs are distributed throughout the ring
+- Show that the ring is able to handle node failures within its ranks
