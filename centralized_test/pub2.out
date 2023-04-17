@@ -1,0 +1,64 @@
+2023-03-28 18:58:17,687 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-03-28 18:58:17,701 - PubAppln - DEBUG - Main: parse command line arguments
+2023-03-28 18:58:17,728 - PubAppln - DEBUG - Main: resetting log level to 20
+2023-03-28 18:58:17,756 - PubAppln - INFO - PublisherMW - 10.0.0.8:7777 Configured Successfully
+2023-03-28 18:58:17,756 - PubAppln - INFO - PublisherAppln - pub2 configured with topics: ['sound', 'light', 'temperature', 'humidity', 'weather']
+2023-03-28 18:58:18,645 - PubAppln - INFO - PublisherAppln - Attempting to register with Discovery service
+2023-03-28 18:58:18,645 - PubAppln - INFO - PublisherMW - Sent register request to Discovery
+2023-03-28 18:58:18,645 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-03-28 18:58:18,646 - PubAppln - INFO - PublisherMW - Received reply of type 1
+2023-03-28 18:58:18,646 - PubAppln - INFO - PublisherAppln - Result of registration: success
+2023-03-28 18:58:23,660 - PubAppln - INFO - PublisherMW - Sent is_ready request, waiting for reply...
+2023-03-28 18:58:23,660 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-03-28 18:58:23,661 - PubAppln - INFO - PublisherMW - Received reply of type 2
+2023-03-28 18:58:28,665 - PubAppln - INFO - PublisherMW - Disseminating - sound 62
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - temperature 81
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - humidity 84.87500373616707
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - weather sunny
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - sound 45
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - temperature 46
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - humidity 98.19007176415568
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - weather sunny
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - sound 86
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - temperature -2
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - humidity 68.25820164905885
+2023-03-28 18:58:28,666 - PubAppln - INFO - PublisherMW - Disseminating - weather cloudy
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - sound 85
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - temperature 38
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - humidity 87.74978560345629
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - weather foggy
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - sound 70
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - light 1600
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - temperature 93
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - humidity 11.774637195663264
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - weather cloudy
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - sound 87
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - temperature 12
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - humidity 50.32773342143835
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - weather icy
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - sound 42
+2023-03-28 18:58:28,667 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - temperature 80
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - humidity 73.95193514997467
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - weather sunny
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - sound 70
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - temperature -22
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - humidity 46.555321181438146
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - weather rainy
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - sound 39
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - temperature -23
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - humidity 44.26067794223181
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - weather icy
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - sound 68
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - temperature 81
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - humidity 65.75286453972072
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherMW - Disseminating - weather foggy
+2023-03-28 18:58:28,668 - PubAppln - INFO - PublisherAppln - Dissemination complete after 10 rounds

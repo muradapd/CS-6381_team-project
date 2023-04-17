@@ -1,0 +1,1267 @@
+2023-02-08 23:20:52,911 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-02-08 23:20:52,914 - SubAppln - DEBUG - Main: parse command line arguments
+2023-02-08 23:20:52,924 - SubAppln - DEBUG - Main: resetting log level to 10
+2023-02-08 23:20:52,927 - SubAppln - DEBUG - Main: effective log level is 10
+2023-02-08 23:20:52,929 - SubAppln - DEBUG - Main: obtain the object
+2023-02-08 23:20:52,929 - SubAppln - DEBUG - BrokerAppln::configure
+2023-02-08 23:20:52,929 - SubAppln - DEBUG - BrokerAppln::configure - parsing config.ini
+2023-02-08 23:20:52,930 - SubAppln - DEBUG - BrokerAppln::configure - initialize the middleware object
+2023-02-08 23:20:52,930 - SubAppln - DEBUG - BrokerMW::configure
+2023-02-08 23:20:52,930 - SubAppln - DEBUG - BrokerMW::configure - obtain ZMQ context
+2023-02-08 23:20:52,931 - SubAppln - DEBUG - BrokerMW::configure - obtain the poller
+2023-02-08 23:20:52,931 - SubAppln - DEBUG - BrokerMW::configure - obtain REQ and PUB sockets
+2023-02-08 23:20:52,931 - SubAppln - DEBUG - BrokerMW::configure - register the REQ socket for incoming replies
+2023-02-08 23:20:52,931 - SubAppln - DEBUG - BrokerMW::configure - connect to Discovery service
+2023-02-08 23:20:52,931 - SubAppln - DEBUG - BrokerMW::configure - bind to the pub socket
+2023-02-08 23:20:52,931 - SubAppln - DEBUG - BrokerAppln::configure - configuration complete
+2023-02-08 23:20:52,931 - SubAppln - DEBUG - BrokerAppln::driver
+2023-02-08 23:20:52,932 - SubAppln - DEBUG - **********************************
+2023-02-08 23:20:52,932 - SubAppln - DEBUG - BrokerAppln::dump
+2023-02-08 23:20:52,932 - SubAppln - DEBUG - ------------------------------
+2023-02-08 23:20:52,932 - SubAppln - DEBUG -      Name: broker
+2023-02-08 23:20:52,932 - SubAppln - DEBUG -      Lookup: Centralized
+2023-02-08 23:20:52,932 - SubAppln - DEBUG -      Dissemination: Broker
+2023-02-08 23:20:52,932 - SubAppln - DEBUG - **********************************
+2023-02-08 23:20:52,932 - SubAppln - DEBUG - BrokerAppln::driver - register with the discovery service
+2023-02-08 23:20:52,933 - SubAppln - DEBUG - BrokerMW::register
+2023-02-08 23:20:52,937 - SubAppln - DEBUG - BrokerMW::register - populate the nested register req
+2023-02-08 23:20:52,939 - SubAppln - DEBUG - BrokerMW::register - done populating nested RegisterReq
+2023-02-08 23:20:52,941 - SubAppln - DEBUG - BrokerMW::register - build the outer DiscoveryReq message
+2023-02-08 23:20:52,941 - SubAppln - DEBUG - BrokerMW::register - done building the outer message
+2023-02-08 23:20:52,941 - SubAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x120\n\x06broker\x1a\x15broker:10.0.0.10:5577"\t10.0.0.10*\x045577'
+2023-02-08 23:20:52,941 - SubAppln - DEBUG - BrokerMW::register - send stringified buffer to Discovery service
+2023-02-08 23:20:52,941 - SubAppln - DEBUG - BrokerMW::register - now wait for reply
+2023-02-08 23:20:52,941 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:20:59,872 - SubAppln - DEBUG - BrokerMW::handle_reply
+2023-02-08 23:20:59,872 - SubAppln - DEBUG - BrokerAppln::driver - result of registration
+2023-02-08 23:20:59,872 - SubAppln - DEBUG - BrokerAppln::driver - check if are ready to go
+2023-02-08 23:20:59,873 - SubAppln - DEBUG - BrokerMW::is_ready
+2023-02-08 23:20:59,873 - SubAppln - DEBUG - BrokerMW::is_ready - populate the nested IsReady msg
+2023-02-08 23:20:59,873 - SubAppln - DEBUG - BrokerMW::is_ready - done populating nested IsReady msg
+2023-02-08 23:20:59,873 - SubAppln - DEBUG - BrokerMW::is_ready - build the outer DiscoveryReq message
+2023-02-08 23:20:59,873 - SubAppln - DEBUG - BrokerMW::is_ready - done building the outer message
+2023-02-08 23:20:59,873 - SubAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x00'
+2023-02-08 23:20:59,873 - SubAppln - DEBUG - BrokerMW::is_ready - send stringified buffer to Discovery service
+2023-02-08 23:20:59,873 - SubAppln - DEBUG - BrokerMW::is_ready - now wait for reply
+2023-02-08 23:20:59,873 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - BrokerMW::handle_reply
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - BrokerAppln::driver - Received True from Discovery Service ready check
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - BrokerMW::lookup all pubs
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - BrokerMW::lookup - populate the nested LookupAllPubsReq msg
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - BrokerMW::lookup - done populating nested LookupAllPubsReq msg
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - BrokerMW::lookup - build the outer discovery message
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - BrokerMW::lookup - done building the outer message
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - Stringified serialized buf = b'\x08\x04*\x00'
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - BrokerMW::lookup - send stringified buffer to Discovery service
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - BrokerMW::lookup - now wait for list of publishers
+2023-02-08 23:21:08,892 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:13,903 - SubAppln - DEBUG - BrokerMW::handle_reply
+2023-02-08 23:21:13,903 - SubAppln - DEBUG - BrokerAppln::driver - Found the following publishers: ['10.0.0.3:5577', '10.0.0.4:5577', '10.0.0.5:5577', '10.0.0.2:5577']
+2023-02-08 23:21:13,903 - SubAppln - DEBUG - BrokerMW::connect_pubs - register the SUB socket for incoming messages
+2023-02-08 23:21:13,903 - SubAppln - DEBUG - BrokerAppln::driver - Listening for publishes of interest
+2023-02-08 23:21:13,903 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,895 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "1056"
+timestamp: "02/08/2023, 23:21:14.894332"
+]
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 1056
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x041056\x1a\x1b02/08/2023, 23:21:14.894332'
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "34"
+timestamp: "02/08/2023, 23:21:14.894665"
+]
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 34
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0234\x1a\x1b02/08/2023, 23:21:14.894665'
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,897 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,900 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'humidity', topic: "humidity"
+content: "77.82261716959884"
+timestamp: "02/08/2023, 23:21:14.894806"
+]
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - BrokerMW::disseminate - b'humidity' 77.82261716959884
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08humidity\x12\x1177.82261716959884\x1a\x1b02/08/2023, 23:21:14.894806'
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'temperature', topic: "temperature"
+content: "50"
+timestamp: "02/08/2023, 23:21:14.894943"
+]
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - BrokerMW::disseminate - b'temperature' 50
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x0250\x1a\x1b02/08/2023, 23:21:14.894943'
+2023-02-08 23:21:14,901 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,902 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,902 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,903 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'altitude', topic: "altitude"
+content: "19721"
+timestamp: "02/08/2023, 23:21:14.895114"
+]
+2023-02-08 23:21:14,903 - SubAppln - DEBUG - BrokerMW::disseminate - b'altitude' 19721
+2023-02-08 23:21:14,905 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,905 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0519721\x1a\x1b02/08/2023, 23:21:14.895114'
+2023-02-08 23:21:14,905 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,905 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,905 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,915 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "978"
+timestamp: "02/08/2023, 23:21:14.895237"
+]
+2023-02-08 23:21:14,915 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 978
+2023-02-08 23:21:14,915 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,915 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03978\x1a\x1b02/08/2023, 23:21:14.895237'
+2023-02-08 23:21:14,915 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,915 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,915 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "82"
+timestamp: "02/08/2023, 23:21:14.895354"
+]
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 82
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0282\x1a\x1b02/08/2023, 23:21:14.895354'
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'humidity', topic: "humidity"
+content: "32.97380112046437"
+timestamp: "02/08/2023, 23:21:14.895473"
+]
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::disseminate - b'humidity' 32.97380112046437
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08humidity\x12\x1132.97380112046437\x1a\x1b02/08/2023, 23:21:14.895473'
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'temperature', topic: "temperature"
+content: "-97"
+timestamp: "02/08/2023, 23:21:14.895643"
+]
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::disseminate - b'temperature' -97
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-97\x1a\x1b02/08/2023, 23:21:14.895643'
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,916 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,917 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,917 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'altitude', topic: "altitude"
+content: "39040"
+timestamp: "02/08/2023, 23:21:14.895777"
+]
+2023-02-08 23:21:14,917 - SubAppln - DEBUG - BrokerMW::disseminate - b'altitude' 39040
+2023-02-08 23:21:14,917 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,917 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0539040\x1a\x1b02/08/2023, 23:21:14.895777'
+2023-02-08 23:21:14,917 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,917 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,917 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,920 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "1075"
+timestamp: "02/08/2023, 23:21:14.895897"
+]
+2023-02-08 23:21:14,920 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 1075
+2023-02-08 23:21:14,920 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,920 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x041075\x1a\x1b02/08/2023, 23:21:14.895897'
+2023-02-08 23:21:14,920 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,920 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,920 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,921 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "43"
+timestamp: "02/08/2023, 23:21:14.896050"
+]
+2023-02-08 23:21:14,921 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 43
+2023-02-08 23:21:14,921 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,921 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0243\x1a\x1b02/08/2023, 23:21:14.896050'
+2023-02-08 23:21:14,921 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,921 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,921 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'humidity', topic: "humidity"
+content: "75.04634145700749"
+timestamp: "02/08/2023, 23:21:14.896182"
+]
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - b'humidity' 75.04634145700749
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08humidity\x12\x1175.04634145700749\x1a\x1b02/08/2023, 23:21:14.896182'
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'temperature', topic: "temperature"
+content: "-35"
+timestamp: "02/08/2023, 23:21:14.896301"
+]
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - b'temperature' -35
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-35\x1a\x1b02/08/2023, 23:21:14.896301'
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'altitude', topic: "altitude"
+content: "39228"
+timestamp: "02/08/2023, 23:21:14.896420"
+]
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - b'altitude' 39228
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0539228\x1a\x1b02/08/2023, 23:21:14.896420'
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "949"
+timestamp: "02/08/2023, 23:21:14.896583"
+]
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 949
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03949\x1a\x1b02/08/2023, 23:21:14.896583'
+2023-02-08 23:21:14,922 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "91"
+timestamp: "02/08/2023, 23:21:14.896718"
+]
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 91
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0291\x1a\x1b02/08/2023, 23:21:14.896718'
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,924 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,924 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,924 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'humidity', topic: "humidity"
+content: "58.99761490645423"
+timestamp: "02/08/2023, 23:21:14.896837"
+]
+2023-02-08 23:21:14,924 - SubAppln - DEBUG - BrokerMW::disseminate - b'humidity' 58.99761490645423
+2023-02-08 23:21:14,924 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,924 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08humidity\x12\x1158.99761490645423\x1a\x1b02/08/2023, 23:21:14.896837'
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'temperature', topic: "temperature"
+content: "-76"
+timestamp: "02/08/2023, 23:21:14.896962"
+]
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - BrokerMW::disseminate - b'temperature' -76
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-76\x1a\x1b02/08/2023, 23:21:14.896962'
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'altitude', topic: "altitude"
+content: "20808"
+timestamp: "02/08/2023, 23:21:14.897125"
+]
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - BrokerMW::disseminate - b'altitude' 20808
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0520808\x1a\x1b02/08/2023, 23:21:14.897125'
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "1004"
+timestamp: "02/08/2023, 23:21:14.897250"
+]
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 1004
+2023-02-08 23:21:14,927 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,928 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x041004\x1a\x1b02/08/2023, 23:21:14.897250'
+2023-02-08 23:21:14,928 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,928 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,928 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,928 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "65"
+timestamp: "02/08/2023, 23:21:14.897368"
+]
+2023-02-08 23:21:14,928 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 65
+2023-02-08 23:21:14,928 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,928 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0265\x1a\x1b02/08/2023, 23:21:14.897368'
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'humidity', topic: "humidity"
+content: "98.70662639246204"
+timestamp: "02/08/2023, 23:21:14.897484"
+]
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::disseminate - b'humidity' 98.70662639246204
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08humidity\x12\x1198.70662639246204\x1a\x1b02/08/2023, 23:21:14.897484'
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'temperature', topic: "temperature"
+content: "90"
+timestamp: "02/08/2023, 23:21:14.897668"
+]
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::disseminate - b'temperature' 90
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x0290\x1a\x1b02/08/2023, 23:21:14.897668'
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'altitude', topic: "altitude"
+content: "18948"
+timestamp: "02/08/2023, 23:21:14.897805"
+]
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::disseminate - b'altitude' 18948
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0518948\x1a\x1b02/08/2023, 23:21:14.897805'
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,930 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,930 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "987"
+timestamp: "02/08/2023, 23:21:14.897926"
+]
+2023-02-08 23:21:14,930 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 987
+2023-02-08 23:21:14,930 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,930 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03987\x1a\x1b02/08/2023, 23:21:14.897926'
+2023-02-08 23:21:14,930 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "51"
+timestamp: "02/08/2023, 23:21:14.898045"
+]
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 51
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0251\x1a\x1b02/08/2023, 23:21:14.898045'
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'humidity', topic: "humidity"
+content: "27.829296010103764"
+timestamp: "02/08/2023, 23:21:14.898400"
+]
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::disseminate - b'humidity' 27.829296010103764
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08humidity\x12\x1227.829296010103764\x1a\x1b02/08/2023, 23:21:14.898400'
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,933 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'temperature', topic: "temperature"
+content: "-20"
+timestamp: "02/08/2023, 23:21:14.898568"
+]
+2023-02-08 23:21:14,933 - SubAppln - DEBUG - BrokerMW::disseminate - b'temperature' -20
+2023-02-08 23:21:14,933 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,933 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-20\x1a\x1b02/08/2023, 23:21:14.898568'
+2023-02-08 23:21:14,933 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,933 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,933 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,933 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'altitude', topic: "altitude"
+content: "29960"
+timestamp: "02/08/2023, 23:21:14.898771"
+]
+2023-02-08 23:21:14,933 - SubAppln - DEBUG - BrokerMW::disseminate - b'altitude' 29960
+2023-02-08 23:21:14,934 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,934 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0529960\x1a\x1b02/08/2023, 23:21:14.898771'
+2023-02-08 23:21:14,934 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,936 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,936 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,936 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "898"
+timestamp: "02/08/2023, 23:21:14.898928"
+]
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 898
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03898\x1a\x1b02/08/2023, 23:21:14.898928'
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "57"
+timestamp: "02/08/2023, 23:21:14.899079"
+]
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 57
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0257\x1a\x1b02/08/2023, 23:21:14.899079'
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'humidity', topic: "humidity"
+content: "25.061491144242794"
+timestamp: "02/08/2023, 23:21:14.899310"
+]
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::disseminate - b'humidity' 25.061491144242794
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08humidity\x12\x1225.061491144242794\x1a\x1b02/08/2023, 23:21:14.899310'
+2023-02-08 23:21:14,937 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'temperature', topic: "temperature"
+content: "-12"
+timestamp: "02/08/2023, 23:21:14.899466"
+]
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerMW::disseminate - b'temperature' -12
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-12\x1a\x1b02/08/2023, 23:21:14.899466'
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'altitude', topic: "altitude"
+content: "36812"
+timestamp: "02/08/2023, 23:21:14.899615"
+]
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerMW::disseminate - b'altitude' 36812
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0536812\x1a\x1b02/08/2023, 23:21:14.899615'
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "981"
+timestamp: "02/08/2023, 23:21:14.899838"
+]
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 981
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03981\x1a\x1b02/08/2023, 23:21:14.899838'
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "49"
+timestamp: "02/08/2023, 23:21:14.899989"
+]
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 49
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0249\x1a\x1b02/08/2023, 23:21:14.899989'
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'humidity', topic: "humidity"
+content: "23.91277472075648"
+timestamp: "02/08/2023, 23:21:14.900192"
+]
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::disseminate - b'humidity' 23.91277472075648
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08humidity\x12\x1123.91277472075648\x1a\x1b02/08/2023, 23:21:14.900192'
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'temperature', topic: "temperature"
+content: "73"
+timestamp: "02/08/2023, 23:21:14.900355"
+]
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::disseminate - b'temperature' 73
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x0273\x1a\x1b02/08/2023, 23:21:14.900355'
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,941 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,941 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'altitude', topic: "altitude"
+content: "39196"
+timestamp: "02/08/2023, 23:21:14.900494"
+]
+2023-02-08 23:21:14,941 - SubAppln - DEBUG - BrokerMW::disseminate - b'altitude' 39196
+2023-02-08 23:21:14,941 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,941 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0539196\x1a\x1b02/08/2023, 23:21:14.900494'
+2023-02-08 23:21:14,941 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,942 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,942 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,942 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "1025"
+timestamp: "02/08/2023, 23:21:14.900629"
+]
+2023-02-08 23:21:14,942 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 1025
+2023-02-08 23:21:14,942 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,942 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x041025\x1a\x1b02/08/2023, 23:21:14.900629'
+2023-02-08 23:21:14,942 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,942 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,942 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "39"
+timestamp: "02/08/2023, 23:21:14.900817"
+]
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 39
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0239\x1a\x1b02/08/2023, 23:21:14.900817'
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'humidity', topic: "humidity"
+content: "21.84769249963518"
+timestamp: "02/08/2023, 23:21:14.901677"
+]
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::disseminate - b'humidity' 21.84769249963518
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08humidity\x12\x1121.84769249963518\x1a\x1b02/08/2023, 23:21:14.901677'
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'temperature', topic: "temperature"
+content: "-60"
+timestamp: "02/08/2023, 23:21:14.902013"
+]
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::disseminate - b'temperature' -60
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-60\x1a\x1b02/08/2023, 23:21:14.902013'
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'altitude', topic: "altitude"
+content: "39376"
+timestamp: "02/08/2023, 23:21:14.903046"
+]
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - BrokerMW::disseminate - b'altitude' 39376
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0539376\x1a\x1b02/08/2023, 23:21:14.903046'
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "973"
+timestamp: "02/08/2023, 23:21:14.903302"
+]
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 973
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03973\x1a\x1b02/08/2023, 23:21:14.903302'
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "31"
+timestamp: "02/08/2023, 23:21:14.903606"
+]
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 31
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0231\x1a\x1b02/08/2023, 23:21:14.903606'
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,945 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'humidity', topic: "humidity"
+content: "58.07315158759321"
+timestamp: "02/08/2023, 23:21:14.903807"
+]
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::disseminate - b'humidity' 58.07315158759321
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08humidity\x12\x1158.07315158759321\x1a\x1b02/08/2023, 23:21:14.903807'
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'temperature', topic: "temperature"
+content: "-84"
+timestamp: "02/08/2023, 23:21:14.904282"
+]
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::disseminate - b'temperature' -84
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-84\x1a\x1b02/08/2023, 23:21:14.904282'
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'altitude', topic: "altitude"
+content: "27486"
+timestamp: "02/08/2023, 23:21:14.904514"
+]
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::disseminate - b'altitude' 27486
+2023-02-08 23:21:14,946 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:14,947 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0527486\x1a\x1b02/08/2023, 23:21:14.904514'
+2023-02-08 23:21:14,947 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:14,947 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "1063"
+timestamp: "02/08/2023, 23:21:16.896797"
+]
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 1063
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x041063\x1a\x1b02/08/2023, 23:21:16.896797'
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'airquality', topic: "airquality"
+content: "poor"
+timestamp: "02/08/2023, 23:21:16.897630"
+]
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::disseminate - b'airquality' poor
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - Stringified serialized buf = b'\n\nairquality\x12\x04poor\x1a\x1b02/08/2023, 23:21:16.897630'
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,899 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "88"
+timestamp: "02/08/2023, 23:21:16.897891"
+]
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 88
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0288\x1a\x1b02/08/2023, 23:21:16.897891'
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'location', topic: "location"
+content: "Europe"
+timestamp: "02/08/2023, 23:21:16.898156"
+]
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - BrokerMW::disseminate - b'location' Europe
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x06Europe\x1a\x1b02/08/2023, 23:21:16.898156'
+2023-02-08 23:21:16,900 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'light', topic: "light"
+content: "1100"
+timestamp: "02/08/2023, 23:21:16.898282"
+]
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerMW::disseminate - b'light' 1100
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x041100\x1a\x1b02/08/2023, 23:21:16.898282'
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "1011"
+timestamp: "02/08/2023, 23:21:16.898405"
+]
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 1011
+2023-02-08 23:21:16,901 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x041011\x1a\x1b02/08/2023, 23:21:16.898405'
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'airquality', topic: "airquality"
+content: "good"
+timestamp: "02/08/2023, 23:21:16.898563"
+]
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::disseminate - b'airquality' good
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - Stringified serialized buf = b'\n\nairquality\x12\x04good\x1a\x1b02/08/2023, 23:21:16.898563'
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "77"
+timestamp: "02/08/2023, 23:21:16.898685"
+]
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 77
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0277\x1a\x1b02/08/2023, 23:21:16.898685'
+2023-02-08 23:21:16,902 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,913 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,913 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,913 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'location', topic: "location"
+content: "Asia"
+timestamp: "02/08/2023, 23:21:16.898803"
+]
+2023-02-08 23:21:16,913 - SubAppln - DEBUG - BrokerMW::disseminate - b'location' Asia
+2023-02-08 23:21:16,913 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,913 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x04Asia\x1a\x1b02/08/2023, 23:21:16.898803'
+2023-02-08 23:21:16,913 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'light', topic: "light"
+content: "1100"
+timestamp: "02/08/2023, 23:21:16.903242"
+]
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::disseminate - b'light' 1100
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x041100\x1a\x1b02/08/2023, 23:21:16.903242'
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "1063"
+timestamp: "02/08/2023, 23:21:16.903580"
+]
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 1063
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x041063\x1a\x1b02/08/2023, 23:21:16.903580'
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'airquality', topic: "airquality"
+content: "smog"
+timestamp: "02/08/2023, 23:21:16.903715"
+]
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::disseminate - b'airquality' smog
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - Stringified serialized buf = b'\n\nairquality\x12\x04smog\x1a\x1b02/08/2023, 23:21:16.903715'
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,914 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "46"
+timestamp: "02/08/2023, 23:21:16.903891"
+]
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 46
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0246\x1a\x1b02/08/2023, 23:21:16.903891'
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'location', topic: "location"
+content: "Asia"
+timestamp: "02/08/2023, 23:21:16.904037"
+]
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - b'location' Asia
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x04Asia\x1a\x1b02/08/2023, 23:21:16.904037'
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'light', topic: "light"
+content: "450"
+timestamp: "02/08/2023, 23:21:16.904167"
+]
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - b'light' 450
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03450\x1a\x1b02/08/2023, 23:21:16.904167'
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "983"
+timestamp: "02/08/2023, 23:21:16.904529"
+]
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 983
+2023-02-08 23:21:16,915 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03983\x1a\x1b02/08/2023, 23:21:16.904529'
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'airquality', topic: "airquality"
+content: "smog"
+timestamp: "02/08/2023, 23:21:16.905027"
+]
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::disseminate - b'airquality' smog
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - Stringified serialized buf = b'\n\nairquality\x12\x04smog\x1a\x1b02/08/2023, 23:21:16.905027'
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "46"
+timestamp: "02/08/2023, 23:21:16.905171"
+]
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 46
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0246\x1a\x1b02/08/2023, 23:21:16.905171'
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,916 - SubAppln - DEBUG - BrokerMW::handle_message
+Received a message from publisher: 02/08/2023, 23:21:14.894332 pressure
+LATENCY WAS: 0:00:00.000933
+CONTENT WAS: 1056
+Received a message from publisher: 02/08/2023, 23:21:14.894665 sound
+LATENCY WAS: 0:00:00.002949
+CONTENT WAS: 34
+Received a message from publisher: 02/08/2023, 23:21:14.894806 humidity
+LATENCY WAS: 0:00:00.006516
+CONTENT WAS: 77.82261716959884
+Received a message from publisher: 02/08/2023, 23:21:14.894943 temperature
+LATENCY WAS: 0:00:00.006832
+CONTENT WAS: 50
+Received a message from publisher: 02/08/2023, 23:21:14.895114 altitude
+LATENCY WAS: 0:00:00.007217
+CONTENT WAS: 19721
+Received a message from publisher: 02/08/2023, 23:21:14.895237 pressure
+LATENCY WAS: 0:00:00.010483
+CONTENT WAS: 978
+Received a message from publisher: 02/08/2023, 23:21:14.895354 sound
+LATENCY WAS: 0:00:00.020600
+CONTENT WAS: 82
+Received a message from publisher: 02/08/2023, 23:21:14.895473 humidity
+LATENCY WAS: 0:00:00.020849
+CONTENT WAS: 32.97380112046437
+Received a message from publisher: 02/08/2023, 23:21:14.895643 temperature
+LATENCY WAS: 0:00:00.021037
+CONTENT WAS: -97
+Received a message from publisher: 02/08/2023, 23:21:14.895777 altitude
+LATENCY WAS: 0:00:00.021297
+CONTENT WAS: 39040
+Received a message from publisher: 02/08/2023, 23:21:14.895897 pressure
+LATENCY WAS: 0:00:00.021439
+CONTENT WAS: 1075
+Received a message from publisher: 02/08/2023, 23:21:14.896050 sound
+LATENCY WAS: 0:00:00.025465
+CONTENT WAS: 43
+Received a message from publisher: 02/08/2023, 23:21:14.896182 humidity
+LATENCY WAS: 0:00:00.025814
+CONTENT WAS: 75.04634145700749
+Received a message from publisher: 02/08/2023, 23:21:14.896301 temperature
+LATENCY WAS: 0:00:00.026015
+CONTENT WAS: -35
+Received a message from publisher: 02/08/2023, 23:21:14.896420 altitude
+LATENCY WAS: 0:00:00.026137
+CONTENT WAS: 39228
+Received a message from publisher: 02/08/2023, 23:21:14.896583 pressure
+LATENCY WAS: 0:00:00.026271
+CONTENT WAS: 949
+Received a message from publisher: 02/08/2023, 23:21:14.896718 sound
+LATENCY WAS: 0:00:00.026382
+CONTENT WAS: 91
+Received a message from publisher: 02/08/2023, 23:21:14.896837 humidity
+LATENCY WAS: 0:00:00.027278
+CONTENT WAS: 58.99761490645423
+Received a message from publisher: 02/08/2023, 23:21:14.896962 temperature
+LATENCY WAS: 0:00:00.029719
+CONTENT WAS: -76
+Received a message from publisher: 02/08/2023, 23:21:14.897125 altitude
+LATENCY WAS: 0:00:00.030083
+CONTENT WAS: 20808
+Received a message from publisher: 02/08/2023, 23:21:14.897250 pressure
+LATENCY WAS: 0:00:00.030279
+CONTENT WAS: 1004
+Received a message from publisher: 02/08/2023, 23:21:14.897368 sound
+LATENCY WAS: 0:00:00.031405
+CONTENT WAS: 65
+Received a message from publisher: 02/08/2023, 23:21:14.897484 humidity
+LATENCY WAS: 0:00:00.031669
+CONTENT WAS: 98.70662639246204
+Received a message from publisher: 02/08/2023, 23:21:14.897668 temperature
+LATENCY WAS: 0:00:00.031782
+CONTENT WAS: 90
+Received a message from publisher: 02/08/2023, 23:21:14.897805 altitude
+LATENCY WAS: 0:00:00.031895
+CONTENT WAS: 18948
+Received a message from publisher: 02/08/2023, 23:21:14.897926 pressure
+LATENCY WAS: 0:00:00.032741
+CONTENT WAS: 987
+Received a message from publisher: 02/08/2023, 23:21:14.898045 sound
+LATENCY WAS: 0:00:00.033058
+CONTENT WAS: 51
+Received a message from publisher: 02/08/2023, 23:21:14.898400 humidity
+LATENCY WAS: 0:00:00.033112
+CONTENT WAS: 27.829296010103764
+Received a message from publisher: 02/08/2023, 23:21:14.898568 temperature
+LATENCY WAS: 0:00:00.034406
+CONTENT WAS: -20
+Received a message from publisher: 02/08/2023, 23:21:14.898771 altitude
+LATENCY WAS: 0:00:00.035117
+CONTENT WAS: 29960
+Received a message from publisher: 02/08/2023, 23:21:14.898928 pressure
+LATENCY WAS: 0:00:00.037947
+CONTENT WAS: 898
+Received a message from publisher: 02/08/2023, 23:21:14.899079 sound
+LATENCY WAS: 0:00:00.038404
+CONTENT WAS: 57
+Received a message from publisher: 02/08/2023, 23:21:14.899310 humidity
+LATENCY WAS: 0:00:00.038541
+CONTENT WAS: 25.061491144242794
+Received a message from publisher: 02/08/2023, 23:21:14.899466 temperature
+LATENCY WAS: 0:00:00.038677
+CONTENT WAS: -12
+Received a message from publisher: 02/08/2023, 23:21:14.899615 altitude
+LATENCY WAS: 0:00:00.038955
+CONTENT WAS: 36812
+Received a message from publisher: 02/08/2023, 23:21:14.899838 pressure
+LATENCY WAS: 0:00:00.039581
+CONTENT WAS: 981
+Received a message from publisher: 02/08/2023, 23:21:14.899989 sound
+LATENCY WAS: 0:00:00.039782
+CONTENT WAS: 49
+Received a message from publisher: 02/08/2023, 23:21:14.900192 humidity
+LATENCY WAS: 0:00:00.039941
+CONTENT WAS: 23.91277472075648
+Received a message from publisher: 02/08/2023, 23:21:14.900355 temperature
+LATENCY WAS: 0:00:00.040260
+CONTENT WAS: 73
+Received a message from publisher: 02/08/2023, 23:21:14.900494 altitude
+LATENCY WAS: 0:00:00.040589
+CONTENT WAS: 39196
+Received a message from publisher: 02/08/2023, 23:21:14.900629 pressure
+LATENCY WAS: 0:00:00.041711
+CONTENT WAS: 1025
+Received a message from publisher: 02/08/2023, 23:21:14.900817 sound
+LATENCY WAS: 0:00:00.042179
+CONTENT WAS: 39
+Received a message from publisher: 02/08/2023, 23:21:14.901677 humidity
+LATENCY WAS: 0:00:00.041632
+CONTENT WAS: 21.84769249963518
+Received a message from publisher: 02/08/2023, 23:21:14.902013 temperature
+LATENCY WAS: 0:00:00.041617
+CONTENT WAS: -60
+Received a message from publisher: 02/08/2023, 23:21:14.903046 altitude
+LATENCY WAS: 0:00:00.040862
+CONTENT WAS: 39376
+Received a message from publisher: 02/08/2023, 23:21:14.903302 pressure
+LATENCY WAS: 0:00:00.041647
+CONTENT WAS: 973
+Received a message from publisher: 02/08/2023, 23:21:14.903606 sound
+LATENCY WAS: 0:00:00.042129
+CONTENT WAS: 31
+Received a message from publisher: 02/08/2023, 23:21:14.903807 humidity
+LATENCY WAS: 0:00:00.042354
+CONTENT WAS: 58.07315158759321
+Received a message from publisher: 02/08/2023, 23:21:14.904282 temperature
+LATENCY WAS: 0:00:00.042205
+CONTENT WAS: -84
+Received a message from publisher: 02/08/2023, 23:21:14.904514 altitude
+LATENCY WAS: 0:00:00.042369
+CONTENT WAS: 27486
+Received a message from publisher: 02/08/2023, 23:21:16.896797 pressure
+LATENCY WAS: 0:00:00.002565
+CONTENT WAS: 1063
+Received a message from publisher: 02/08/2023, 23:21:16.897630 airquality
+LATENCY WAS: 0:00:00.002144
+CONTENT WAS: poor
+Received a message from publisher: 02/08/2023, 23:21:16.897891 sound
+LATENCY WAS: 0:00:00.002134
+CONTENT WAS: 88
+Received a message from publisher: 02/08/2023, 23:21:16.898156 location
+LATENCY WAS: 0:00:00.002438
+CONTENT WAS: Europe
+Received a message from publisher: 02/08/2023, 23:21:16.898282 light
+LATENCY WAS: 0:00:00.002948
+CONTENT WAS: 1100
+Received a message from publisher: 02/08/2023, 23:21:16.898405 pressure
+LATENCY WAS: 0:00:00.003447
+CONTENT WAS: 1011
+Received a message from publisher: 02/08/2023, 23:21:16.898563 airquality
+LATENCY WAS: 0:00:00.003871
+CONTENT WAS: good
+Received a message from publisher: 02/08/2023, 23:21:16.898685 sound
+LATENCY WAS: 0:00:00.004030
+CONTENT WAS: 77
+Received a message from publisher: 02/08/2023, 23:21:16.898803 location
+LATENCY WAS: 0:00:00.014972
+CONTENT WAS: Asia
+Received a message from publisher: 02/08/2023, 23:21:16.903242 light
+LATENCY WAS: 0:00:00.010920
+CONTENT WAS: 1100
+Received a message from publisher: 02/08/2023, 23:21:16.903580 pressure
+LATENCY WAS: 0:00:00.010863
+CONTENT WAS: 1063
+Received a message from publisher: 02/08/2023, 23:21:16.903715 airquality
+LATENCY WAS: 0:00:00.011032
+CONTENT WAS: smog
+Received a message from publisher: 02/08/2023, 23:21:16.903891 sound
+LATENCY WAS: 0:00:00.011119
+CONTENT WAS: 46
+Received a message from publisher: 02/08/2023, 23:21:16.904037 location
+LATENCY WAS: 0:00:00.011287
+CONTENT WAS: Asia
+Received a message from publisher: 02/08/2023, 23:21:16.904167 light
+LATENCY WAS: 0:00:00.011426
+CONTENT WAS: 450
+Received a message from publisher: 02/08/2023, 23:21:16.904529 pressure
+LATENCY WAS: 0:00:00.011362
+CONTENT WAS: 983
+Received a message from publisher: 02/08/2023, 23:21:16.905027 airquality
+LATENCY WAS: 0:00:00.011108
+CONTENT WAS: smog
+Received a message from publisher: 02/08/2023, 23:21:16.905171 sound
+LATENCY WAS: 0:00:00.011252
+CONTENT WAS: 46
+Received a message from publisher: 02/08/2023, 23:21:16.905371 location
+2023-02-08 23:21:16,923 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'location', topic: "location"
+content: "Europe"
+timestamp: "02/08/2023, 23:21:16.905371"
+]
+2023-02-08 23:21:16,923 - SubAppln - DEBUG - BrokerMW::disseminate - b'location' Europe
+2023-02-08 23:21:16,923 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,923 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x06Europe\x1a\x1b02/08/2023, 23:21:16.905371'
+2023-02-08 23:21:16,923 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,924 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,924 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,924 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'light', topic: "light"
+content: "800"
+timestamp: "02/08/2023, 23:21:16.905520"
+]
+2023-02-08 23:21:16,924 - SubAppln - DEBUG - BrokerMW::disseminate - b'light' 800
+2023-02-08 23:21:16,924 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,924 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03800\x1a\x1b02/08/2023, 23:21:16.905520'
+2023-02-08 23:21:16,924 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,926 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,926 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,926 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "949"
+timestamp: "02/08/2023, 23:21:16.905653"
+]
+2023-02-08 23:21:16,926 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 949
+2023-02-08 23:21:16,926 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,926 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03949\x1a\x1b02/08/2023, 23:21:16.905653'
+2023-02-08 23:21:16,926 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,927 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,927 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,928 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'airquality', topic: "airquality"
+content: "good"
+timestamp: "02/08/2023, 23:21:16.905785"
+]
+2023-02-08 23:21:16,928 - SubAppln - DEBUG - BrokerMW::disseminate - b'airquality' good
+2023-02-08 23:21:16,928 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,928 - SubAppln - DEBUG - Stringified serialized buf = b'\n\nairquality\x12\x04good\x1a\x1b02/08/2023, 23:21:16.905785'
+2023-02-08 23:21:16,928 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,930 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,930 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,931 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "49"
+timestamp: "02/08/2023, 23:21:16.906031"
+]
+2023-02-08 23:21:16,931 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 49
+2023-02-08 23:21:16,931 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,931 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0249\x1a\x1b02/08/2023, 23:21:16.906031'
+2023-02-08 23:21:16,931 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,934 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,935 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,935 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'location', topic: "location"
+content: "Australia"
+timestamp: "02/08/2023, 23:21:16.906174"
+]
+2023-02-08 23:21:16,935 - SubAppln - DEBUG - BrokerMW::disseminate - b'location' Australia
+2023-02-08 23:21:16,935 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,935 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\tAustralia\x1a\x1b02/08/2023, 23:21:16.906174'
+2023-02-08 23:21:16,935 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,941 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,941 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,941 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'light', topic: "light"
+content: "800"
+timestamp: "02/08/2023, 23:21:16.906305"
+]
+2023-02-08 23:21:16,941 - SubAppln - DEBUG - BrokerMW::disseminate - b'light' 800
+2023-02-08 23:21:16,941 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,941 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03800\x1a\x1b02/08/2023, 23:21:16.906305'
+2023-02-08 23:21:16,941 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,943 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,943 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,943 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "944"
+timestamp: "02/08/2023, 23:21:16.906477"
+]
+2023-02-08 23:21:16,943 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 944
+2023-02-08 23:21:16,943 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,943 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03944\x1a\x1b02/08/2023, 23:21:16.906477'
+2023-02-08 23:21:16,943 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,944 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,944 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'airquality', topic: "airquality"
+content: "good"
+timestamp: "02/08/2023, 23:21:16.906609"
+]
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - BrokerMW::disseminate - b'airquality' good
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - Stringified serialized buf = b'\n\nairquality\x12\x04good\x1a\x1b02/08/2023, 23:21:16.906609'
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "94"
+timestamp: "02/08/2023, 23:21:16.906740"
+]
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 94
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0294\x1a\x1b02/08/2023, 23:21:16.906740'
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'location', topic: "location"
+content: "America"
+timestamp: "02/08/2023, 23:21:16.906910"
+]
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - BrokerMW::disseminate - b'location' America
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x07America\x1a\x1b02/08/2023, 23:21:16.906910'
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,947 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,947 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'light', topic: "light"
+content: "1100"
+timestamp: "02/08/2023, 23:21:16.907077"
+]
+2023-02-08 23:21:16,947 - SubAppln - DEBUG - BrokerMW::disseminate - b'light' 1100
+2023-02-08 23:21:16,947 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,947 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x041100\x1a\x1b02/08/2023, 23:21:16.907077'
+2023-02-08 23:21:16,947 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,948 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,948 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,948 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "983"
+timestamp: "02/08/2023, 23:21:16.907214"
+]
+2023-02-08 23:21:16,948 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 983
+2023-02-08 23:21:16,948 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,948 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03983\x1a\x1b02/08/2023, 23:21:16.907214'
+2023-02-08 23:21:16,948 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,950 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,951 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,951 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'airquality', topic: "airquality"
+content: "good"
+timestamp: "02/08/2023, 23:21:16.907344"
+]
+2023-02-08 23:21:16,955 - SubAppln - DEBUG - BrokerMW::disseminate - b'airquality' good
+2023-02-08 23:21:16,955 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,955 - SubAppln - DEBUG - Stringified serialized buf = b'\n\nairquality\x12\x04good\x1a\x1b02/08/2023, 23:21:16.907344'
+2023-02-08 23:21:16,955 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,956 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,957 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,957 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "46"
+timestamp: "02/08/2023, 23:21:16.907533"
+]
+2023-02-08 23:21:16,957 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 46
+2023-02-08 23:21:16,957 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,957 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0246\x1a\x1b02/08/2023, 23:21:16.907533'
+2023-02-08 23:21:16,957 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,957 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,957 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,957 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'location', topic: "location"
+content: "Australia"
+timestamp: "02/08/2023, 23:21:16.907669"
+]
+2023-02-08 23:21:16,958 - SubAppln - DEBUG - BrokerMW::disseminate - b'location' Australia
+2023-02-08 23:21:16,958 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,958 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\tAustralia\x1a\x1b02/08/2023, 23:21:16.907669'
+2023-02-08 23:21:16,958 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'light', topic: "light"
+content: "1600"
+timestamp: "02/08/2023, 23:21:16.907800"
+]
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - BrokerMW::disseminate - b'light' 1600
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x041600\x1a\x1b02/08/2023, 23:21:16.907800'
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,962 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,962 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,963 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "1073"
+timestamp: "02/08/2023, 23:21:16.907963"
+]
+2023-02-08 23:21:16,963 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 1073
+2023-02-08 23:21:16,963 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,963 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x041073\x1a\x1b02/08/2023, 23:21:16.907963'
+2023-02-08 23:21:16,963 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,964 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,965 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,965 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'airquality', topic: "airquality"
+content: "poor"
+timestamp: "02/08/2023, 23:21:16.908122"
+]
+2023-02-08 23:21:16,966 - SubAppln - DEBUG - BrokerMW::disseminate - b'airquality' poor
+2023-02-08 23:21:16,966 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,966 - SubAppln - DEBUG - Stringified serialized buf = b'\n\nairquality\x12\x04poor\x1a\x1b02/08/2023, 23:21:16.908122'
+2023-02-08 23:21:16,966 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,967 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,967 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,968 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "73"
+timestamp: "02/08/2023, 23:21:16.908258"
+]
+2023-02-08 23:21:16,968 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 73
+2023-02-08 23:21:16,968 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,968 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0273\x1a\x1b02/08/2023, 23:21:16.908258'
+2023-02-08 23:21:16,968 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,969 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,969 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,969 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'location', topic: "location"
+content: "Europe"
+timestamp: "02/08/2023, 23:21:16.908395"
+]
+2023-02-08 23:21:16,969 - SubAppln - DEBUG - BrokerMW::disseminate - b'location' Europe
+2023-02-08 23:21:16,969 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,969 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x06Europe\x1a\x1b02/08/2023, 23:21:16.908395'
+2023-02-08 23:21:16,969 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,972 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,972 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,973 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'light', topic: "light"
+content: "450"
+timestamp: "02/08/2023, 23:21:16.919609"
+]
+2023-02-08 23:21:16,973 - SubAppln - DEBUG - BrokerMW::disseminate - b'light' 450
+2023-02-08 23:21:16,973 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,973 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03450\x1a\x1b02/08/2023, 23:21:16.919609'
+2023-02-08 23:21:16,973 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,977 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,978 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,979 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "870"
+timestamp: "02/08/2023, 23:21:16.919845"
+]
+2023-02-08 23:21:16,979 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 870
+2023-02-08 23:21:16,979 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,979 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03870\x1a\x1b02/08/2023, 23:21:16.919845'
+2023-02-08 23:21:16,979 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,984 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,985 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,985 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'airquality', topic: "airquality"
+content: "good"
+timestamp: "02/08/2023, 23:21:16.919971"
+]
+2023-02-08 23:21:16,985 - SubAppln - DEBUG - BrokerMW::disseminate - b'airquality' good
+2023-02-08 23:21:16,985 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,985 - SubAppln - DEBUG - Stringified serialized buf = b'\n\nairquality\x12\x04good\x1a\x1b02/08/2023, 23:21:16.919971'
+2023-02-08 23:21:16,986 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,987 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,987 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,988 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "59"
+timestamp: "02/08/2023, 23:21:16.920092"
+]
+2023-02-08 23:21:16,988 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 59
+2023-02-08 23:21:16,988 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,988 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0259\x1a\x1b02/08/2023, 23:21:16.920092'
+2023-02-08 23:21:16,988 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,989 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,990 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,990 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'location', topic: "location"
+content: "Europe"
+timestamp: "02/08/2023, 23:21:16.920211"
+]
+2023-02-08 23:21:16,990 - SubAppln - DEBUG - BrokerMW::disseminate - b'location' Europe
+2023-02-08 23:21:16,990 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,990 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x06Europe\x1a\x1b02/08/2023, 23:21:16.920211'
+2023-02-08 23:21:16,990 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:16,994 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:16,995 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:16,995 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'light', topic: "light"
+content: "800"
+timestamp: "02/08/2023, 23:21:16.920371"
+]
+2023-02-08 23:21:16,995 - SubAppln - DEBUG - BrokerMW::disseminate - b'light' 800
+2023-02-08 23:21:16,996 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:16,996 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03800\x1a\x1b02/08/2023, 23:21:16.920371'
+2023-02-08 23:21:16,996 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:17,000 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:17,000 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:17,000 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'pressure', topic: "pressure"
+content: "965"
+timestamp: "02/08/2023, 23:21:16.920494"
+]
+2023-02-08 23:21:17,000 - SubAppln - DEBUG - BrokerMW::disseminate - b'pressure' 965
+2023-02-08 23:21:17,000 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:17,001 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03965\x1a\x1b02/08/2023, 23:21:16.920494'
+2023-02-08 23:21:17,001 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:17,006 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:17,006 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:17,007 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'airquality', topic: "airquality"
+content: "smog"
+timestamp: "02/08/2023, 23:21:16.920614"
+]
+2023-02-08 23:21:17,007 - SubAppln - DEBUG - BrokerMW::disseminate - b'airquality' smog
+2023-02-08 23:21:17,007 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:17,008 - SubAppln - DEBUG - Stringified serialized buf = b'\n\nairquality\x12\x04smog\x1a\x1b02/08/2023, 23:21:16.920614'
+2023-02-08 23:21:17,008 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:17,010 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:17,010 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:17,010 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'sound', topic: "sound"
+content: "50"
+timestamp: "02/08/2023, 23:21:16.920735"
+]
+2023-02-08 23:21:17,010 - SubAppln - DEBUG - BrokerMW::disseminate - b'sound' 50
+2023-02-08 23:21:17,011 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:17,011 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05sound\x12\x0250\x1a\x1b02/08/2023, 23:21:16.920735'
+2023-02-08 23:21:17,011 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:17,012 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:17,012 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:17,013 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'location', topic: "location"
+content: "Asia"
+timestamp: "02/08/2023, 23:21:16.920909"
+]
+2023-02-08 23:21:17,013 - SubAppln - DEBUG - BrokerMW::disseminate - b'location' Asia
+2023-02-08 23:21:17,013 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:17,013 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x04Asia\x1a\x1b02/08/2023, 23:21:16.920909'
+2023-02-08 23:21:17,013 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:17,016 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop
+2023-02-08 23:21:17,016 - SubAppln - DEBUG - BrokerMW::handle_message
+2023-02-08 23:21:17,016 - SubAppln - DEBUG - BrokerAppln::driver - Received [b'light', topic: "light"
+content: "450"
+timestamp: "02/08/2023, 23:21:16.921031"
+]
+2023-02-08 23:21:17,016 - SubAppln - DEBUG - BrokerMW::disseminate - b'light' 450
+2023-02-08 23:21:17,016 - SubAppln - DEBUG - BrokerMW::disseminate - build the topic message
+2023-02-08 23:21:17,016 - SubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03450\x1a\x1b02/08/2023, 23:21:16.921031'
+2023-02-08 23:21:17,016 - SubAppln - DEBUG - BrokerMW::disseminate - publish our serialized message
+2023-02-08 23:21:17,019 - SubAppln - DEBUG - BrokerMW::event_loop - run the event loop

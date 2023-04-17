@@ -1,0 +1,338 @@
+2023-03-28 18:58:17,729 - DiscoveryAppln - INFO - DiscoveryAppln: Configured as disc1
+2023-03-28 18:58:17,730 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:17,741 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:17,788 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:17,788 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEi', b'', b'\x08\x01\x12[\n\tpublisher\x12&altitude,sound,humidity,pressure,light\x1a\x13pub4:10.0.0.10:7777"\t10.0.0.10*\x0477778\x01']
+2023-03-28 18:58:17,788 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['altitude', 'sound', 'humidity', 'pressure', 'light'], 'id': 'pub4:10.0.0.10:7777', 'address': '10.0.0.10', 'port': '7777', 'successor': '', 'identity': b'\x00k\x8bEi', 'chain': ['']}
+2023-03-28 18:58:17,788 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id pub4:10.0.0.10:7777
+2023-03-28 18:58:17,788 - DiscoveryAppln - INFO - DiscoveryAppln: 1/1 pubs and 0/1 subs
+2023-03-28 18:58:17,788 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'\x00k\x8bEi'
+2023-03-28 18:58:17,788 - DiscoveryAppln - INFO - New chain after that was removed: None
+2023-03-28 18:58:17,788 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:17,799 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:17,968 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:17,968 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEp', b'', b'\x08\x01\x12_\n\tpublisher\x12,temperature,sound,location,humidity,pressure\x1a\x12pub1:10.0.0.7:7777"\x0810.0.0.7*\x0477778\x01']
+2023-03-28 18:58:17,968 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['temperature', 'sound', 'location', 'humidity', 'pressure'], 'id': 'pub1:10.0.0.7:7777', 'address': '10.0.0.7', 'port': '7777', 'successor': '', 'identity': b'\x00k\x8bEp', 'chain': ['']}
+2023-03-28 18:58:17,968 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id pub1:10.0.0.7:7777
+2023-03-28 18:58:17,968 - DiscoveryAppln - INFO - DiscoveryAppln: 2/1 pubs and 0/1 subs
+2023-03-28 18:58:17,968 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'\x00k\x8bEp'
+2023-03-28 18:58:17,968 - DiscoveryAppln - INFO - New chain after that was removed: None
+2023-03-28 18:58:17,968 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:17,979 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:18,218 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:18,218 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEo', b'', b'\x08\x01\x12`\n\tpublisher\x12+humidity,light,weather,temperature,altitude\x1a\x13pub5:10.0.0.11:7777"\t10.0.0.11*\x0477778\x01']
+2023-03-28 18:58:18,218 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['humidity', 'light', 'weather', 'temperature', 'altitude'], 'id': 'pub5:10.0.0.11:7777', 'address': '10.0.0.11', 'port': '7777', 'successor': '', 'identity': b'\x00k\x8bEo', 'chain': ['']}
+2023-03-28 18:58:18,218 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id pub5:10.0.0.11:7777
+2023-03-28 18:58:18,218 - DiscoveryAppln - INFO - DiscoveryAppln: 3/1 pubs and 0/1 subs
+2023-03-28 18:58:18,218 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'\x00k\x8bEo'
+2023-03-28 18:58:18,218 - DiscoveryAppln - INFO - New chain after that was removed: None
+2023-03-28 18:58:18,219 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:18,229 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:18,461 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:18,461 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEn', b'', b'\x08\x01\x12]\n\tpublisher\x12*weather,altitude,pressure,airquality,sound\x1a\x12pub3:10.0.0.9:7777"\x0810.0.0.9*\x0477778\x01']
+2023-03-28 18:58:18,461 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['weather', 'altitude', 'pressure', 'airquality', 'sound'], 'id': 'pub3:10.0.0.9:7777', 'address': '10.0.0.9', 'port': '7777', 'successor': '', 'identity': b'\x00k\x8bEn', 'chain': ['']}
+2023-03-28 18:58:18,461 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id pub3:10.0.0.9:7777
+2023-03-28 18:58:18,461 - DiscoveryAppln - INFO - DiscoveryAppln: 4/1 pubs and 0/1 subs
+2023-03-28 18:58:18,461 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'\x00k\x8bEn'
+2023-03-28 18:58:18,461 - DiscoveryAppln - INFO - New chain after that was removed: None
+2023-03-28 18:58:18,462 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:18,472 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:18,645 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:18,646 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEj', b'', b'\x08\x01\x12[\n\tpublisher\x12(sound,light,temperature,humidity,weather\x1a\x12pub2:10.0.0.8:7777"\x0810.0.0.8*\x0477778\x01']
+2023-03-28 18:58:18,646 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['sound', 'light', 'temperature', 'humidity', 'weather'], 'id': 'pub2:10.0.0.8:7777', 'address': '10.0.0.8', 'port': '7777', 'successor': '', 'identity': b'\x00k\x8bEj', 'chain': ['']}
+2023-03-28 18:58:18,646 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id pub2:10.0.0.8:7777
+2023-03-28 18:58:18,646 - DiscoveryAppln - INFO - DiscoveryAppln: 5/1 pubs and 0/1 subs
+2023-03-28 18:58:18,646 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'\x00k\x8bEj'
+2023-03-28 18:58:18,646 - DiscoveryAppln - INFO - New chain after that was removed: None
+2023-03-28 18:58:18,646 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:18,656 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:18,967 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:18,967 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEh', b'', b'\x08\x01\x12K\n\nsubscriber\x12\x19pressure,light,airquality\x1a\x12sub3:10.0.0.4:5577"\x0810.0.0.4*\x045577']
+2023-03-28 18:58:18,968 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'subscriber', 'topic_list': ['pressure', 'light', 'airquality'], 'id': 'sub3:10.0.0.4:5577', 'address': '10.0.0.4', 'port': '5577', 'successor': '', 'identity': b'\x00k\x8bEh', 'chain': ['']}
+2023-03-28 18:58:18,968 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new subscriber with id sub3:10.0.0.4:5577
+2023-03-28 18:58:18,968 - DiscoveryAppln - INFO - DiscoveryAppln: 5/1 pubs and 1/1 subs
+2023-03-28 18:58:18,968 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'\x00k\x8bEh'
+2023-03-28 18:58:18,968 - DiscoveryAppln - INFO - New chain after that was removed: None
+2023-03-28 18:58:18,968 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:18,978 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:18,979 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:18,979 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEh', b'', b'\x08\x02\x1a\x00']
+2023-03-28 18:58:18,979 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEh', 'chain': ['']}
+2023-03-28 18:58:18,979 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEh', 'chain': ['']}
+2023-03-28 18:58:18,979 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-03-28 18:58:18,979 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-03-28 18:58:18,979 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-03-28 18:58:18,979 - DiscoveryAppln - INFO - DiscoveryMW - built the reply reply: true
+
+2023-03-28 18:58:18,980 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:18,990 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:18,990 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:18,990 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEh', b'', b'\x08\x03"\n\n\x08pressure']
+2023-03-28 18:58:18,990 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "pressure"
+
+2023-03-28 18:58:18,991 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['pressure'], 'identity': b'\x00k\x8bEh', 'chain': ['']}
+2023-03-28 18:58:18,991 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:18,991 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.9:7777', '10.0.0.10:7777', '10.0.0.7:7777']
+2023-03-28 18:58:18,991 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,001 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,002 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,002 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEh', b'', b'\x08\x03"\x07\n\x05light']
+2023-03-28 18:58:19,002 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "light"
+
+2023-03-28 18:58:19,002 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['light'], 'identity': b'\x00k\x8bEh', 'chain': ['']}
+2023-03-28 18:58:19,002 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,002 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.10:7777', '10.0.0.11:7777', '10.0.0.8:7777']
+2023-03-28 18:58:19,002 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,012 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,012 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,013 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEh', b'', b'\x08\x03"\x0c\n\nairquality']
+2023-03-28 18:58:19,013 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "airquality"
+
+2023-03-28 18:58:19,013 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['airquality'], 'identity': b'\x00k\x8bEh', 'chain': ['']}
+2023-03-28 18:58:19,013 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,013 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.9:7777']
+2023-03-28 18:58:19,013 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,023 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,299 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,299 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEm', b'', b'\x08\x01\x12K\n\nsubscriber\x12\x19airquality,altitude,light\x1a\x12sub4:10.0.0.5:5577"\x0810.0.0.5*\x045577']
+2023-03-28 18:58:19,299 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'subscriber', 'topic_list': ['airquality', 'altitude', 'light'], 'id': 'sub4:10.0.0.5:5577', 'address': '10.0.0.5', 'port': '5577', 'successor': '', 'identity': b'\x00k\x8bEm', 'chain': ['']}
+2023-03-28 18:58:19,300 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new subscriber with id sub4:10.0.0.5:5577
+2023-03-28 18:58:19,300 - DiscoveryAppln - INFO - DiscoveryAppln: 5/1 pubs and 2/1 subs
+2023-03-28 18:58:19,300 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'\x00k\x8bEm'
+2023-03-28 18:58:19,300 - DiscoveryAppln - INFO - New chain after that was removed: None
+2023-03-28 18:58:19,300 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,311 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,311 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,311 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEm', b'', b'\x08\x02\x1a\x00']
+2023-03-28 18:58:19,311 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEm', 'chain': ['']}
+2023-03-28 18:58:19,311 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEm', 'chain': ['']}
+2023-03-28 18:58:19,311 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-03-28 18:58:19,311 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-03-28 18:58:19,311 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-03-28 18:58:19,311 - DiscoveryAppln - INFO - DiscoveryMW - built the reply reply: true
+
+2023-03-28 18:58:19,311 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,323 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,323 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,323 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEm', b'', b'\x08\x03"\x0c\n\nairquality']
+2023-03-28 18:58:19,323 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "airquality"
+
+2023-03-28 18:58:19,323 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['airquality'], 'identity': b'\x00k\x8bEm', 'chain': ['']}
+2023-03-28 18:58:19,324 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,324 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.9:7777']
+2023-03-28 18:58:19,326 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,338 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,338 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,338 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEm', b'', b'\x08\x03"\n\n\x08altitude']
+2023-03-28 18:58:19,338 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "altitude"
+
+2023-03-28 18:58:19,338 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['altitude'], 'identity': b'\x00k\x8bEm', 'chain': ['']}
+2023-03-28 18:58:19,339 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,339 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.9:7777', '10.0.0.10:7777', '10.0.0.11:7777']
+2023-03-28 18:58:19,339 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,349 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,349 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,349 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEm', b'', b'\x08\x03"\x07\n\x05light']
+2023-03-28 18:58:19,350 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "light"
+
+2023-03-28 18:58:19,350 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['light'], 'identity': b'\x00k\x8bEm', 'chain': ['']}
+2023-03-28 18:58:19,350 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,350 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.10:7777', '10.0.0.11:7777', '10.0.0.8:7777']
+2023-03-28 18:58:19,350 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,360 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,374 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,375 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEk', b'', b'\x08\x01\x12F\n\nsubscriber\x12\x14sound,altitude,light\x1a\x12sub2:10.0.0.3:5577"\x0810.0.0.3*\x045577']
+2023-03-28 18:58:19,375 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'subscriber', 'topic_list': ['sound', 'altitude', 'light'], 'id': 'sub2:10.0.0.3:5577', 'address': '10.0.0.3', 'port': '5577', 'successor': '', 'identity': b'\x00k\x8bEk', 'chain': ['']}
+2023-03-28 18:58:19,375 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new subscriber with id sub2:10.0.0.3:5577
+2023-03-28 18:58:19,375 - DiscoveryAppln - INFO - DiscoveryAppln: 5/1 pubs and 3/1 subs
+2023-03-28 18:58:19,375 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'\x00k\x8bEk'
+2023-03-28 18:58:19,375 - DiscoveryAppln - INFO - New chain after that was removed: None
+2023-03-28 18:58:19,376 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,386 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,386 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,386 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEk', b'', b'\x08\x02\x1a\x00']
+2023-03-28 18:58:19,386 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEk', 'chain': ['']}
+2023-03-28 18:58:19,386 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEk', 'chain': ['']}
+2023-03-28 18:58:19,386 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-03-28 18:58:19,386 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-03-28 18:58:19,386 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-03-28 18:58:19,386 - DiscoveryAppln - INFO - DiscoveryMW - built the reply reply: true
+
+2023-03-28 18:58:19,386 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,397 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,397 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,397 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEk', b'', b'\x08\x03"\x07\n\x05sound']
+2023-03-28 18:58:19,397 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "sound"
+
+2023-03-28 18:58:19,397 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['sound'], 'identity': b'\x00k\x8bEk', 'chain': ['']}
+2023-03-28 18:58:19,397 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,397 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.9:7777', '10.0.0.10:7777', '10.0.0.7:7777', '10.0.0.8:7777']
+2023-03-28 18:58:19,398 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,408 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,408 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,408 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEk', b'', b'\x08\x03"\n\n\x08altitude']
+2023-03-28 18:58:19,408 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "altitude"
+
+2023-03-28 18:58:19,409 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['altitude'], 'identity': b'\x00k\x8bEk', 'chain': ['']}
+2023-03-28 18:58:19,409 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,409 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.9:7777', '10.0.0.10:7777', '10.0.0.11:7777']
+2023-03-28 18:58:19,409 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,420 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,420 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,420 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEk', b'', b'\x08\x03"\x07\n\x05light']
+2023-03-28 18:58:19,420 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "light"
+
+2023-03-28 18:58:19,420 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['light'], 'identity': b'\x00k\x8bEk', 'chain': ['']}
+2023-03-28 18:58:19,420 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,420 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.10:7777', '10.0.0.11:7777', '10.0.0.8:7777']
+2023-03-28 18:58:19,421 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,432 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,495 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,495 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEl', b'', b'\x08\x01\x12N\n\nsubscriber\x12\x1cairquality,pressure,location\x1a\x12sub5:10.0.0.6:5577"\x0810.0.0.6*\x045577']
+2023-03-28 18:58:19,495 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'subscriber', 'topic_list': ['airquality', 'pressure', 'location'], 'id': 'sub5:10.0.0.6:5577', 'address': '10.0.0.6', 'port': '5577', 'successor': '', 'identity': b'\x00k\x8bEl', 'chain': ['']}
+2023-03-28 18:58:19,495 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new subscriber with id sub5:10.0.0.6:5577
+2023-03-28 18:58:19,495 - DiscoveryAppln - INFO - DiscoveryAppln: 5/1 pubs and 4/1 subs
+2023-03-28 18:58:19,495 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'\x00k\x8bEl'
+2023-03-28 18:58:19,495 - DiscoveryAppln - INFO - New chain after that was removed: None
+2023-03-28 18:58:19,495 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,506 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,507 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,507 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEl', b'', b'\x08\x02\x1a\x00']
+2023-03-28 18:58:19,507 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEl', 'chain': ['']}
+2023-03-28 18:58:19,507 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEl', 'chain': ['']}
+2023-03-28 18:58:19,507 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-03-28 18:58:19,507 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-03-28 18:58:19,507 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-03-28 18:58:19,507 - DiscoveryAppln - INFO - DiscoveryMW - built the reply reply: true
+
+2023-03-28 18:58:19,507 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,518 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,518 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,518 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEl', b'', b'\x08\x03"\x0c\n\nairquality']
+2023-03-28 18:58:19,518 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "airquality"
+
+2023-03-28 18:58:19,518 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['airquality'], 'identity': b'\x00k\x8bEl', 'chain': ['']}
+2023-03-28 18:58:19,518 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,518 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.9:7777']
+2023-03-28 18:58:19,519 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,529 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,529 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,529 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEl', b'', b'\x08\x03"\n\n\x08pressure']
+2023-03-28 18:58:19,529 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "pressure"
+
+2023-03-28 18:58:19,529 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['pressure'], 'identity': b'\x00k\x8bEl', 'chain': ['']}
+2023-03-28 18:58:19,529 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,529 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.9:7777', '10.0.0.10:7777', '10.0.0.7:7777']
+2023-03-28 18:58:19,530 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,541 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,542 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,542 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEl', b'', b'\x08\x03"\n\n\x08location']
+2023-03-28 18:58:19,542 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "location"
+
+2023-03-28 18:58:19,542 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['location'], 'identity': b'\x00k\x8bEl', 'chain': ['']}
+2023-03-28 18:58:19,542 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,542 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.7:7777']
+2023-03-28 18:58:19,543 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,553 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,710 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,710 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEg', b'', b'\x08\x01\x12H\n\nsubscriber\x12\x16weather,pressure,light\x1a\x12sub1:10.0.0.2:5577"\x0810.0.0.2*\x045577']
+2023-03-28 18:58:19,710 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'subscriber', 'topic_list': ['weather', 'pressure', 'light'], 'id': 'sub1:10.0.0.2:5577', 'address': '10.0.0.2', 'port': '5577', 'successor': '', 'identity': b'\x00k\x8bEg', 'chain': ['']}
+2023-03-28 18:58:19,710 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new subscriber with id sub1:10.0.0.2:5577
+2023-03-28 18:58:19,710 - DiscoveryAppln - INFO - DiscoveryAppln: 5/1 pubs and 5/1 subs
+2023-03-28 18:58:19,710 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'\x00k\x8bEg'
+2023-03-28 18:58:19,710 - DiscoveryAppln - INFO - New chain after that was removed: None
+2023-03-28 18:58:19,710 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,720 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,721 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,721 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEg', b'', b'\x08\x02\x1a\x00']
+2023-03-28 18:58:19,721 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEg', 'chain': ['']}
+2023-03-28 18:58:19,721 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEg', 'chain': ['']}
+2023-03-28 18:58:19,721 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-03-28 18:58:19,721 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-03-28 18:58:19,721 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-03-28 18:58:19,721 - DiscoveryAppln - INFO - DiscoveryMW - built the reply reply: true
+
+2023-03-28 18:58:19,721 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,732 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,732 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,732 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEg', b'', b'\x08\x03"\t\n\x07weather']
+2023-03-28 18:58:19,732 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "weather"
+
+2023-03-28 18:58:19,733 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['weather'], 'identity': b'\x00k\x8bEg', 'chain': ['']}
+2023-03-28 18:58:19,733 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,733 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.9:7777', '10.0.0.11:7777', '10.0.0.8:7777']
+2023-03-28 18:58:19,733 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,743 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,743 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,743 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEg', b'', b'\x08\x03"\n\n\x08pressure']
+2023-03-28 18:58:19,743 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "pressure"
+
+2023-03-28 18:58:19,744 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['pressure'], 'identity': b'\x00k\x8bEg', 'chain': ['']}
+2023-03-28 18:58:19,744 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,744 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.9:7777', '10.0.0.10:7777', '10.0.0.7:7777']
+2023-03-28 18:58:19,744 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,754 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:19,754 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:19,754 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEg', b'', b'\x08\x03"\x07\n\x05light']
+2023-03-28 18:58:19,754 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "light"
+
+2023-03-28 18:58:19,754 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['light'], 'identity': b'\x00k\x8bEg', 'chain': ['']}
+2023-03-28 18:58:19,754 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 1, self.lookup: Centralized, self.dissemination: Direct
+2023-03-28 18:58:19,755 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.10:7777', '10.0.0.11:7777', '10.0.0.8:7777']
+2023-03-28 18:58:19,755 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:19,765 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:22,795 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:22,795 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEi', b'', b'\x08\x02\x1a\x00']
+2023-03-28 18:58:22,795 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEi', 'chain': ['']}
+2023-03-28 18:58:22,795 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEi', 'chain': ['']}
+2023-03-28 18:58:22,795 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-03-28 18:58:22,795 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-03-28 18:58:22,795 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-03-28 18:58:22,795 - DiscoveryAppln - INFO - DiscoveryMW - built the reply reply: true
+
+2023-03-28 18:58:22,796 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:22,807 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:22,987 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:22,987 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEp', b'', b'\x08\x02\x1a\x00']
+2023-03-28 18:58:22,988 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEp', 'chain': ['']}
+2023-03-28 18:58:22,988 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEp', 'chain': ['']}
+2023-03-28 18:58:22,988 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-03-28 18:58:22,988 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-03-28 18:58:22,988 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-03-28 18:58:22,988 - DiscoveryAppln - INFO - DiscoveryMW - built the reply reply: true
+
+2023-03-28 18:58:22,988 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:22,998 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:23,222 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:23,222 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEo', b'', b'\x08\x02\x1a\x00']
+2023-03-28 18:58:23,222 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEo', 'chain': ['']}
+2023-03-28 18:58:23,222 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEo', 'chain': ['']}
+2023-03-28 18:58:23,222 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-03-28 18:58:23,222 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-03-28 18:58:23,222 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-03-28 18:58:23,222 - DiscoveryAppln - INFO - DiscoveryMW - built the reply reply: true
+
+2023-03-28 18:58:23,223 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:23,233 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:23,467 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:23,467 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEn', b'', b'\x08\x02\x1a\x00']
+2023-03-28 18:58:23,467 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEn', 'chain': ['']}
+2023-03-28 18:58:23,467 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEn', 'chain': ['']}
+2023-03-28 18:58:23,467 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-03-28 18:58:23,467 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-03-28 18:58:23,467 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-03-28 18:58:23,467 - DiscoveryAppln - INFO - DiscoveryMW - built the reply reply: true
+
+2023-03-28 18:58:23,468 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:23,478 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-03-28 18:58:23,660 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-03-28 18:58:23,660 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'\x00k\x8bEj', b'', b'\x08\x02\x1a\x00']
+2023-03-28 18:58:23,660 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEj', 'chain': ['']}
+2023-03-28 18:58:23,660 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 0, 'num_subs': 0, 'broker': 0, 'initiator': '', 'identity': b'\x00k\x8bEj', 'chain': ['']}
+2023-03-28 18:58:23,660 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-03-28 18:58:23,660 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-03-28 18:58:23,660 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-03-28 18:58:23,660 - DiscoveryAppln - INFO - DiscoveryMW - built the reply reply: true
+
+2023-03-28 18:58:23,660 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-03-28 18:58:23,671 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop

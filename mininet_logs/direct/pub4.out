@@ -1,0 +1,8 @@
+2023-03-10 13:31:41,032 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-03-10 13:31:41,038 - PubAppln - DEBUG - Main: parse command line arguments
+2023-03-10 13:31:41,051 - PubAppln - DEBUG - Main: resetting log level to 20
+2023-03-10 13:31:41,060 - PubAppln - INFO - PublisherMW - 10.0.0.5:5577 Configured Successfully
+2023-03-10 13:31:41,065 - PubAppln - INFO - PublisherAppln - pub4 configured with topics: ['humidity', 'weather', 'sound', 'airquality', 'light']
+2023-03-10 13:31:41,065 - PubAppln - INFO - PublisherAppln - Attempting to register with Discovery service
+2023-03-10 13:31:41,065 - PubAppln - INFO - PublisherMW - Sent register request to Discovery
+2023-03-10 13:31:41,065 - PubAppln - INFO - PublisherMW - Waiting for events...

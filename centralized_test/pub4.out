@@ -1,0 +1,64 @@
+2023-03-28 18:58:17,697 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-03-28 18:58:17,717 - PubAppln - DEBUG - Main: parse command line arguments
+2023-03-28 18:58:17,731 - PubAppln - DEBUG - Main: resetting log level to 20
+2023-03-28 18:58:17,735 - PubAppln - INFO - PublisherMW - 10.0.0.10:7777 Configured Successfully
+2023-03-28 18:58:17,737 - PubAppln - INFO - PublisherAppln - pub4 configured with topics: ['altitude', 'sound', 'humidity', 'pressure', 'light']
+2023-03-28 18:58:17,787 - PubAppln - INFO - PublisherAppln - Attempting to register with Discovery service
+2023-03-28 18:58:17,787 - PubAppln - INFO - PublisherMW - Sent register request to Discovery
+2023-03-28 18:58:17,787 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-03-28 18:58:17,789 - PubAppln - INFO - PublisherMW - Received reply of type 1
+2023-03-28 18:58:17,789 - PubAppln - INFO - PublisherAppln - Result of registration: success
+2023-03-28 18:58:22,795 - PubAppln - INFO - PublisherMW - Sent is_ready request, waiting for reply...
+2023-03-28 18:58:22,795 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-03-28 18:58:22,796 - PubAppln - INFO - PublisherMW - Received reply of type 2
+2023-03-28 18:58:27,801 - PubAppln - INFO - PublisherMW - Disseminating - altitude 3728
+2023-03-28 18:58:27,802 - PubAppln - INFO - PublisherMW - Disseminating - sound 76
+2023-03-28 18:58:27,802 - PubAppln - INFO - PublisherMW - Disseminating - humidity 17.27250863120707
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1046
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - altitude 30921
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - sound 43
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - humidity 27.263998103287232
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1041
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - light 1600
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - altitude 17878
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - sound 93
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - humidity 94.34348024407421
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - pressure 935
+2023-03-28 18:58:27,803 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - altitude 18591
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - sound 82
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - humidity 48.97235371051032
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - pressure 908
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - altitude 39585
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - sound 66
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - humidity 89.92154713623903
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1037
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-03-28 18:58:27,804 - PubAppln - INFO - PublisherMW - Disseminating - altitude 11415
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - sound 53
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - humidity 90.05300960458155
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - pressure 968
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - altitude 8148
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - sound 83
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - humidity 49.48405614816083
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1046
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - light 1600
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - altitude 13332
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - sound 60
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - humidity 34.20958479097705
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - pressure 974
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - altitude 21516
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - sound 93
+2023-03-28 18:58:27,805 - PubAppln - INFO - PublisherMW - Disseminating - humidity 62.9746244921277
+2023-03-28 18:58:27,806 - PubAppln - INFO - PublisherMW - Disseminating - pressure 909
+2023-03-28 18:58:27,806 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-03-28 18:58:27,806 - PubAppln - INFO - PublisherMW - Disseminating - altitude 25539
+2023-03-28 18:58:27,806 - PubAppln - INFO - PublisherMW - Disseminating - sound 40
+2023-03-28 18:58:27,806 - PubAppln - INFO - PublisherMW - Disseminating - humidity 55.44474890374006
+2023-03-28 18:58:27,806 - PubAppln - INFO - PublisherMW - Disseminating - pressure 969
+2023-03-28 18:58:27,806 - PubAppln - INFO - PublisherMW - Disseminating - light 1600
+2023-03-28 18:58:27,806 - PubAppln - INFO - PublisherAppln - Dissemination complete after 10 rounds

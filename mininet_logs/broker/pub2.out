@@ -1,0 +1,251 @@
+2023-02-08 23:20:52,816 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-02-08 23:20:52,826 - PubAppln - DEBUG - Main: parse command line arguments
+2023-02-08 23:20:52,830 - PubAppln - DEBUG - Main: resetting log level to 10
+2023-02-08 23:20:52,850 - PubAppln - DEBUG - Main: effective log level is 10
+2023-02-08 23:20:52,851 - PubAppln - DEBUG - Main: obtain the object
+2023-02-08 23:20:52,854 - PubAppln - DEBUG - PublisherAppln::configure
+2023-02-08 23:20:52,854 - PubAppln - DEBUG - PublisherAppln::configure - parsing config.ini
+2023-02-08 23:20:52,854 - PubAppln - DEBUG - PublisherAppln::configure - selecting our topic list
+2023-02-08 23:20:52,858 - PubAppln - DEBUG - PublisherAppln::configure - initialize the middleware object
+2023-02-08 23:20:52,860 - PubAppln - DEBUG - PublisherMW::configure
+2023-02-08 23:20:52,862 - PubAppln - DEBUG - PublisherMW::configure - obtain ZMQ context
+2023-02-08 23:20:52,862 - PubAppln - DEBUG - PublisherMW::configure - obtain the poller
+2023-02-08 23:20:52,862 - PubAppln - DEBUG - PublisherMW::configure - obtain REQ and PUB sockets
+2023-02-08 23:20:52,863 - PubAppln - DEBUG - PublisherMW::configure - register the REQ socket for incoming replies
+2023-02-08 23:20:52,863 - PubAppln - DEBUG - PublisherMW::configure - connect to Discovery service
+2023-02-08 23:20:52,863 - PubAppln - DEBUG - PublisherMW::configure - bind to the pub socket
+2023-02-08 23:20:52,863 - PubAppln - DEBUG - PublisherAppln::configure - configuration complete
+2023-02-08 23:20:52,863 - PubAppln - DEBUG - PublisherAppln::driver
+2023-02-08 23:20:52,863 - PubAppln - DEBUG - **********************************
+2023-02-08 23:20:52,863 - PubAppln - DEBUG - PublisherAppln::dump
+2023-02-08 23:20:52,863 - PubAppln - DEBUG - ------------------------------
+2023-02-08 23:20:52,863 - PubAppln - DEBUG -      Name: pub2
+2023-02-08 23:20:52,863 - PubAppln - DEBUG -      Lookup: Centralized
+2023-02-08 23:20:52,863 - PubAppln - DEBUG -      Dissemination: Broker
+2023-02-08 23:20:52,863 - PubAppln - DEBUG -      TopicList: ['light', 'temperature', 'altitude', 'location', 'pressure']
+2023-02-08 23:20:52,863 - PubAppln - DEBUG -      Iterations: 10
+2023-02-08 23:20:52,863 - PubAppln - DEBUG - **********************************
+2023-02-08 23:20:52,864 - PubAppln - DEBUG - PublisherAppln::driver - register with the discovery service
+2023-02-08 23:20:52,864 - PubAppln - DEBUG - PublisherMW::register
+2023-02-08 23:20:52,864 - PubAppln - DEBUG - PublisherMW::register - populate the nested register req
+2023-02-08 23:20:52,864 - PubAppln - DEBUG - PublisherMW::register - done populating nested RegisterReq
+2023-02-08 23:20:52,864 - PubAppln - DEBUG - PublisherMW::register - build the outer DiscoveryReq message
+2023-02-08 23:20:52,865 - PubAppln - DEBUG - PublisherMW::register - done building the outer message
+2023-02-08 23:20:52,866 - PubAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12]\n\tpublisher\x12,light,temperature,altitude,location,pressure\x1a\x12pub2:10.0.0.3:5577"\x0810.0.0.3*\x045577'
+2023-02-08 23:20:52,870 - PubAppln - DEBUG - PublisherMW::register - send stringified buffer to Discovery service
+2023-02-08 23:20:52,870 - PubAppln - DEBUG - PublisherMW::register - now wait for reply
+2023-02-08 23:20:52,872 - PubAppln - DEBUG - PublisherMW::event_loop - run the event loop
+2023-02-08 23:20:53,855 - PubAppln - DEBUG - PublisherMW::handle_reply
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - PublisherAppln::driver - result of registration: success
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - PublisherAppln::driver - check if are ready to go
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - PublisherMW::is_ready
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - PublisherMW::is_ready - populate the nested IsReady msg
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - PublisherMW::is_ready - done populating nested IsReady msg
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - PublisherMW::is_ready - build the outer DiscoveryReq message
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - PublisherMW::is_ready - done building the outer message
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x00'
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - PublisherMW::is_ready - send stringified buffer to Discovery service
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - PublisherMW::is_ready - now wait for reply
+2023-02-08 23:20:53,856 - PubAppln - DEBUG - PublisherMW::event_loop - run the event loop
+2023-02-08 23:21:02,880 - PubAppln - DEBUG - PublisherMW::handle_reply
+2023-02-08 23:21:12,890 - PubAppln - DEBUG - PublisherMW::disseminate - light 450
+2023-02-08 23:21:12,890 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,890 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03450\x1a\x1b02/08/2023, 23:21:12.890665'
+2023-02-08 23:21:12,890 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - temperature -58
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-58\x1a\x1b02/08/2023, 23:21:12.891193'
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - altitude 8044
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x048044\x1a\x1b02/08/2023, 23:21:12.891404'
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - location Europe
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x06Europe\x1a\x1b02/08/2023, 23:21:12.891558'
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - pressure 939
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03939\x1a\x1b02/08/2023, 23:21:12.891688'
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - light 1100
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x041100\x1a\x1b02/08/2023, 23:21:12.891820'
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - temperature 75
+2023-02-08 23:21:12,891 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x0275\x1a\x1b02/08/2023, 23:21:12.891999'
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - altitude 6638
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x046638\x1a\x1b02/08/2023, 23:21:12.892138'
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - location Australia
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\tAustralia\x1a\x1b02/08/2023, 23:21:12.892278'
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - pressure 929
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03929\x1a\x1b02/08/2023, 23:21:12.892463'
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - light 800
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03800\x1a\x1b02/08/2023, 23:21:12.892603'
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - temperature 28
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x0228\x1a\x1b02/08/2023, 23:21:12.892736'
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - altitude 20367
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0520367\x1a\x1b02/08/2023, 23:21:12.892869'
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,892 - PubAppln - DEBUG - PublisherMW::disseminate - location Africa
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x06Africa\x1a\x1b02/08/2023, 23:21:12.893046'
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - pressure 876
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03876\x1a\x1b02/08/2023, 23:21:12.893220'
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - light 800
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03800\x1a\x1b02/08/2023, 23:21:12.893364'
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - temperature 86
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x0286\x1a\x1b02/08/2023, 23:21:12.893538'
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - altitude 619
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x03619\x1a\x1b02/08/2023, 23:21:12.893674'
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - location Africa
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x06Africa\x1a\x1b02/08/2023, 23:21:12.893816'
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - pressure 962
+2023-02-08 23:21:12,893 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03962\x1a\x1b02/08/2023, 23:21:12.894033'
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - light 450
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03450\x1a\x1b02/08/2023, 23:21:12.894184'
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - temperature -12
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-12\x1a\x1b02/08/2023, 23:21:12.894323'
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - altitude 37920
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0537920\x1a\x1b02/08/2023, 23:21:12.894501'
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - location America
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x07America\x1a\x1b02/08/2023, 23:21:12.894643'
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - pressure 1036
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x041036\x1a\x1b02/08/2023, 23:21:12.894779'
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - light 450
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03450\x1a\x1b02/08/2023, 23:21:12.894914'
+2023-02-08 23:21:12,894 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - temperature -76
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-76\x1a\x1b02/08/2023, 23:21:12.895086'
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - altitude 38529
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0538529\x1a\x1b02/08/2023, 23:21:12.895229'
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - location America
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x07America\x1a\x1b02/08/2023, 23:21:12.895379'
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - pressure 912
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03912\x1a\x1b02/08/2023, 23:21:12.895555'
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - light 1100
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x041100\x1a\x1b02/08/2023, 23:21:12.895699'
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - temperature -89
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x03-89\x1a\x1b02/08/2023, 23:21:12.895835'
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - altitude 38210
+2023-02-08 23:21:12,895 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0538210\x1a\x1b02/08/2023, 23:21:12.895969'
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - location Australia
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\tAustralia\x1a\x1b02/08/2023, 23:21:12.896162'
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - pressure 881
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03881\x1a\x1b02/08/2023, 23:21:12.896304'
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - light 1100
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x041100\x1a\x1b02/08/2023, 23:21:12.896442'
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - temperature 83
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x0283\x1a\x1b02/08/2023, 23:21:12.896640'
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - altitude 38678
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0538678\x1a\x1b02/08/2023, 23:21:12.896780'
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - location America
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,896 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x07America\x1a\x1b02/08/2023, 23:21:12.896964'
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - pressure 916
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03916\x1a\x1b02/08/2023, 23:21:12.897164'
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - light 800
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03800\x1a\x1b02/08/2023, 23:21:12.897305'
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - temperature 59
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x0259\x1a\x1b02/08/2023, 23:21:12.897441'
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - altitude 4811
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x044811\x1a\x1b02/08/2023, 23:21:12.897640'
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - location Europe
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x06Europe\x1a\x1b02/08/2023, 23:21:12.897785'
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - pressure 1019
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,897 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x041019\x1a\x1b02/08/2023, 23:21:12.897923'
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - light 450
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x05light\x12\x03450\x1a\x1b02/08/2023, 23:21:12.898214'
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - temperature -7
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x0btemperature\x12\x02-7\x1a\x1b02/08/2023, 23:21:12.898393'
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - altitude 24909
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08altitude\x12\x0524909\x1a\x1b02/08/2023, 23:21:12.898569'
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - location Europe
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08location\x12\x06Europe\x1a\x1b02/08/2023, 23:21:12.898786'
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - pressure 985
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - build the topic message
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - Stringified serialized buf = b'\n\x08pressure\x12\x03985\x1a\x1b02/08/2023, 23:21:12.898928'
+2023-02-08 23:21:12,898 - PubAppln - DEBUG - PublisherMW::disseminate - publish our serialized message
+2023-02-08 23:21:12,899 - PubAppln - DEBUG - PublisherAppln::driver - finished publishing

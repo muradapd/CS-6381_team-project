@@ -1,0 +1,8 @@
+2023-03-10 13:31:41,095 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-03-10 13:31:41,096 - SubAppln - DEBUG - Main: parse command line arguments
+2023-03-10 13:31:41,099 - SubAppln - DEBUG - Main: resetting log level to 20
+2023-03-10 13:31:41,104 - SubAppln - INFO - SubscriberMW - 10.0.0.8:5577 Configured Successfully
+2023-03-10 13:31:41,104 - SubAppln - INFO - SubscriberAppln - sub3 configured with topics: ['temperature', 'pressure', 'location', 'sound', 'weather']
+2023-03-10 13:31:41,104 - SubAppln - INFO - SubscriberAppln - Attempting to register with Discovery service
+2023-03-10 13:31:41,105 - SubAppln - INFO - SubscriberMW - Sent register request to Discovery
+2023-03-10 13:31:41,105 - SubAppln - INFO - SubscriberMW - Waiting for events...

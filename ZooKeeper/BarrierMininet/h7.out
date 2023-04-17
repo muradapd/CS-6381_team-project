@@ -1,0 +1,15 @@
+Demo program for ZooKeeper-based Barrier Sync: Client Appln
+ClientApp::run - Client C5 now running and opening connection to zookeeper
+ClientApp::run -- state = LOST
+ClientApp::run C5 - parent znode is set
+ClientApp::DataChangeWatcher C5 - data = b'2', stat = ZnodeStat(czxid=27, mzxid=38, ctime=1680207032456, mtime=1680207086308, version=2, cversion=4, aversion=0, ephemeralOwner=0, dataLength=1, numChildren=4, pzxid=37)
+ClientApp C5 barrier not reached yet
+ClientApp C5 found parent znode value = b'2', stat = ZnodeStat(czxid=27, mzxid=38, ctime=1680207032456, mtime=1680207086308, version=2, cversion=5, aversion=0, ephemeralOwner=0, dataLength=1, numChildren=5, pzxid=39)
+ClientApp C5 barrier not reached yet
+ClientApp C5 found parent znode value = b'5', stat = ZnodeStat(czxid=27, mzxid=40, ctime=1680207032456, mtime=1680207086346, version=3, cversion=5, aversion=0, ephemeralOwner=0, dataLength=1, numChildren=5, pzxid=39)
+ClientApp C5 barrier not reached yet
+ClientApp::DataChangeWatcher C5 - data = b'5', stat = ZnodeStat(czxid=27, mzxid=40, ctime=1680207032456, mtime=1680207086346, version=3, cversion=5, aversion=0, ephemeralOwner=0, dataLength=1, numChildren=5, pzxid=39)
+ClientApp: C5, barrier is reached
+ClientApp C5 found parent znode value = b'5', stat = ZnodeStat(czxid=27, mzxid=40, ctime=1680207032456, mtime=1680207086346, version=3, cversion=8, aversion=0, ephemeralOwner=0, dataLength=1, numChildren=2, pzxid=43)
+ClientApp C5 has reached the barrier and so we disconnect from zookeeper
+ClientApp C5: Bye Bye 

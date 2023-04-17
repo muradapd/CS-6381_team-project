@@ -1,0 +1,406 @@
+2023-02-08 23:20:52,853 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-02-08 23:20:52,864 - SubAppln - DEBUG - Main: parse command line arguments
+2023-02-08 23:20:52,880 - SubAppln - DEBUG - Main: resetting log level to 10
+2023-02-08 23:20:52,897 - SubAppln - DEBUG - Main: effective log level is 10
+2023-02-08 23:20:52,897 - SubAppln - DEBUG - Main: obtain the object
+2023-02-08 23:20:52,897 - SubAppln - DEBUG - SubscriberAppln::configure
+2023-02-08 23:20:52,897 - SubAppln - DEBUG - SubscriberAppln::configure - parsing config.ini
+2023-02-08 23:20:52,897 - SubAppln - DEBUG - SubscriberAppln::configure - selecting our topic list
+2023-02-08 23:20:52,898 - SubAppln - DEBUG - SubscriberAppln::configure - initialize the middleware object
+2023-02-08 23:20:52,898 - SubAppln - DEBUG - SubscriberMW::configure
+2023-02-08 23:20:52,898 - SubAppln - DEBUG - SubscriberMW::configure - obtain ZMQ context
+2023-02-08 23:20:52,898 - SubAppln - DEBUG - SubscriberMW::configure - obtain the poller
+2023-02-08 23:20:52,898 - SubAppln - DEBUG - SubscriberMW::configure - obtain REQ and SUB sockets
+2023-02-08 23:20:52,898 - SubAppln - DEBUG - SubscriberMW::configure - register the REQ socket for incoming replies
+2023-02-08 23:20:52,898 - SubAppln - DEBUG - SubscriberMW::configure - connect to Discovery service
+2023-02-08 23:20:52,899 - SubAppln - DEBUG - SubscriberMW::configure - connect to the sub socket
+2023-02-08 23:20:52,899 - SubAppln - DEBUG - SubscriberAppln::configure - configuration complete
+2023-02-08 23:20:52,899 - SubAppln - DEBUG - SubscriberAppln::driver
+2023-02-08 23:20:52,899 - SubAppln - DEBUG - **********************************
+2023-02-08 23:20:52,899 - SubAppln - DEBUG - SubscriberAppln::dump
+2023-02-08 23:20:52,899 - SubAppln - DEBUG - ------------------------------
+2023-02-08 23:20:52,899 - SubAppln - DEBUG -      Name: sub1
+2023-02-08 23:20:52,899 - SubAppln - DEBUG -      Lookup: Centralized
+2023-02-08 23:20:52,900 - SubAppln - DEBUG -      Dissemination: Broker
+2023-02-08 23:20:52,900 - SubAppln - DEBUG -      topicList: ['weather', 'location', 'sound', 'humidity', 'pressure']
+2023-02-08 23:20:52,900 - SubAppln - DEBUG - **********************************
+2023-02-08 23:20:52,900 - SubAppln - DEBUG - SubscriberAppln::driver - register with the discovery service
+2023-02-08 23:20:52,900 - SubAppln - DEBUG - SubscriberMW::register
+2023-02-08 23:20:52,900 - SubAppln - DEBUG - SubscriberMW::register - populate the nested register req
+2023-02-08 23:20:52,900 - SubAppln - DEBUG - SubscriberMW::register - done populating nested RegisterReq
+2023-02-08 23:20:52,901 - SubAppln - DEBUG - SubscriberMW::register - build the outer DiscoveryReq message
+2023-02-08 23:20:52,901 - SubAppln - DEBUG - SubscriberMW::register - done building the outer message
+2023-02-08 23:20:52,901 - SubAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12Z\n\nsubscriber\x12(weather,location,sound,humidity,pressure\x1a\x12sub1:10.0.0.6:5577"\x0810.0.0.6*\x045577'
+2023-02-08 23:20:52,901 - SubAppln - DEBUG - SubscriberMW::register - send stringified buffer to Discovery service
+2023-02-08 23:20:52,901 - SubAppln - DEBUG - SubscriberMW::register - now wait for reply
+2023-02-08 23:20:52,901 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:20:56,863 - SubAppln - DEBUG - SubscriberMW::handle_reply
+2023-02-08 23:20:56,863 - SubAppln - DEBUG - SubscriberAppln::driver - result of registration
+2023-02-08 23:20:56,863 - SubAppln - DEBUG - SubscriberAppln::driver - check if are ready to go
+2023-02-08 23:20:56,863 - SubAppln - DEBUG - SubscriberMW::is_ready
+2023-02-08 23:20:56,863 - SubAppln - DEBUG - SubscriberMW::is_ready - populate the nested IsReady msg
+2023-02-08 23:20:56,863 - SubAppln - DEBUG - SubscriberMW::is_ready - done populating nested IsReady msg
+2023-02-08 23:20:56,863 - SubAppln - DEBUG - SubscriberMW::is_ready - build the outer DiscoveryReq message
+2023-02-08 23:20:56,863 - SubAppln - DEBUG - SubscriberMW::is_ready - done building the outer message
+2023-02-08 23:20:56,863 - SubAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x00'
+2023-02-08 23:20:56,864 - SubAppln - DEBUG - SubscriberMW::is_ready - send stringified buffer to Discovery service
+2023-02-08 23:20:56,864 - SubAppln - DEBUG - SubscriberMW::is_ready - now wait for reply
+2023-02-08 23:20:56,864 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - SubscriberMW::handle_reply
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - SubscriberAppln::driver - Received True from Discovery Service ready check
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - SubscriberMW::lookup
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - SubscriberMW::lookup - populate the nested LookupPubByTopicReq msg
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - SubscriberMW::lookup - done populating nested LookupPubByTopicReq msg
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - SubscriberMW::lookup - build the outer discovery message
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - SubscriberMW::lookup - done building the outer message
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - Stringified serialized buf = b'\x08\x03"*\n(weather,location,sound,humidity,pressure'
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - SubscriberMW::lookup - send stringified buffer to Discovery service
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - SubscriberMW::lookup - now wait for list of publishers
+2023-02-08 23:21:05,886 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,905 - SubAppln - DEBUG - SubscriberMW::handle_reply
+2023-02-08 23:21:14,905 - SubAppln - DEBUG - SubscriberMW::connect_pubs - connecting to ['10.0.0.10:5577']
+2023-02-08 23:21:14,905 - SubAppln - DEBUG - SubscriberMW::connect_pubs - register the SUB socket for incoming messages
+2023-02-08 23:21:14,905 - SubAppln - DEBUG - SubscriberAppln::driver - Listening for publishes of interest
+2023-02-08 23:21:14,905 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,921 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "978"
+timestamp: "02/08/2023, 23:21:14.895237"
+
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,923 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "82"
+timestamp: "02/08/2023, 23:21:14.895354"
+
+2023-02-08 23:21:14,924 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,924 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,924 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "humidity"
+content: "32.97380112046437"
+timestamp: "02/08/2023, 23:21:14.895473"
+
+2023-02-08 23:21:14,924 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,925 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,925 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "1075"
+timestamp: "02/08/2023, 23:21:14.895897"
+
+2023-02-08 23:21:14,925 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,925 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "43"
+timestamp: "02/08/2023, 23:21:14.896050"
+
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "humidity"
+content: "75.04634145700749"
+timestamp: "02/08/2023, 23:21:14.896182"
+
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "949"
+timestamp: "02/08/2023, 23:21:14.896583"
+
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "91"
+timestamp: "02/08/2023, 23:21:14.896718"
+
+2023-02-08 23:21:14,926 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "humidity"
+content: "58.99761490645423"
+timestamp: "02/08/2023, 23:21:14.896837"
+
+2023-02-08 23:21:14,929 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,930 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "1004"
+timestamp: "02/08/2023, 23:21:14.897250"
+
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "65"
+timestamp: "02/08/2023, 23:21:14.897368"
+
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,931 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "humidity"
+content: "98.70662639246204"
+timestamp: "02/08/2023, 23:21:14.897484"
+
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "987"
+timestamp: "02/08/2023, 23:21:14.897926"
+
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "51"
+timestamp: "02/08/2023, 23:21:14.898045"
+
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "humidity"
+content: "27.829296010103764"
+timestamp: "02/08/2023, 23:21:14.898400"
+
+2023-02-08 23:21:14,932 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,938 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "898"
+timestamp: "02/08/2023, 23:21:14.898928"
+
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "57"
+timestamp: "02/08/2023, 23:21:14.899079"
+
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "humidity"
+content: "25.061491144242794"
+timestamp: "02/08/2023, 23:21:14.899310"
+
+2023-02-08 23:21:14,939 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "981"
+timestamp: "02/08/2023, 23:21:14.899838"
+
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "49"
+timestamp: "02/08/2023, 23:21:14.899989"
+
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "humidity"
+content: "23.91277472075648"
+timestamp: "02/08/2023, 23:21:14.900192"
+
+2023-02-08 23:21:14,940 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,943 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "1025"
+timestamp: "02/08/2023, 23:21:14.900629"
+
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "39"
+timestamp: "02/08/2023, 23:21:14.900817"
+
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "humidity"
+content: "21.84769249963518"
+timestamp: "02/08/2023, 23:21:14.901677"
+
+2023-02-08 23:21:14,944 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,947 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,947 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "973"
+timestamp: "02/08/2023, 23:21:14.903302"
+
+2023-02-08 23:21:14,947 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,947 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,947 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "31"
+timestamp: "02/08/2023, 23:21:14.903606"
+
+2023-02-08 23:21:14,947 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:14,947 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:14,948 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "humidity"
+content: "58.07315158759321"
+timestamp: "02/08/2023, 23:21:14.903807"
+
+2023-02-08 23:21:14,948 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,910 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,910 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "1063"
+timestamp: "02/08/2023, 23:21:16.896797"
+
+2023-02-08 23:21:16,910 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,910 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,910 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "88"
+timestamp: "02/08/2023, 23:21:16.897891"
+
+2023-02-08 23:21:16,910 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,910 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,910 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "location"
+content: "Europe"
+timestamp: "02/08/2023, 23:21:16.898156"
+
+2023-02-08 23:21:16,910 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,910 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,911 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "1011"
+timestamp: "02/08/2023, 23:21:16.898405"
+
+2023-02-08 23:21:16,911 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,917 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,918 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "77"
+timestamp: "02/08/2023, 23:21:16.898685"
+
+2023-02-08 23:21:16,918 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,918 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,918 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "location"
+content: "Asia"
+timestamp: "02/08/2023, 23:21:16.898803"
+
+2023-02-08 23:21:16,918 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,918 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,918 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "1063"
+timestamp: "02/08/2023, 23:21:16.903580"
+
+2023-02-08 23:21:16,918 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "46"
+timestamp: "02/08/2023, 23:21:16.903891"
+
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "location"
+content: "Asia"
+timestamp: "02/08/2023, 23:21:16.904037"
+
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "983"
+timestamp: "02/08/2023, 23:21:16.904529"
+
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "46"
+timestamp: "02/08/2023, 23:21:16.905171"
+
+2023-02-08 23:21:16,919 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,924 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,924 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "location"
+content: "Europe"
+timestamp: "02/08/2023, 23:21:16.905371"
+
+2023-02-08 23:21:16,924 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,927 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,928 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "949"
+timestamp: "02/08/2023, 23:21:16.905653"
+
+2023-02-08 23:21:16,928 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,934 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,935 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "49"
+timestamp: "02/08/2023, 23:21:16.906031"
+
+2023-02-08 23:21:16,935 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,941 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,941 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "location"
+content: "Australia"
+timestamp: "02/08/2023, 23:21:16.906174"
+
+2023-02-08 23:21:16,941 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,944 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "944"
+timestamp: "02/08/2023, 23:21:16.906477"
+
+2023-02-08 23:21:16,945 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "94"
+timestamp: "02/08/2023, 23:21:16.906740"
+
+2023-02-08 23:21:16,946 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,947 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,947 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "location"
+content: "America"
+timestamp: "02/08/2023, 23:21:16.906910"
+
+2023-02-08 23:21:16,947 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,950 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,950 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "983"
+timestamp: "02/08/2023, 23:21:16.907214"
+
+2023-02-08 23:21:16,951 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "46"
+timestamp: "02/08/2023, 23:21:16.907533"
+
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "location"
+content: "Australia"
+timestamp: "02/08/2023, 23:21:16.907669"
+
+2023-02-08 23:21:16,960 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,964 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,964 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "1073"
+timestamp: "02/08/2023, 23:21:16.907963"
+
+2023-02-08 23:21:16,964 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,968 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,968 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "73"
+timestamp: "02/08/2023, 23:21:16.908258"
+
+2023-02-08 23:21:16,969 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,971 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,971 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "location"
+content: "Europe"
+timestamp: "02/08/2023, 23:21:16.908395"
+
+2023-02-08 23:21:16,972 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,981 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,981 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "870"
+timestamp: "02/08/2023, 23:21:16.919845"
+
+2023-02-08 23:21:16,982 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,988 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,989 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "59"
+timestamp: "02/08/2023, 23:21:16.920092"
+
+2023-02-08 23:21:16,989 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:16,993 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:16,993 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "location"
+content: "Europe"
+timestamp: "02/08/2023, 23:21:16.920211"
+
+2023-02-08 23:21:16,994 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:17,002 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:17,003 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "pressure"
+content: "965"
+timestamp: "02/08/2023, 23:21:16.920494"
+
+2023-02-08 23:21:17,003 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:17,011 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:17,012 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "sound"
+content: "50"
+timestamp: "02/08/2023, 23:21:16.920735"
+
+2023-02-08 23:21:17,012 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop
+2023-02-08 23:21:17,014 - SubAppln - DEBUG - SubscriberMW::handle_message
+2023-02-08 23:21:17,015 - SubAppln - DEBUG - SubscriberAppln::driver - Received topic: "location"
+content: "Asia"
+timestamp: "02/08/2023, 23:21:16.920909"
+
+2023-02-08 23:21:17,015 - SubAppln - DEBUG - SubscriberMW::event_loop - run the event loop

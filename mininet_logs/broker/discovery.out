@@ -1,0 +1,298 @@
+2023-02-08 23:20:52,793 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-02-08 23:20:52,795 - DiscoveryAppln - DEBUG - Main: parse command line arguments
+2023-02-08 23:20:52,824 - DiscoveryAppln - DEBUG - Main: Creating Discovery Application with 4 publishers and 4 subscribers
+2023-02-08 23:20:52,842 - DiscoveryAppln - DEBUG - Main: obtain the object
+2023-02-08 23:20:52,842 - DiscoveryAppln - DEBUG - DiscoveryAppln::configure
+2023-02-08 23:20:52,842 - DiscoveryAppln - DEBUG - DiscoveryAppln::configure - parsing config.ini
+2023-02-08 23:20:52,842 - DiscoveryAppln - DEBUG - DiscoveryAppln::configure - initialize the middleware object
+2023-02-08 23:20:52,848 - DiscoveryAppln - DEBUG - DiscoveryMW::configure
+2023-02-08 23:20:52,849 - DiscoveryAppln - DEBUG - DiscoveryMW::configure - obtain ZMQ context
+2023-02-08 23:20:52,849 - DiscoveryAppln - DEBUG - DiscoveryMW::configure - obtain the poller
+2023-02-08 23:20:52,849 - DiscoveryAppln - DEBUG - DiscoveryMW::configure - obtain REP socket
+2023-02-08 23:20:52,849 - DiscoveryAppln - DEBUG - DiscoveryMW::configure - register the REP socket for incoming requests
+2023-02-08 23:20:52,849 - DiscoveryAppln - DEBUG - DiscoveryMW::configure - binding to port
+2023-02-08 23:20:52,850 - DiscoveryAppln - DEBUG - DiscoveryAppln::configure - configuration complete
+2023-02-08 23:20:52,850 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver
+2023-02-08 23:20:52,850 - DiscoveryAppln - DEBUG - **********************************
+2023-02-08 23:20:52,850 - DiscoveryAppln - DEBUG - DiscoveryAppln::dump
+2023-02-08 23:20:52,851 - DiscoveryAppln - DEBUG - ------------------------------
+2023-02-08 23:20:52,851 - DiscoveryAppln - DEBUG -     Publishers: 4
+2023-02-08 23:20:52,851 - DiscoveryAppln - DEBUG -     Subscribers: 4
+2023-02-08 23:20:52,851 - DiscoveryAppln - DEBUG - **********************************
+2023-02-08 23:20:53,852 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:20:53,854 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:20:53,854 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a register request
+2023-02-08 23:20:53,854 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['light', 'temperature', 'altitude', 'location', 'pressure'], 'id': 'pub2:10.0.0.3:5577', 'address': '10.0.0.3', 'port': '5577'}
+2023-02-08 23:20:53,854 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Registering new publisher with id pub2:10.0.0.3:5577
+2023-02-08 23:20:53,854 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 1/4 pubs and 0/4 subs
+2023-02-08 23:20:53,854 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration
+2023-02-08 23:20:53,854 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - result of registration: success
+2023-02-08 23:20:53,854 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - build the outer DiscoveryRep message
+2023-02-08 23:20:53,855 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - done building the outer message
+2023-02-08 23:20:53,855 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12\x03\n\x011'
+2023-02-08 23:20:53,855 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - send stringified buffer to requestor
+2023-02-08 23:20:54,857 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:20:54,857 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:20:54,857 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a register request
+2023-02-08 23:20:54,858 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['sound', 'weather', 'altitude', 'pressure', 'humidity'], 'id': 'pub3:10.0.0.4:5577', 'address': '10.0.0.4', 'port': '5577'}
+2023-02-08 23:20:54,858 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Registering new publisher with id pub3:10.0.0.4:5577
+2023-02-08 23:20:54,858 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 2/4 pubs and 0/4 subs
+2023-02-08 23:20:54,858 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration
+2023-02-08 23:20:54,858 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - result of registration: success
+2023-02-08 23:20:54,858 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - build the outer DiscoveryRep message
+2023-02-08 23:20:54,858 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - done building the outer message
+2023-02-08 23:20:54,858 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12\x03\n\x011'
+2023-02-08 23:20:54,858 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - send stringified buffer to requestor
+2023-02-08 23:20:55,860 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:20:55,860 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:20:55,860 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a register request
+2023-02-08 23:20:55,861 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['pressure', 'sound', 'humidity', 'temperature', 'altitude'], 'id': 'pub4:10.0.0.5:5577', 'address': '10.0.0.5', 'port': '5577'}
+2023-02-08 23:20:55,861 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Registering new publisher with id pub4:10.0.0.5:5577
+2023-02-08 23:20:55,861 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 3/4 pubs and 0/4 subs
+2023-02-08 23:20:55,861 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration
+2023-02-08 23:20:55,861 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - result of registration: success
+2023-02-08 23:20:55,861 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - build the outer DiscoveryRep message
+2023-02-08 23:20:55,861 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - done building the outer message
+2023-02-08 23:20:55,861 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12\x03\n\x011'
+2023-02-08 23:20:55,861 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - send stringified buffer to requestor
+2023-02-08 23:20:56,862 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:20:56,862 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:20:56,862 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a register request
+2023-02-08 23:20:56,862 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'register', 'role': 'subscriber', 'topic_list': ['weather', 'location', 'sound', 'humidity', 'pressure'], 'id': 'sub1:10.0.0.6:5577', 'address': '10.0.0.6', 'port': '5577'}
+2023-02-08 23:20:56,862 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Registering new subscriber with id sub1:10.0.0.6:5577
+2023-02-08 23:20:56,863 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 3/4 pubs and 1/4 subs
+2023-02-08 23:20:56,863 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration
+2023-02-08 23:20:56,863 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - result of registration: success
+2023-02-08 23:20:56,863 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - build the outer DiscoveryRep message
+2023-02-08 23:20:56,863 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - done building the outer message
+2023-02-08 23:20:56,863 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12\x03\n\x011'
+2023-02-08 23:20:56,863 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - send stringified buffer to requestor
+2023-02-08 23:20:57,864 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a register request
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['pressure', 'airquality', 'sound', 'location', 'light'], 'id': 'pub1:10.0.0.2:5577', 'address': '10.0.0.2', 'port': '5577'}
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Registering new publisher with id pub1:10.0.0.2:5577
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 1/4 subs
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - result of registration: success
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - build the outer DiscoveryRep message
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - done building the outer message
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12\x03\n\x011'
+2023-02-08 23:20:57,865 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - send stringified buffer to requestor
+2023-02-08 23:20:58,866 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:20:58,867 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:20:58,867 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a register request
+2023-02-08 23:20:58,867 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'register', 'role': 'subscriber', 'topic_list': ['altitude', 'light', 'pressure', 'weather', 'temperature'], 'id': 'sub2:10.0.0.7:5577', 'address': '10.0.0.7', 'port': '5577'}
+2023-02-08 23:20:58,867 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Registering new subscriber with id sub2:10.0.0.7:5577
+2023-02-08 23:20:58,867 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 2/4 subs
+2023-02-08 23:20:58,868 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration
+2023-02-08 23:20:58,868 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - result of registration: success
+2023-02-08 23:20:58,868 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - build the outer DiscoveryRep message
+2023-02-08 23:20:58,868 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - done building the outer message
+2023-02-08 23:20:58,868 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12\x03\n\x011'
+2023-02-08 23:20:58,868 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - send stringified buffer to requestor
+2023-02-08 23:20:59,869 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:20:59,869 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:20:59,870 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a register request
+2023-02-08 23:20:59,870 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'register', 'role': 'broker', 'topic_list': [''], 'id': 'broker:10.0.0.10:5577', 'address': '10.0.0.10', 'port': '5577'}
+2023-02-08 23:20:59,870 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Registering new broker with id broker:10.0.0.10:5577
+2023-02-08 23:20:59,870 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 2/4 subs
+2023-02-08 23:20:59,870 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration
+2023-02-08 23:20:59,870 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - result of registration: success
+2023-02-08 23:20:59,870 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - build the outer DiscoveryRep message
+2023-02-08 23:20:59,871 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - done building the outer message
+2023-02-08 23:20:59,872 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12\x03\n\x011'
+2023-02-08 23:20:59,872 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - send stringified buffer to requestor
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a register request
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'register', 'role': 'subscriber', 'topic_list': ['airquality', 'altitude', 'light', 'location', 'weather'], 'id': 'sub3:10.0.0.8:5577', 'address': '10.0.0.8', 'port': '5577'}
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Registering new subscriber with id sub3:10.0.0.8:5577
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 3/4 subs
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - result of registration: success
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - build the outer DiscoveryRep message
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - done building the outer message
+2023-02-08 23:21:00,874 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12\x03\n\x011'
+2023-02-08 23:21:00,875 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - send stringified buffer to requestor
+2023-02-08 23:21:01,876 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a register request
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'register', 'role': 'subscriber', 'topic_list': ['pressure', 'location', 'light', 'weather', 'temperature'], 'id': 'sub4:10.0.0.9:5577', 'address': '10.0.0.9', 'port': '5577'}
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Registering new subscriber with id sub4:10.0.0.9:5577
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 4/4 subs
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - result of registration: success
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - build the outer DiscoveryRep message
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - done building the outer message
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x01\x12\x03\n\x011'
+2023-02-08 23:21:01,877 - DiscoveryAppln - DEBUG - DiscoveryMW::verify_registration - send stringified buffer to requestor
+2023-02-08 23:21:02,878 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:02,878 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:02,878 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received an is_ready request
+2023-02-08 23:21:02,878 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'is_ready'}
+2023-02-08 23:21:02,878 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Checking if system is ready
+2023-02-08 23:21:02,879 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 4/4 subs
+2023-02-08 23:21:02,879 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Broker is here
+2023-02-08 23:21:02,879 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready
+2023-02-08 23:21:02,879 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - result of ready check: True
+2023-02-08 23:21:02,879 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - build the outer DiscoveryRep message
+2023-02-08 23:21:02,879 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - done building the outer message
+2023-02-08 23:21:02,879 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x02\x08\x01'
+2023-02-08 23:21:02,879 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - send stringified buffer to requestor
+2023-02-08 23:21:03,880 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:03,881 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:03,881 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received an is_ready request
+2023-02-08 23:21:03,881 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'is_ready'}
+2023-02-08 23:21:03,881 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Checking if system is ready
+2023-02-08 23:21:03,881 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 4/4 subs
+2023-02-08 23:21:03,882 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Broker is here
+2023-02-08 23:21:03,882 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready
+2023-02-08 23:21:03,882 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - result of ready check: True
+2023-02-08 23:21:03,882 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - build the outer DiscoveryRep message
+2023-02-08 23:21:03,882 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - done building the outer message
+2023-02-08 23:21:03,882 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x02\x08\x01'
+2023-02-08 23:21:03,882 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - send stringified buffer to requestor
+2023-02-08 23:21:04,882 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received an is_ready request
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'is_ready'}
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Checking if system is ready
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 4/4 subs
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Broker is here
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - result of ready check: True
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - build the outer DiscoveryRep message
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - done building the outer message
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x02\x08\x01'
+2023-02-08 23:21:04,883 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - send stringified buffer to requestor
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received an is_ready request
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'is_ready'}
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Checking if system is ready
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 4/4 subs
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Broker is here
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - result of ready check: True
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - build the outer DiscoveryRep message
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - done building the outer message
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x02\x08\x01'
+2023-02-08 23:21:05,885 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - send stringified buffer to requestor
+2023-02-08 23:21:06,886 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:06,886 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:06,886 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received an is_ready request
+2023-02-08 23:21:06,886 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'is_ready'}
+2023-02-08 23:21:06,886 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Checking if system is ready
+2023-02-08 23:21:06,887 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 4/4 subs
+2023-02-08 23:21:06,887 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Broker is here
+2023-02-08 23:21:06,887 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready
+2023-02-08 23:21:06,887 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - result of ready check: True
+2023-02-08 23:21:06,887 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - build the outer DiscoveryRep message
+2023-02-08 23:21:06,887 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - done building the outer message
+2023-02-08 23:21:06,887 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x02\x08\x01'
+2023-02-08 23:21:06,887 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - send stringified buffer to requestor
+2023-02-08 23:21:07,888 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received an is_ready request
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'is_ready'}
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Checking if system is ready
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 4/4 subs
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Broker is here
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - result of ready check: True
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - build the outer DiscoveryRep message
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - done building the outer message
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x02\x08\x01'
+2023-02-08 23:21:07,889 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - send stringified buffer to requestor
+2023-02-08 23:21:08,890 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:08,890 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:08,890 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received an is_ready request
+2023-02-08 23:21:08,890 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'is_ready'}
+2023-02-08 23:21:08,890 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Checking if system is ready
+2023-02-08 23:21:08,890 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 4/4 subs
+2023-02-08 23:21:08,891 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Broker is here
+2023-02-08 23:21:08,891 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready
+2023-02-08 23:21:08,891 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - result of ready check: True
+2023-02-08 23:21:08,891 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - build the outer DiscoveryRep message
+2023-02-08 23:21:08,891 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - done building the outer message
+2023-02-08 23:21:08,891 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x02\x08\x01'
+2023-02-08 23:21:08,891 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - send stringified buffer to requestor
+2023-02-08 23:21:09,894 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received an is_ready request
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'is_ready'}
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Checking if system is ready
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 4/4 subs
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Broker is here
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - result of ready check: True
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - build the outer DiscoveryRep message
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - done building the outer message
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x02\x08\x01'
+2023-02-08 23:21:09,895 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - send stringified buffer to requestor
+2023-02-08 23:21:10,896 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received an is_ready request
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'is_ready'}
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Checking if system is ready
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - 4/4 pubs and 4/4 subs
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Broker is here
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - result of ready check: True
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - build the outer DiscoveryRep message
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - done building the outer message
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x02\x1a\x02\x08\x01'
+2023-02-08 23:21:10,897 - DiscoveryAppln - DEBUG - DiscoveryMW::is_ready - send stringified buffer to requestor
+2023-02-08 23:21:11,898 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:11,898 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:11,898 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a lookup request
+2023-02-08 23:21:11,898 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'lookup', 'topicList': ['pressure', 'location', 'light', 'weather', 'temperature']}
+2023-02-08 23:21:11,898 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Sending broker address: ['10.0.0.10:5577']
+2023-02-08 23:21:11,898 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup request
+2023-02-08 23:21:11,898 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - build the outer DiscoveryRep message
+2023-02-08 23:21:11,898 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - done building the outer message
+2023-02-08 23:21:11,898 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x03"\x10\n\x0e10.0.0.10:5577'
+2023-02-08 23:21:11,898 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - send stringified buffer to requestor
+2023-02-08 23:21:12,900 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:12,900 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:12,900 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a lookup request
+2023-02-08 23:21:12,900 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'lookup', 'topicList': ['airquality', 'altitude', 'light', 'location', 'weather']}
+2023-02-08 23:21:12,900 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Sending broker address: ['10.0.0.10:5577']
+2023-02-08 23:21:12,900 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup request
+2023-02-08 23:21:12,900 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - build the outer DiscoveryRep message
+2023-02-08 23:21:12,900 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - done building the outer message
+2023-02-08 23:21:12,900 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x03"\x10\n\x0e10.0.0.10:5577'
+2023-02-08 23:21:12,900 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - send stringified buffer to requestor
+2023-02-08 23:21:13,902 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:13,902 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:13,902 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a lookup request for all pubs
+2023-02-08 23:21:13,903 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'lookup_all_pubs'}
+2023-02-08 23:21:13,903 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Looking up all publishers
+2023-02-08 23:21:13,903 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - List of all publishers: ['10.0.0.3:5577', '10.0.0.4:5577', '10.0.0.5:5577', '10.0.0.2:5577']
+2023-02-08 23:21:13,903 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup request
+2023-02-08 23:21:13,903 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - build the outer DiscoveryRep message
+2023-02-08 23:21:13,903 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - done building the outer message
+2023-02-08 23:21:13,903 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x04*9\n710.0.0.3:5577,10.0.0.4:5577,10.0.0.5:5577,10.0.0.2:5577'
+2023-02-08 23:21:13,903 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - send stringified buffer to requestor
+2023-02-08 23:21:14,903 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:14,904 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:14,904 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a lookup request
+2023-02-08 23:21:14,904 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'lookup', 'topicList': ['weather', 'location', 'sound', 'humidity', 'pressure']}
+2023-02-08 23:21:14,904 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Sending broker address: ['10.0.0.10:5577']
+2023-02-08 23:21:14,904 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup request
+2023-02-08 23:21:14,904 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - build the outer DiscoveryRep message
+2023-02-08 23:21:14,904 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - done building the outer message
+2023-02-08 23:21:14,904 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x03"\x10\n\x0e10.0.0.10:5577'
+2023-02-08 23:21:14,904 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - send stringified buffer to requestor
+2023-02-08 23:21:15,906 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop
+2023-02-08 23:21:15,906 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply
+2023-02-08 23:21:15,906 - DiscoveryAppln - DEBUG - DiscoveryMW::handle_reply - received a lookup request
+2023-02-08 23:21:15,906 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - {'request_type': 'lookup', 'topicList': ['altitude', 'light', 'pressure', 'weather', 'temperature']}
+2023-02-08 23:21:15,906 - DiscoveryAppln - DEBUG - DiscoveryAppln::driver - Sending broker address: ['10.0.0.10:5577']
+2023-02-08 23:21:15,907 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup request
+2023-02-08 23:21:15,907 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - build the outer DiscoveryRep message
+2023-02-08 23:21:15,907 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - done building the outer message
+2023-02-08 23:21:15,907 - DiscoveryAppln - DEBUG - Stringified serialized buf = b'\x08\x03"\x10\n\x0e10.0.0.10:5577'
+2023-02-08 23:21:15,907 - DiscoveryAppln - DEBUG - DiscoveryMW::lookup - send stringified buffer to requestor
+2023-02-08 23:21:16,908 - DiscoveryAppln - DEBUG - DiscoveryMW::event_loop - run the event loop

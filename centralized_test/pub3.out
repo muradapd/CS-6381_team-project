@@ -1,0 +1,64 @@
+2023-03-28 18:58:17,760 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-03-28 18:58:17,761 - PubAppln - DEBUG - Main: parse command line arguments
+2023-03-28 18:58:17,770 - PubAppln - DEBUG - Main: resetting log level to 20
+2023-03-28 18:58:17,773 - PubAppln - INFO - PublisherMW - 10.0.0.9:7777 Configured Successfully
+2023-03-28 18:58:17,774 - PubAppln - INFO - PublisherAppln - pub3 configured with topics: ['weather', 'altitude', 'pressure', 'airquality', 'sound']
+2023-03-28 18:58:18,460 - PubAppln - INFO - PublisherAppln - Attempting to register with Discovery service
+2023-03-28 18:58:18,460 - PubAppln - INFO - PublisherMW - Sent register request to Discovery
+2023-03-28 18:58:18,460 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-03-28 18:58:18,462 - PubAppln - INFO - PublisherMW - Received reply of type 1
+2023-03-28 18:58:18,462 - PubAppln - INFO - PublisherAppln - Result of registration: success
+2023-03-28 18:58:23,466 - PubAppln - INFO - PublisherMW - Sent is_ready request, waiting for reply...
+2023-03-28 18:58:23,467 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-03-28 18:58:23,468 - PubAppln - INFO - PublisherMW - Received reply of type 2
+2023-03-28 18:58:28,473 - PubAppln - INFO - PublisherMW - Disseminating - weather icy
+2023-03-28 18:58:28,473 - PubAppln - INFO - PublisherMW - Disseminating - altitude 38798
+2023-03-28 18:58:28,473 - PubAppln - INFO - PublisherMW - Disseminating - pressure 926
+2023-03-28 18:58:28,473 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - sound 63
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - weather rainy
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - altitude 34007
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1075
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - sound 51
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - weather icy
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - altitude 23829
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - pressure 934
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - airquality good
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - sound 58
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - weather sunny
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - altitude 37128
+2023-03-28 18:58:28,474 - PubAppln - INFO - PublisherMW - Disseminating - pressure 963
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - sound 67
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - weather sunny
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - altitude 809
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - pressure 955
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - sound 70
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - weather icy
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - altitude 34726
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - pressure 891
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - sound 66
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - weather sunny
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - altitude 23970
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1021
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - sound 43
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - weather sunny
+2023-03-28 18:58:28,475 - PubAppln - INFO - PublisherMW - Disseminating - altitude 9675
+2023-03-28 18:58:28,476 - PubAppln - INFO - PublisherMW - Disseminating - pressure 991
+2023-03-28 18:58:28,476 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-03-28 18:58:28,476 - PubAppln - INFO - PublisherMW - Disseminating - sound 61
+2023-03-28 18:58:28,476 - PubAppln - INFO - PublisherMW - Disseminating - weather rainy
+2023-03-28 18:58:28,476 - PubAppln - INFO - PublisherMW - Disseminating - altitude 39969
+2023-03-28 18:58:28,479 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1003
+2023-03-28 18:58:28,479 - PubAppln - INFO - PublisherMW - Disseminating - airquality good
+2023-03-28 18:58:28,480 - PubAppln - INFO - PublisherMW - Disseminating - sound 65
+2023-03-28 18:58:28,480 - PubAppln - INFO - PublisherMW - Disseminating - weather foggy
+2023-03-28 18:58:28,480 - PubAppln - INFO - PublisherMW - Disseminating - altitude 15633
+2023-03-28 18:58:28,480 - PubAppln - INFO - PublisherMW - Disseminating - pressure 889
+2023-03-28 18:58:28,480 - PubAppln - INFO - PublisherMW - Disseminating - airquality good
+2023-03-28 18:58:28,480 - PubAppln - INFO - PublisherMW - Disseminating - sound 64
+2023-03-28 18:58:28,480 - PubAppln - INFO - PublisherAppln - Dissemination complete after 10 rounds

@@ -1,0 +1,64 @@
+2023-03-28 18:58:17,656 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-03-28 18:58:17,670 - PubAppln - DEBUG - Main: parse command line arguments
+2023-03-28 18:58:17,705 - PubAppln - DEBUG - Main: resetting log level to 20
+2023-03-28 18:58:17,711 - PubAppln - INFO - PublisherMW - 10.0.0.7:7777 Configured Successfully
+2023-03-28 18:58:17,713 - PubAppln - INFO - PublisherAppln - pub1 configured with topics: ['temperature', 'sound', 'location', 'humidity', 'pressure']
+2023-03-28 18:58:17,967 - PubAppln - INFO - PublisherAppln - Attempting to register with Discovery service
+2023-03-28 18:58:17,967 - PubAppln - INFO - PublisherMW - Sent register request to Discovery
+2023-03-28 18:58:17,967 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-03-28 18:58:17,969 - PubAppln - INFO - PublisherMW - Received reply of type 1
+2023-03-28 18:58:17,969 - PubAppln - INFO - PublisherAppln - Result of registration: success
+2023-03-28 18:58:22,987 - PubAppln - INFO - PublisherMW - Sent is_ready request, waiting for reply...
+2023-03-28 18:58:22,987 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-03-28 18:58:22,988 - PubAppln - INFO - PublisherMW - Received reply of type 2
+2023-03-28 18:58:27,993 - PubAppln - INFO - PublisherMW - Disseminating - temperature -44
+2023-03-28 18:58:27,994 - PubAppln - INFO - PublisherMW - Disseminating - sound 33
+2023-03-28 18:58:27,994 - PubAppln - INFO - PublisherMW - Disseminating - location Australia
+2023-03-28 18:58:27,994 - PubAppln - INFO - PublisherMW - Disseminating - humidity 41.97099584502213
+2023-03-28 18:58:27,994 - PubAppln - INFO - PublisherMW - Disseminating - pressure 992
+2023-03-28 18:58:27,994 - PubAppln - INFO - PublisherMW - Disseminating - temperature 24
+2023-03-28 18:58:27,994 - PubAppln - INFO - PublisherMW - Disseminating - sound 95
+2023-03-28 18:58:27,994 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-03-28 18:58:27,994 - PubAppln - INFO - PublisherMW - Disseminating - humidity 22.276884977065396
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - pressure 925
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - temperature -83
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - sound 52
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - humidity 53.17825935230124
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1084
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - temperature -8
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - sound 51
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - humidity 51.436864213401705
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1060
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - temperature 57
+2023-03-28 18:58:27,995 - PubAppln - INFO - PublisherMW - Disseminating - sound 48
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - location Africa
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - humidity 62.287542903984956
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - pressure 989
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - temperature 47
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - sound 53
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - location Africa
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - humidity 90.41554177026296
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1076
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - temperature 0
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - sound 82
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - humidity 54.70139932849168
+2023-03-28 18:58:27,998 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1029
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - temperature -35
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - sound 66
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - humidity 20.641450705701377
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1019
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - temperature -77
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - sound 71
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - humidity 23.64431035894264
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1000
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - temperature 44
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - sound 56
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - location Africa
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - humidity 14.22973367087597
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherMW - Disseminating - pressure 999
+2023-03-28 18:58:27,999 - PubAppln - INFO - PublisherAppln - Dissemination complete after 10 rounds
