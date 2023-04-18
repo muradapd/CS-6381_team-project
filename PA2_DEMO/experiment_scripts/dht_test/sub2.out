@@ -1,0 +1,1253 @@
+2023-04-18 13:33:45,157 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-04-18 13:33:45,157 - SubAppln - DEBUG - Main: parse command line arguments
+2023-04-18 13:33:45,177 - SubAppln - DEBUG - Main: resetting log level to 20
+2023-04-18 13:33:45,187 - SubAppln - INFO - SubscriberMW - localhost:5577 Configured Successfully
+2023-04-18 13:33:45,188 - SubAppln - INFO - SubscriberAppln - sub2 configured with topics: ['temperature', 'airquality', 'altitude', 'humidity', 'location', 'light', 'sound', 'pressure', 'weather']
+2023-04-18 13:33:47,110 - SubAppln - INFO - SubscriberAppln - Attempting to register with Discovery service
+2023-04-18 13:33:47,110 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,113 - SubAppln - INFO - SubscriberMW - Received reply of type 1
+2023-04-18 13:33:47,113 - SubAppln - INFO - SubscriberAppln - Result of registration: 1
+2023-04-18 13:33:47,115 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,180 - SubAppln - INFO - SubscriberMW - Received reply of type 2
+2023-04-18 13:33:47,182 - SubAppln - INFO - SubscriberAppln - System is ready!
+2023-04-18 13:33:47,182 - SubAppln - INFO - SubscriberAppln - Looking up publishers for: ['temperature', 'airquality', 'altitude', 'humidity', 'location', 'light', 'sound', 'pressure', 'weather']
+2023-04-18 13:33:47,182 - SubAppln - INFO - SubscriberMW - Looking up topics: ['temperature']
+2023-04-18 13:33:47,183 - SubAppln - INFO - SubscriberMW - Sent lookup request to Discovery
+2023-04-18 13:33:47,183 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,240 - SubAppln - INFO - SubscriberMW - Received reply of type 3
+2023-04-18 13:33:47,243 - SubAppln - INFO - SubscriberMW - Looking up topics: ['airquality']
+2023-04-18 13:33:47,243 - SubAppln - INFO - SubscriberMW - Sent lookup request to Discovery
+2023-04-18 13:33:47,243 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,294 - SubAppln - INFO - SubscriberMW - Received reply of type 3
+2023-04-18 13:33:47,296 - SubAppln - INFO - SubscriberMW - Looking up topics: ['altitude']
+2023-04-18 13:33:47,296 - SubAppln - INFO - SubscriberMW - Sent lookup request to Discovery
+2023-04-18 13:33:47,297 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,329 - SubAppln - INFO - SubscriberMW - Received reply of type 3
+2023-04-18 13:33:47,331 - SubAppln - INFO - SubscriberMW - Looking up topics: ['humidity']
+2023-04-18 13:33:47,331 - SubAppln - INFO - SubscriberMW - Sent lookup request to Discovery
+2023-04-18 13:33:47,331 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,357 - SubAppln - INFO - SubscriberMW - Received reply of type 3
+2023-04-18 13:33:47,359 - SubAppln - INFO - SubscriberMW - Looking up topics: ['location']
+2023-04-18 13:33:47,359 - SubAppln - INFO - SubscriberMW - Sent lookup request to Discovery
+2023-04-18 13:33:47,360 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,385 - SubAppln - INFO - SubscriberMW - Received reply of type 3
+2023-04-18 13:33:47,388 - SubAppln - INFO - SubscriberMW - Looking up topics: ['light']
+2023-04-18 13:33:47,388 - SubAppln - INFO - SubscriberMW - Sent lookup request to Discovery
+2023-04-18 13:33:47,388 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,421 - SubAppln - INFO - SubscriberMW - Received reply of type 3
+2023-04-18 13:33:47,423 - SubAppln - INFO - SubscriberMW - Looking up topics: ['sound']
+2023-04-18 13:33:47,423 - SubAppln - INFO - SubscriberMW - Sent lookup request to Discovery
+2023-04-18 13:33:47,423 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,448 - SubAppln - INFO - SubscriberMW - Received reply of type 3
+2023-04-18 13:33:47,450 - SubAppln - INFO - SubscriberMW - Looking up topics: ['pressure']
+2023-04-18 13:33:47,451 - SubAppln - INFO - SubscriberMW - Sent lookup request to Discovery
+2023-04-18 13:33:47,451 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,483 - SubAppln - INFO - SubscriberMW - Received reply of type 3
+2023-04-18 13:33:47,485 - SubAppln - INFO - SubscriberMW - Looking up topics: ['weather']
+2023-04-18 13:33:47,485 - SubAppln - INFO - SubscriberMW - Sent lookup request to Discovery
+2023-04-18 13:33:47,485 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:47,543 - SubAppln - INFO - SubscriberMW - Received reply of type 3
+2023-04-18 13:33:47,546 - SubAppln - INFO - SubscriberAppln - Connecting to publishers: ['', '10.0.0.3:7777', '10.0.0.12:7777']
+2023-04-18 13:33:47,546 - SubAppln - INFO - SubscriberMW - connecting to ['', '10.0.0.3:7777', '10.0.0.12:7777']
+2023-04-18 13:33:47,546 - SubAppln - INFO - SubscriberMW - register the SUB socket for incoming messages
+2023-04-18 13:33:47,546 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:55,719 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:55,721 - SubAppln - INFO - SubscriberAppln - (latency: 00.002320) Received topic: "pressure"
+content: "912"
+timestamp: "04/18/2023, 13:33:55.719313"
+
+2023-04-18 13:33:55,721 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:55,820 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:55,821 - SubAppln - INFO - SubscriberAppln - (latency: 00.000756) Received topic: "sound"
+content: "44"
+timestamp: "04/18/2023, 13:33:55.820426"
+
+2023-04-18 13:33:55,821 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:55,921 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:55,922 - SubAppln - INFO - SubscriberAppln - (latency: 00.000907) Received topic: "weather"
+content: "icy"
+timestamp: "04/18/2023, 13:33:55.921533"
+
+2023-04-18 13:33:55,922 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:55,966 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:55,966 - SubAppln - INFO - SubscriberAppln - (latency: 00.000838) Received topic: "humidity"
+content: "96.97480481597832"
+timestamp: "04/18/2023, 13:33:55.966110"
+
+2023-04-18 13:33:55,967 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,022 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,023 - SubAppln - INFO - SubscriberAppln - (latency: 00.000842) Received topic: "light"
+content: "800"
+timestamp: "04/18/2023, 13:33:56.022122"
+
+2023-04-18 13:33:56,023 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,067 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,068 - SubAppln - INFO - SubscriberAppln - (latency: 00.000769) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:33:56.067239"
+
+2023-04-18 13:33:56,068 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,123 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,123 - SubAppln - INFO - SubscriberAppln - (latency: 00.000685) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:33:56.123229"
+
+2023-04-18 13:33:56,124 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,168 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,168 - SubAppln - INFO - SubscriberAppln - (latency: 00.000691) Received topic: "airquality"
+content: "smog"
+timestamp: "04/18/2023, 13:33:56.167981"
+
+2023-04-18 13:33:56,168 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,224 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,225 - SubAppln - INFO - SubscriberAppln - (latency: 00.000788) Received topic: "pressure"
+content: "1072"
+timestamp: "04/18/2023, 13:33:56.224289"
+
+2023-04-18 13:33:56,225 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,268 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,269 - SubAppln - INFO - SubscriberAppln - (latency: 00.000447) Received topic: "altitude"
+content: "13286"
+timestamp: "04/18/2023, 13:33:56.268674"
+
+2023-04-18 13:33:56,269 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,325 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,325 - SubAppln - INFO - SubscriberAppln - (latency: 00.000647) Received topic: "sound"
+content: "53"
+timestamp: "04/18/2023, 13:33:56.324791"
+
+2023-04-18 13:33:56,325 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,369 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,369 - SubAppln - INFO - SubscriberAppln - (latency: 00.000642) Received topic: "location"
+content: "America"
+timestamp: "04/18/2023, 13:33:56.369199"
+
+2023-04-18 13:33:56,370 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,426 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,426 - SubAppln - INFO - SubscriberAppln - (latency: 00.000711) Received topic: "weather"
+content: "foggy"
+timestamp: "04/18/2023, 13:33:56.425839"
+
+2023-04-18 13:33:56,426 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,470 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,470 - SubAppln - INFO - SubscriberAppln - (latency: 00.000709) Received topic: "humidity"
+content: "85.33738029823516"
+timestamp: "04/18/2023, 13:33:56.470222"
+
+2023-04-18 13:33:56,471 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,526 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,527 - SubAppln - INFO - SubscriberAppln - (latency: 00.000833) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:33:56.526585"
+
+2023-04-18 13:33:56,527 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,571 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,571 - SubAppln - INFO - SubscriberAppln - (latency: 00.000505) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:33:56.570830"
+
+2023-04-18 13:33:56,571 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,627 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,628 - SubAppln - INFO - SubscriberAppln - (latency: 00.000723) Received topic: "location"
+content: "Africa"
+timestamp: "04/18/2023, 13:33:56.627633"
+
+2023-04-18 13:33:56,628 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,672 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,672 - SubAppln - INFO - SubscriberAppln - (latency: 00.000746) Received topic: "airquality"
+content: "smog"
+timestamp: "04/18/2023, 13:33:56.671892"
+
+2023-04-18 13:33:56,672 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,728 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,729 - SubAppln - INFO - SubscriberAppln - (latency: 00.000744) Received topic: "pressure"
+content: "1009"
+timestamp: "04/18/2023, 13:33:56.728683"
+
+2023-04-18 13:33:56,729 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,772 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,773 - SubAppln - INFO - SubscriberAppln - (latency: 00.000602) Received topic: "altitude"
+content: "779"
+timestamp: "04/18/2023, 13:33:56.772449"
+
+2023-04-18 13:33:56,773 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,830 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,830 - SubAppln - INFO - SubscriberAppln - (latency: 00.000822) Received topic: "sound"
+content: "74"
+timestamp: "04/18/2023, 13:33:56.829829"
+
+2023-04-18 13:33:56,830 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,873 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,873 - SubAppln - INFO - SubscriberAppln - (latency: 00.000580) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:33:56.873020"
+
+2023-04-18 13:33:56,873 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,931 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,931 - SubAppln - INFO - SubscriberAppln - (latency: 00.000659) Received topic: "weather"
+content: "cloudy"
+timestamp: "04/18/2023, 13:33:56.930881"
+
+2023-04-18 13:33:56,931 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:56,974 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:56,974 - SubAppln - INFO - SubscriberAppln - (latency: 00.000680) Received topic: "humidity"
+content: "66.10302665402398"
+timestamp: "04/18/2023, 13:33:56.974117"
+
+2023-04-18 13:33:56,975 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,031 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,032 - SubAppln - INFO - SubscriberAppln - (latency: 00.000814) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:33:57.031580"
+
+2023-04-18 13:33:57,032 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,074 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,075 - SubAppln - INFO - SubscriberAppln - (latency: 00.000543) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:33:57.074752"
+
+2023-04-18 13:33:57,075 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,132 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,133 - SubAppln - INFO - SubscriberAppln - (latency: 00.000774) Received topic: "location"
+content: "Europe"
+timestamp: "04/18/2023, 13:33:57.132620"
+
+2023-04-18 13:33:57,133 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,176 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,176 - SubAppln - INFO - SubscriberAppln - (latency: 00.000982) Received topic: "airquality"
+content: "smog"
+timestamp: "04/18/2023, 13:33:57.175887"
+
+2023-04-18 13:33:57,177 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,233 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,234 - SubAppln - INFO - SubscriberAppln - (latency: 00.000738) Received topic: "pressure"
+content: "917"
+timestamp: "04/18/2023, 13:33:57.233653"
+
+2023-04-18 13:33:57,234 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,276 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,277 - SubAppln - INFO - SubscriberAppln - (latency: 00.000538) Received topic: "altitude"
+content: "2403"
+timestamp: "04/18/2023, 13:33:57.276469"
+
+2023-04-18 13:33:57,277 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,334 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,334 - SubAppln - INFO - SubscriberAppln - (latency: 00.000669) Received topic: "sound"
+content: "34"
+timestamp: "04/18/2023, 13:33:57.334296"
+
+2023-04-18 13:33:57,335 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,377 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,377 - SubAppln - INFO - SubscriberAppln - (latency: 00.000663) Received topic: "location"
+content: "Australia"
+timestamp: "04/18/2023, 13:33:57.377057"
+
+2023-04-18 13:33:57,378 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,435 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,436 - SubAppln - INFO - SubscriberAppln - (latency: 00.000786) Received topic: "weather"
+content: "sunny"
+timestamp: "04/18/2023, 13:33:57.435275"
+
+2023-04-18 13:33:57,436 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,478 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,478 - SubAppln - INFO - SubscriberAppln - (latency: 00.000677) Received topic: "humidity"
+content: "25.517636069835177"
+timestamp: "04/18/2023, 13:33:57.478071"
+
+2023-04-18 13:33:57,479 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,536 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,536 - SubAppln - INFO - SubscriberAppln - (latency: 00.000709) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:33:57.535852"
+
+2023-04-18 13:33:57,536 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,579 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,579 - SubAppln - INFO - SubscriberAppln - (latency: 00.000645) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:33:57.579136"
+
+2023-04-18 13:33:57,580 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,637 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,637 - SubAppln - INFO - SubscriberAppln - (latency: 00.000725) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:33:57.636882"
+
+2023-04-18 13:33:57,637 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,680 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,680 - SubAppln - INFO - SubscriberAppln - (latency: 00.000668) Received topic: "airquality"
+content: "smog"
+timestamp: "04/18/2023, 13:33:57.680227"
+
+2023-04-18 13:33:57,681 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,738 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,738 - SubAppln - INFO - SubscriberAppln - (latency: 00.000700) Received topic: "pressure"
+content: "972"
+timestamp: "04/18/2023, 13:33:57.737965"
+
+2023-04-18 13:33:57,738 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,781 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,781 - SubAppln - INFO - SubscriberAppln - (latency: 00.000689) Received topic: "altitude"
+content: "16808"
+timestamp: "04/18/2023, 13:33:57.780875"
+
+2023-04-18 13:33:57,781 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,838 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,839 - SubAppln - INFO - SubscriberAppln - (latency: 00.000557) Received topic: "sound"
+content: "80"
+timestamp: "04/18/2023, 13:33:57.838618"
+
+2023-04-18 13:33:57,839 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,882 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,882 - SubAppln - INFO - SubscriberAppln - (latency: 00.000675) Received topic: "location"
+content: "Europe"
+timestamp: "04/18/2023, 13:33:57.881919"
+
+2023-04-18 13:33:57,882 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,939 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,940 - SubAppln - INFO - SubscriberAppln - (latency: 00.000752) Received topic: "weather"
+content: "cloudy"
+timestamp: "04/18/2023, 13:33:57.939673"
+
+2023-04-18 13:33:57,940 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:57,983 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:57,983 - SubAppln - INFO - SubscriberAppln - (latency: 00.000701) Received topic: "humidity"
+content: "59.332419951891474"
+timestamp: "04/18/2023, 13:33:57.982959"
+
+2023-04-18 13:33:57,983 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,040 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,041 - SubAppln - INFO - SubscriberAppln - (latency: 00.000781) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:33:58.040391"
+
+2023-04-18 13:33:58,041 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,084 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,084 - SubAppln - INFO - SubscriberAppln - (latency: 00.000680) Received topic: "light"
+content: "1600"
+timestamp: "04/18/2023, 13:33:58.084045"
+
+2023-04-18 13:33:58,084 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,141 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,142 - SubAppln - INFO - SubscriberAppln - (latency: 00.000730) Received topic: "location"
+content: "Australia"
+timestamp: "04/18/2023, 13:33:58.141419"
+
+2023-04-18 13:33:58,142 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,184 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,185 - SubAppln - INFO - SubscriberAppln - (latency: 00.000466) Received topic: "airquality"
+content: "poor"
+timestamp: "04/18/2023, 13:33:58.184624"
+
+2023-04-18 13:33:58,185 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,242 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,243 - SubAppln - INFO - SubscriberAppln - (latency: 00.000747) Received topic: "pressure"
+content: "1081"
+timestamp: "04/18/2023, 13:33:58.242406"
+
+2023-04-18 13:33:58,243 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,285 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,285 - SubAppln - INFO - SubscriberAppln - (latency: 00.000580) Received topic: "altitude"
+content: "30563"
+timestamp: "04/18/2023, 13:33:58.285209"
+
+2023-04-18 13:33:58,286 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,343 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,344 - SubAppln - INFO - SubscriberAppln - (latency: 00.000710) Received topic: "sound"
+content: "77"
+timestamp: "04/18/2023, 13:33:58.343590"
+
+2023-04-18 13:33:58,344 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,385 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,386 - SubAppln - INFO - SubscriberAppln - (latency: 00.000474) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:33:58.385755"
+
+2023-04-18 13:33:58,386 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,444 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,445 - SubAppln - INFO - SubscriberAppln - (latency: 00.000703) Received topic: "weather"
+content: "foggy"
+timestamp: "04/18/2023, 13:33:58.444663"
+
+2023-04-18 13:33:58,445 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,486 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,486 - SubAppln - INFO - SubscriberAppln - (latency: 00.000583) Received topic: "humidity"
+content: "28.272583222046368"
+timestamp: "04/18/2023, 13:33:58.486368"
+
+2023-04-18 13:33:58,487 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,545 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,545 - SubAppln - INFO - SubscriberAppln - (latency: 00.000654) Received topic: "light"
+content: "800"
+timestamp: "04/18/2023, 13:33:58.545156"
+
+2023-04-18 13:33:58,546 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,587 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,588 - SubAppln - INFO - SubscriberAppln - (latency: 00.000781) Received topic: "light"
+content: "1600"
+timestamp: "04/18/2023, 13:33:58.587417"
+
+2023-04-18 13:33:58,588 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,646 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,646 - SubAppln - INFO - SubscriberAppln - (latency: 00.000688) Received topic: "location"
+content: "Europe"
+timestamp: "04/18/2023, 13:33:58.646180"
+
+2023-04-18 13:33:58,647 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,688 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,688 - SubAppln - INFO - SubscriberAppln - (latency: 00.000509) Received topic: "airquality"
+content: "smog"
+timestamp: "04/18/2023, 13:33:58.687980"
+
+2023-04-18 13:33:58,688 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,747 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,747 - SubAppln - INFO - SubscriberAppln - (latency: 00.000739) Received topic: "pressure"
+content: "894"
+timestamp: "04/18/2023, 13:33:58.746919"
+
+2023-04-18 13:33:58,747 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,788 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,789 - SubAppln - INFO - SubscriberAppln - (latency: 00.000557) Received topic: "altitude"
+content: "28259"
+timestamp: "04/18/2023, 13:33:58.788533"
+
+2023-04-18 13:33:58,789 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,848 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,849 - SubAppln - INFO - SubscriberAppln - (latency: 00.000945) Received topic: "sound"
+content: "43"
+timestamp: "04/18/2023, 13:33:58.848051"
+
+2023-04-18 13:33:58,849 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,889 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,889 - SubAppln - INFO - SubscriberAppln - (latency: 00.000729) Received topic: "location"
+content: "America"
+timestamp: "04/18/2023, 13:33:58.889175"
+
+2023-04-18 13:33:58,890 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,948 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,949 - SubAppln - INFO - SubscriberAppln - (latency: 00.000737) Received topic: "weather"
+content: "sunny"
+timestamp: "04/18/2023, 13:33:58.948697"
+
+2023-04-18 13:33:58,949 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:58,989 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:58,990 - SubAppln - INFO - SubscriberAppln - (latency: 00.000540) Received topic: "humidity"
+content: "65.76404312772686"
+timestamp: "04/18/2023, 13:33:58.989739"
+
+2023-04-18 13:33:58,990 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,049 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,050 - SubAppln - INFO - SubscriberAppln - (latency: 00.000645) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:33:59.049596"
+
+2023-04-18 13:33:59,050 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,090 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,091 - SubAppln - INFO - SubscriberAppln - (latency: 00.000632) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:33:59.090343"
+
+2023-04-18 13:33:59,091 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,150 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,150 - SubAppln - INFO - SubscriberAppln - (latency: 00.000616) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:33:59.150163"
+
+2023-04-18 13:33:59,151 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,191 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,191 - SubAppln - INFO - SubscriberAppln - (latency: 00.000529) Received topic: "airquality"
+content: "good"
+timestamp: "04/18/2023, 13:33:59.190878"
+
+2023-04-18 13:33:59,191 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,250 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,251 - SubAppln - INFO - SubscriberAppln - (latency: 00.000547) Received topic: "pressure"
+content: "969"
+timestamp: "04/18/2023, 13:33:59.250669"
+
+2023-04-18 13:33:59,251 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,291 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,291 - SubAppln - INFO - SubscriberAppln - (latency: 00.000577) Received topic: "altitude"
+content: "39054"
+timestamp: "04/18/2023, 13:33:59.291384"
+
+2023-04-18 13:33:59,292 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,351 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,351 - SubAppln - INFO - SubscriberAppln - (latency: 00.000519) Received topic: "sound"
+content: "32"
+timestamp: "04/18/2023, 13:33:59.351195"
+
+2023-04-18 13:33:59,351 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,392 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,392 - SubAppln - INFO - SubscriberAppln - (latency: 00.000581) Received topic: "location"
+content: "Europe"
+timestamp: "04/18/2023, 13:33:59.391923"
+
+2023-04-18 13:33:59,392 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,452 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,453 - SubAppln - INFO - SubscriberAppln - (latency: 00.000770) Received topic: "weather"
+content: "cloudy"
+timestamp: "04/18/2023, 13:33:59.452216"
+
+2023-04-18 13:33:59,453 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,492 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,493 - SubAppln - INFO - SubscriberAppln - (latency: 00.000535) Received topic: "humidity"
+content: "71.00874131820281"
+timestamp: "04/18/2023, 13:33:59.492467"
+
+2023-04-18 13:33:59,493 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,553 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,554 - SubAppln - INFO - SubscriberAppln - (latency: 00.000901) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:33:59.553286"
+
+2023-04-18 13:33:59,554 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,593 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,593 - SubAppln - INFO - SubscriberAppln - (latency: 00.000580) Received topic: "light"
+content: "800"
+timestamp: "04/18/2023, 13:33:59.592995"
+
+2023-04-18 13:33:59,593 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,654 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,655 - SubAppln - INFO - SubscriberAppln - (latency: 00.000757) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:33:59.654281"
+
+2023-04-18 13:33:59,655 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,694 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,694 - SubAppln - INFO - SubscriberAppln - (latency: 00.000660) Received topic: "airquality"
+content: "poor"
+timestamp: "04/18/2023, 13:33:59.694108"
+
+2023-04-18 13:33:59,695 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,755 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,755 - SubAppln - INFO - SubscriberAppln - (latency: 00.000558) Received topic: "pressure"
+content: "926"
+timestamp: "04/18/2023, 13:33:59.754867"
+
+2023-04-18 13:33:59,755 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,795 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,795 - SubAppln - INFO - SubscriberAppln - (latency: 00.000812) Received topic: "altitude"
+content: "25739"
+timestamp: "04/18/2023, 13:33:59.795122"
+
+2023-04-18 13:33:59,796 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,856 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,856 - SubAppln - INFO - SubscriberAppln - (latency: 00.000810) Received topic: "sound"
+content: "39"
+timestamp: "04/18/2023, 13:33:59.856023"
+
+2023-04-18 13:33:59,857 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,895 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,896 - SubAppln - INFO - SubscriberAppln - (latency: 00.000576) Received topic: "location"
+content: "Europe"
+timestamp: "04/18/2023, 13:33:59.895668"
+
+2023-04-18 13:33:59,896 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,957 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,957 - SubAppln - INFO - SubscriberAppln - (latency: 00.000686) Received topic: "weather"
+content: "rainy"
+timestamp: "04/18/2023, 13:33:59.956803"
+
+2023-04-18 13:33:59,957 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:33:59,996 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:33:59,996 - SubAppln - INFO - SubscriberAppln - (latency: 00.000508) Received topic: "humidity"
+content: "53.71847450677113"
+timestamp: "04/18/2023, 13:33:59.996274"
+
+2023-04-18 13:33:59,997 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,057 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,058 - SubAppln - INFO - SubscriberAppln - (latency: 00.000638) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:34:00.057512"
+
+2023-04-18 13:34:00,058 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,097 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,097 - SubAppln - INFO - SubscriberAppln - (latency: 00.000483) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:34:00.096914"
+
+2023-04-18 13:34:00,097 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,158 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,159 - SubAppln - INFO - SubscriberAppln - (latency: 00.000760) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:34:00.158606"
+
+2023-04-18 13:34:00,159 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,197 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,198 - SubAppln - INFO - SubscriberAppln - (latency: 00.000891) Received topic: "airquality"
+content: "smog"
+timestamp: "04/18/2023, 13:34:00.197472"
+
+2023-04-18 13:34:00,198 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,259 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,260 - SubAppln - INFO - SubscriberAppln - (latency: 00.000762) Received topic: "pressure"
+content: "1012"
+timestamp: "04/18/2023, 13:34:00.259268"
+
+2023-04-18 13:34:00,260 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,298 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,299 - SubAppln - INFO - SubscriberAppln - (latency: 00.000638) Received topic: "altitude"
+content: "34474"
+timestamp: "04/18/2023, 13:34:00.298484"
+
+2023-04-18 13:34:00,299 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,360 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,360 - SubAppln - INFO - SubscriberAppln - (latency: 00.000737) Received topic: "sound"
+content: "70"
+timestamp: "04/18/2023, 13:34:00.359960"
+
+2023-04-18 13:34:00,361 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,399 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,400 - SubAppln - INFO - SubscriberAppln - (latency: 00.000756) Received topic: "location"
+content: "America"
+timestamp: "04/18/2023, 13:34:00.399517"
+
+2023-04-18 13:34:00,400 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,461 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,461 - SubAppln - INFO - SubscriberAppln - (latency: 00.000898) Received topic: "weather"
+content: "icy"
+timestamp: "04/18/2023, 13:34:00.461026"
+
+2023-04-18 13:34:00,462 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,500 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,500 - SubAppln - INFO - SubscriberAppln - (latency: 00.000506) Received topic: "humidity"
+content: "35.539796868220805"
+timestamp: "04/18/2023, 13:34:00.500062"
+
+2023-04-18 13:34:00,500 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,561 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,562 - SubAppln - INFO - SubscriberAppln - (latency: 00.000673) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:34:00.561605"
+
+2023-04-18 13:34:00,562 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,600 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,601 - SubAppln - INFO - SubscriberAppln - (latency: 00.000610) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:34:00.600587"
+
+2023-04-18 13:34:00,601 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,662 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,663 - SubAppln - INFO - SubscriberAppln - (latency: 00.000706) Received topic: "location"
+content: "Europe"
+timestamp: "04/18/2023, 13:34:00.662661"
+
+2023-04-18 13:34:00,663 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,701 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,702 - SubAppln - INFO - SubscriberAppln - (latency: 00.000763) Received topic: "airquality"
+content: "good"
+timestamp: "04/18/2023, 13:34:00.701645"
+
+2023-04-18 13:34:00,702 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,764 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,764 - SubAppln - INFO - SubscriberAppln - (latency: 00.000900) Received topic: "pressure"
+content: "905"
+timestamp: "04/18/2023, 13:34:00.763815"
+
+2023-04-18 13:34:00,765 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,802 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,803 - SubAppln - INFO - SubscriberAppln - (latency: 00.000806) Received topic: "altitude"
+content: "30500"
+timestamp: "04/18/2023, 13:34:00.802359"
+
+2023-04-18 13:34:00,803 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,865 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,865 - SubAppln - INFO - SubscriberAppln - (latency: 00.000718) Received topic: "sound"
+content: "78"
+timestamp: "04/18/2023, 13:34:00.864780"
+
+2023-04-18 13:34:00,865 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,903 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,904 - SubAppln - INFO - SubscriberAppln - (latency: 00.000693) Received topic: "location"
+content: "America"
+timestamp: "04/18/2023, 13:34:00.903414"
+
+2023-04-18 13:34:00,904 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:00,966 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:00,966 - SubAppln - INFO - SubscriberAppln - (latency: 00.000794) Received topic: "weather"
+content: "cloudy"
+timestamp: "04/18/2023, 13:34:00.965843"
+
+2023-04-18 13:34:00,966 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,004 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,004 - SubAppln - INFO - SubscriberAppln - (latency: 00.000733) Received topic: "humidity"
+content: "38.59426605151259"
+timestamp: "04/18/2023, 13:34:01.004139"
+
+2023-04-18 13:34:01,005 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,067 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,067 - SubAppln - INFO - SubscriberAppln - (latency: 00.000687) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:34:01.066913"
+
+2023-04-18 13:34:01,067 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,104 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,105 - SubAppln - INFO - SubscriberAppln - (latency: 00.000493) Received topic: "light"
+content: "1600"
+timestamp: "04/18/2023, 13:34:01.104703"
+
+2023-04-18 13:34:01,105 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,167 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,168 - SubAppln - INFO - SubscriberAppln - (latency: 00.000684) Received topic: "location"
+content: "Australia"
+timestamp: "04/18/2023, 13:34:01.167559"
+
+2023-04-18 13:34:01,168 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,205 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,205 - SubAppln - INFO - SubscriberAppln - (latency: 00.000592) Received topic: "airquality"
+content: "poor"
+timestamp: "04/18/2023, 13:34:01.205254"
+
+2023-04-18 13:34:01,206 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,268 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,268 - SubAppln - INFO - SubscriberAppln - (latency: 00.000536) Received topic: "pressure"
+content: "882"
+timestamp: "04/18/2023, 13:34:01.268087"
+
+2023-04-18 13:34:01,268 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,306 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,307 - SubAppln - INFO - SubscriberAppln - (latency: 00.000747) Received topic: "altitude"
+content: "6275"
+timestamp: "04/18/2023, 13:34:01.306330"
+
+2023-04-18 13:34:01,307 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,368 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,369 - SubAppln - INFO - SubscriberAppln - (latency: 00.000610) Received topic: "sound"
+content: "82"
+timestamp: "04/18/2023, 13:34:01.368658"
+
+2023-04-18 13:34:01,369 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,407 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,407 - SubAppln - INFO - SubscriberAppln - (latency: 00.000579) Received topic: "location"
+content: "Europe"
+timestamp: "04/18/2023, 13:34:01.406902"
+
+2023-04-18 13:34:01,407 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,469 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,469 - SubAppln - INFO - SubscriberAppln - (latency: 00.000537) Received topic: "weather"
+content: "foggy"
+timestamp: "04/18/2023, 13:34:01.469317"
+
+2023-04-18 13:34:01,470 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,507 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,507 - SubAppln - INFO - SubscriberAppln - (latency: 00.000503) Received topic: "humidity"
+content: "83.89342277548074"
+timestamp: "04/18/2023, 13:34:01.507408"
+
+2023-04-18 13:34:01,508 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,570 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,570 - SubAppln - INFO - SubscriberAppln - (latency: 00.000574) Received topic: "light"
+content: "1600"
+timestamp: "04/18/2023, 13:34:01.569864"
+
+2023-04-18 13:34:01,570 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,608 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,608 - SubAppln - INFO - SubscriberAppln - (latency: 00.000526) Received topic: "light"
+content: "1600"
+timestamp: "04/18/2023, 13:34:01.607923"
+
+2023-04-18 13:34:01,608 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,671 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,672 - SubAppln - INFO - SubscriberAppln - (latency: 00.000760) Received topic: "location"
+content: "Europe"
+timestamp: "04/18/2023, 13:34:01.671412"
+
+2023-04-18 13:34:01,672 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,708 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,709 - SubAppln - INFO - SubscriberAppln - (latency: 00.000604) Received topic: "airquality"
+content: "poor"
+timestamp: "04/18/2023, 13:34:01.708557"
+
+2023-04-18 13:34:01,709 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,772 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,772 - SubAppln - INFO - SubscriberAppln - (latency: 00.000488) Received topic: "pressure"
+content: "892"
+timestamp: "04/18/2023, 13:34:01.771954"
+
+2023-04-18 13:34:01,772 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,809 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,809 - SubAppln - INFO - SubscriberAppln - (latency: 00.000504) Received topic: "altitude"
+content: "37186"
+timestamp: "04/18/2023, 13:34:01.809124"
+
+2023-04-18 13:34:01,809 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,873 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,873 - SubAppln - INFO - SubscriberAppln - (latency: 00.000693) Received topic: "sound"
+content: "59"
+timestamp: "04/18/2023, 13:34:01.873075"
+
+2023-04-18 13:34:01,874 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,910 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,910 - SubAppln - INFO - SubscriberAppln - (latency: 00.000702) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:34:01.910163"
+
+2023-04-18 13:34:01,911 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:01,973 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:01,974 - SubAppln - INFO - SubscriberAppln - (latency: 00.000519) Received topic: "weather"
+content: "foggy"
+timestamp: "04/18/2023, 13:34:01.973642"
+
+2023-04-18 13:34:01,974 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,010 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,011 - SubAppln - INFO - SubscriberAppln - (latency: 00.000643) Received topic: "humidity"
+content: "30.341974640772104"
+timestamp: "04/18/2023, 13:34:02.010683"
+
+2023-04-18 13:34:02,011 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,074 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,074 - SubAppln - INFO - SubscriberAppln - (latency: 00.000802) Received topic: "light"
+content: "800"
+timestamp: "04/18/2023, 13:34:02.074140"
+
+2023-04-18 13:34:02,075 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,111 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,111 - SubAppln - INFO - SubscriberAppln - (latency: 00.000524) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:34:02.111195"
+
+2023-04-18 13:34:02,111 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,175 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,175 - SubAppln - INFO - SubscriberAppln - (latency: 00.000619) Received topic: "location"
+content: "America"
+timestamp: "04/18/2023, 13:34:02.174806"
+
+2023-04-18 13:34:02,175 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,212 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,213 - SubAppln - INFO - SubscriberAppln - (latency: 00.000768) Received topic: "airquality"
+content: "smog"
+timestamp: "04/18/2023, 13:34:02.212256"
+
+2023-04-18 13:34:02,213 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,276 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,276 - SubAppln - INFO - SubscriberAppln - (latency: 00.000775) Received topic: "pressure"
+content: "941"
+timestamp: "04/18/2023, 13:34:02.275872"
+
+2023-04-18 13:34:02,276 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,313 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,313 - SubAppln - INFO - SubscriberAppln - (latency: 00.000615) Received topic: "altitude"
+content: "22877"
+timestamp: "04/18/2023, 13:34:02.312964"
+
+2023-04-18 13:34:02,313 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,376 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,377 - SubAppln - INFO - SubscriberAppln - (latency: 00.000528) Received topic: "sound"
+content: "90"
+timestamp: "04/18/2023, 13:34:02.376499"
+
+2023-04-18 13:34:02,377 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,413 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,414 - SubAppln - INFO - SubscriberAppln - (latency: 00.000516) Received topic: "location"
+content: "Europe"
+timestamp: "04/18/2023, 13:34:02.413504"
+
+2023-04-18 13:34:02,414 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,477 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,477 - SubAppln - INFO - SubscriberAppln - (latency: 00.000658) Received topic: "weather"
+content: "icy"
+timestamp: "04/18/2023, 13:34:02.476982"
+
+2023-04-18 13:34:02,477 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,514 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,514 - SubAppln - INFO - SubscriberAppln - (latency: 00.000642) Received topic: "humidity"
+content: "93.9173132813383"
+timestamp: "04/18/2023, 13:34:02.514011"
+
+2023-04-18 13:34:02,514 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,577 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,578 - SubAppln - INFO - SubscriberAppln - (latency: 00.000567) Received topic: "light"
+content: "800"
+timestamp: "04/18/2023, 13:34:02.577687"
+
+2023-04-18 13:34:02,578 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,614 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,615 - SubAppln - INFO - SubscriberAppln - (latency: 00.000668) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:34:02.614529"
+
+2023-04-18 13:34:02,615 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,678 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,678 - SubAppln - INFO - SubscriberAppln - (latency: 00.000670) Received topic: "location"
+content: "Australia"
+timestamp: "04/18/2023, 13:34:02.678222"
+
+2023-04-18 13:34:02,679 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,715 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,715 - SubAppln - INFO - SubscriberAppln - (latency: 00.000522) Received topic: "airquality"
+content: "good"
+timestamp: "04/18/2023, 13:34:02.715042"
+
+2023-04-18 13:34:02,715 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,779 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,779 - SubAppln - INFO - SubscriberAppln - (latency: 00.000454) Received topic: "pressure"
+content: "987"
+timestamp: "04/18/2023, 13:34:02.778972"
+
+2023-04-18 13:34:02,779 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,815 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,816 - SubAppln - INFO - SubscriberAppln - (latency: 00.000520) Received topic: "altitude"
+content: "17015"
+timestamp: "04/18/2023, 13:34:02.815597"
+
+2023-04-18 13:34:02,816 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,880 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,880 - SubAppln - INFO - SubscriberAppln - (latency: 00.000624) Received topic: "sound"
+content: "75"
+timestamp: "04/18/2023, 13:34:02.879931"
+
+2023-04-18 13:34:02,880 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,916 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,916 - SubAppln - INFO - SubscriberAppln - (latency: 00.000540) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:34:02.916106"
+
+2023-04-18 13:34:02,916 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:02,981 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:02,981 - SubAppln - INFO - SubscriberAppln - (latency: 00.000801) Received topic: "weather"
+content: "foggy"
+timestamp: "04/18/2023, 13:34:02.981003"
+
+2023-04-18 13:34:02,982 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,016 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,017 - SubAppln - INFO - SubscriberAppln - (latency: 00.000496) Received topic: "humidity"
+content: "82.6200139455116"
+timestamp: "04/18/2023, 13:34:03.016636"
+
+2023-04-18 13:34:03,017 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,082 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,082 - SubAppln - INFO - SubscriberAppln - (latency: 00.000801) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:34:03.082104"
+
+2023-04-18 13:34:03,083 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,117 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,118 - SubAppln - INFO - SubscriberAppln - (latency: 00.000693) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:34:03.117703"
+
+2023-04-18 13:34:03,118 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,183 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,184 - SubAppln - INFO - SubscriberAppln - (latency: 00.000783) Received topic: "location"
+content: "America"
+timestamp: "04/18/2023, 13:34:03.183220"
+
+2023-04-18 13:34:03,184 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,218 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,218 - SubAppln - INFO - SubscriberAppln - (latency: 00.000567) Received topic: "airquality"
+content: "poor"
+timestamp: "04/18/2023, 13:34:03.218247"
+
+2023-04-18 13:34:03,219 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,284 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,285 - SubAppln - INFO - SubscriberAppln - (latency: 00.000802) Received topic: "pressure"
+content: "964"
+timestamp: "04/18/2023, 13:34:03.284258"
+
+2023-04-18 13:34:03,285 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,319 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,319 - SubAppln - INFO - SubscriberAppln - (latency: 00.000522) Received topic: "altitude"
+content: "36856"
+timestamp: "04/18/2023, 13:34:03.318851"
+
+2023-04-18 13:34:03,319 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,385 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,386 - SubAppln - INFO - SubscriberAppln - (latency: 00.000738) Received topic: "sound"
+content: "32"
+timestamp: "04/18/2023, 13:34:03.385344"
+
+2023-04-18 13:34:03,386 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,419 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,420 - SubAppln - INFO - SubscriberAppln - (latency: 00.000670) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:34:03.419447"
+
+2023-04-18 13:34:03,420 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,486 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,486 - SubAppln - INFO - SubscriberAppln - (latency: 00.000705) Received topic: "weather"
+content: "cloudy"
+timestamp: "04/18/2023, 13:34:03.486219"
+
+2023-04-18 13:34:03,487 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,520 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,520 - SubAppln - INFO - SubscriberAppln - (latency: 00.000480) Received topic: "humidity"
+content: "52.69900769062512"
+timestamp: "04/18/2023, 13:34:03.519990"
+
+2023-04-18 13:34:03,520 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,586 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,587 - SubAppln - INFO - SubscriberAppln - (latency: 00.000480) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:34:03.586799"
+
+2023-04-18 13:34:03,587 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,620 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,621 - SubAppln - INFO - SubscriberAppln - (latency: 00.000461) Received topic: "light"
+content: "800"
+timestamp: "04/18/2023, 13:34:03.620555"
+
+2023-04-18 13:34:03,621 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,688 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,688 - SubAppln - INFO - SubscriberAppln - (latency: 00.000721) Received topic: "location"
+content: "Australia"
+timestamp: "04/18/2023, 13:34:03.687906"
+
+2023-04-18 13:34:03,688 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,721 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,722 - SubAppln - INFO - SubscriberAppln - (latency: 00.000734) Received topic: "airquality"
+content: "smog"
+timestamp: "04/18/2023, 13:34:03.721609"
+
+2023-04-18 13:34:03,722 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,789 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,789 - SubAppln - INFO - SubscriberAppln - (latency: 00.000624) Received topic: "pressure"
+content: "1062"
+timestamp: "04/18/2023, 13:34:03.788901"
+
+2023-04-18 13:34:03,789 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,822 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,822 - SubAppln - INFO - SubscriberAppln - (latency: 00.000666) Received topic: "altitude"
+content: "25652"
+timestamp: "04/18/2023, 13:34:03.822219"
+
+2023-04-18 13:34:03,823 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,890 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,890 - SubAppln - INFO - SubscriberAppln - (latency: 00.000794) Received topic: "sound"
+content: "59"
+timestamp: "04/18/2023, 13:34:03.889995"
+
+2023-04-18 13:34:03,891 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,922 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,923 - SubAppln - INFO - SubscriberAppln - (latency: 00.000514) Received topic: "location"
+content: "Australia"
+timestamp: "04/18/2023, 13:34:03.922799"
+
+2023-04-18 13:34:03,923 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:03,991 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:03,991 - SubAppln - INFO - SubscriberAppln - (latency: 00.000763) Received topic: "weather"
+content: "rainy"
+timestamp: "04/18/2023, 13:34:03.991030"
+
+2023-04-18 13:34:03,992 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,023 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,024 - SubAppln - INFO - SubscriberAppln - (latency: 00.000671) Received topic: "humidity"
+content: "75.41754289471959"
+timestamp: "04/18/2023, 13:34:04.023328"
+
+2023-04-18 13:34:04,024 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,092 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,092 - SubAppln - INFO - SubscriberAppln - (latency: 00.000738) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:34:04.092039"
+
+2023-04-18 13:34:04,093 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,124 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,124 - SubAppln - INFO - SubscriberAppln - (latency: 00.000521) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:34:04.123859"
+
+2023-04-18 13:34:04,124 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,192 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,193 - SubAppln - INFO - SubscriberAppln - (latency: 00.000555) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:34:04.192561"
+
+2023-04-18 13:34:04,193 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,224 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,224 - SubAppln - INFO - SubscriberAppln - (latency: 00.000585) Received topic: "airquality"
+content: "poor"
+timestamp: "04/18/2023, 13:34:04.224364"
+
+2023-04-18 13:34:04,225 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,293 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,293 - SubAppln - INFO - SubscriberAppln - (latency: 00.000497) Received topic: "pressure"
+content: "912"
+timestamp: "04/18/2023, 13:34:04.293052"
+
+2023-04-18 13:34:04,293 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,325 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,325 - SubAppln - INFO - SubscriberAppln - (latency: 00.000562) Received topic: "altitude"
+content: "26930"
+timestamp: "04/18/2023, 13:34:04.324910"
+
+2023-04-18 13:34:04,325 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,393 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,394 - SubAppln - INFO - SubscriberAppln - (latency: 00.000546) Received topic: "sound"
+content: "63"
+timestamp: "04/18/2023, 13:34:04.393559"
+
+2023-04-18 13:34:04,394 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,425 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,425 - SubAppln - INFO - SubscriberAppln - (latency: 00.000557) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:34:04.425380"
+
+2023-04-18 13:34:04,426 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,494 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,494 - SubAppln - INFO - SubscriberAppln - (latency: 00.000663) Received topic: "weather"
+content: "rainy"
+timestamp: "04/18/2023, 13:34:04.494068"
+
+2023-04-18 13:34:04,495 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,526 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,526 - SubAppln - INFO - SubscriberAppln - (latency: 00.000480) Received topic: "humidity"
+content: "28.329736376891788"
+timestamp: "04/18/2023, 13:34:04.525873"
+
+2023-04-18 13:34:04,526 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,594 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,595 - SubAppln - INFO - SubscriberAppln - (latency: 00.000642) Received topic: "light"
+content: "800"
+timestamp: "04/18/2023, 13:34:04.594685"
+
+2023-04-18 13:34:04,595 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,626 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,626 - SubAppln - INFO - SubscriberAppln - (latency: 00.000506) Received topic: "light"
+content: "450"
+timestamp: "04/18/2023, 13:34:04.626348"
+
+2023-04-18 13:34:04,627 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,695 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,695 - SubAppln - INFO - SubscriberAppln - (latency: 00.000619) Received topic: "location"
+content: "America"
+timestamp: "04/18/2023, 13:34:04.695285"
+
+2023-04-18 13:34:04,696 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,727 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,727 - SubAppln - INFO - SubscriberAppln - (latency: 00.000553) Received topic: "airquality"
+content: "smog"
+timestamp: "04/18/2023, 13:34:04.726874"
+
+2023-04-18 13:34:04,727 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,795 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,796 - SubAppln - INFO - SubscriberAppln - (latency: 00.000512) Received topic: "pressure"
+content: "884"
+timestamp: "04/18/2023, 13:34:04.795794"
+
+2023-04-18 13:34:04,796 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,827 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,827 - SubAppln - INFO - SubscriberAppln - (latency: 00.000549) Received topic: "altitude"
+content: "30047"
+timestamp: "04/18/2023, 13:34:04.827412"
+
+2023-04-18 13:34:04,828 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,897 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,897 - SubAppln - INFO - SubscriberAppln - (latency: 00.000729) Received topic: "sound"
+content: "67"
+timestamp: "04/18/2023, 13:34:04.896827"
+
+2023-04-18 13:34:04,897 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,928 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,928 - SubAppln - INFO - SubscriberAppln - (latency: 00.000465) Received topic: "location"
+content: "Australia"
+timestamp: "04/18/2023, 13:34:04.927995"
+
+2023-04-18 13:34:04,928 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:04,998 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:04,998 - SubAppln - INFO - SubscriberAppln - (latency: 00.000725) Received topic: "weather"
+content: "foggy"
+timestamp: "04/18/2023, 13:34:04.997948"
+
+2023-04-18 13:34:04,998 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,028 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,029 - SubAppln - INFO - SubscriberAppln - (latency: 00.000542) Received topic: "humidity"
+content: "44.61154796966188"
+timestamp: "04/18/2023, 13:34:05.028529"
+
+2023-04-18 13:34:05,029 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,098 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,099 - SubAppln - INFO - SubscriberAppln - (latency: 00.000643) Received topic: "light"
+content: "800"
+timestamp: "04/18/2023, 13:34:05.098516"
+
+2023-04-18 13:34:05,099 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,129 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,129 - SubAppln - INFO - SubscriberAppln - (latency: 00.000519) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:34:05.129024"
+
+2023-04-18 13:34:05,129 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,199 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,199 - SubAppln - INFO - SubscriberAppln - (latency: 00.000500) Received topic: "location"
+content: "Australia"
+timestamp: "04/18/2023, 13:34:05.199013"
+
+2023-04-18 13:34:05,199 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,229 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,229 - SubAppln - INFO - SubscriberAppln - (latency: 00.000386) Received topic: "airquality"
+content: "poor"
+timestamp: "04/18/2023, 13:34:05.229522"
+
+2023-04-18 13:34:05,230 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,299 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,300 - SubAppln - INFO - SubscriberAppln - (latency: 00.000603) Received topic: "pressure"
+content: "1068"
+timestamp: "04/18/2023, 13:34:05.299575"
+
+2023-04-18 13:34:05,300 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,330 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,330 - SubAppln - INFO - SubscriberAppln - (latency: 00.000664) Received topic: "altitude"
+content: "12497"
+timestamp: "04/18/2023, 13:34:05.330010"
+
+2023-04-18 13:34:05,331 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,400 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,401 - SubAppln - INFO - SubscriberAppln - (latency: 00.000531) Received topic: "sound"
+content: "92"
+timestamp: "04/18/2023, 13:34:05.400451"
+
+2023-04-18 13:34:05,401 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,430 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,431 - SubAppln - INFO - SubscriberAppln - (latency: 00.000532) Received topic: "location"
+content: "Africa"
+timestamp: "04/18/2023, 13:34:05.430527"
+
+2023-04-18 13:34:05,431 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,501 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,502 - SubAppln - INFO - SubscriberAppln - (latency: 00.000789) Received topic: "weather"
+content: "sunny"
+timestamp: "04/18/2023, 13:34:05.501222"
+
+2023-04-18 13:34:05,502 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,531 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,531 - SubAppln - INFO - SubscriberAppln - (latency: 00.000477) Received topic: "humidity"
+content: "26.969716716449216"
+timestamp: "04/18/2023, 13:34:05.531092"
+
+2023-04-18 13:34:05,531 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,601 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,602 - SubAppln - INFO - SubscriberAppln - (latency: 00.000536) Received topic: "light"
+content: "800"
+timestamp: "04/18/2023, 13:34:05.601741"
+
+2023-04-18 13:34:05,602 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,631 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,632 - SubAppln - INFO - SubscriberAppln - (latency: 00.000545) Received topic: "light"
+content: "1100"
+timestamp: "04/18/2023, 13:34:05.631592"
+
+2023-04-18 13:34:05,632 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,702 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,702 - SubAppln - INFO - SubscriberAppln - (latency: 00.000695) Received topic: "location"
+content: "America"
+timestamp: "04/18/2023, 13:34:05.702254"
+
+2023-04-18 13:34:05,703 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,732 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,732 - SubAppln - INFO - SubscriberAppln - (latency: 00.000535) Received topic: "airquality"
+content: "poor"
+timestamp: "04/18/2023, 13:34:05.732101"
+
+2023-04-18 13:34:05,732 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,832 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,833 - SubAppln - INFO - SubscriberAppln - (latency: 00.000536) Received topic: "altitude"
+content: "37569"
+timestamp: "04/18/2023, 13:34:05.832612"
+
+2023-04-18 13:34:05,833 - SubAppln - INFO - SubscriberMW - Waiting for events...
+2023-04-18 13:34:05,933 - SubAppln - INFO - SubscriberMW - Received a message
+2023-04-18 13:34:05,933 - SubAppln - INFO - SubscriberAppln - (latency: 00.000544) Received topic: "location"
+content: "Asia"
+timestamp: "04/18/2023, 13:34:05.933184"
+
+2023-04-18 13:34:05,934 - SubAppln - INFO - SubscriberMW - Waiting for events...

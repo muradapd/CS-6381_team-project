@@ -1,8 +1,0 @@
-2023-04-17 22:03:14,264 - PubAppln - INFO - Publisher app configured.
-2023-04-17 22:03:14,264 - PubAppln - INFO - App: pub3 - 10.0.0.7:5566; Topiclist: ['altitude', 'airquality']
-2023-04-17 22:03:14,264 - PubAppln - INFO - Registering app with discovery service.
-2023-04-17 22:03:14,339 - PubAppln - INFO - Publisher app registered.
-2023-04-17 22:03:14,339 - PubAppln - INFO - Waiting for all ready from discovery service.
-2023-04-17 22:03:18,752 - PubAppln - INFO - All sub and pub apps registered and ready.
-2023-04-17 22:03:20,988 - PubAppln - INFO - Disseminating info on our topics.
-2023-04-17 22:03:20,988 - PubAppln - INFO - Dissemination finished. Exiting.

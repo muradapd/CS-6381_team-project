@@ -1,0 +1,115 @@
+2023-04-18 13:33:45,106 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-04-18 13:33:45,108 - PubAppln - DEBUG - Main: parse command line arguments
+2023-04-18 13:33:45,113 - PubAppln - DEBUG - Main: resetting log level to 20
+2023-04-18 13:33:45,157 - PubAppln - INFO - PublisherMW - 10.0.0.3:7777 Configured Successfully
+2023-04-18 13:33:45,157 - PubAppln - INFO - PublisherAppln - pub1 configured with topics: ['pressure', 'sound', 'weather', 'light', 'location']
+2023-04-18 13:33:45,567 - PubAppln - INFO - PublisherAppln - Attempting to register with Discovery service
+2023-04-18 13:33:45,567 - PubAppln - INFO - PublisherMW - Sent register request to Discovery
+2023-04-18 13:33:45,568 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-04-18 13:33:45,646 - PubAppln - INFO - PublisherMW - Received reply of type 1
+2023-04-18 13:33:45,646 - PubAppln - INFO - Received 1/5 registration verifications
+2023-04-18 13:33:45,647 - PubAppln - INFO - PublisherAppln - Result of registration: success
+2023-04-18 13:33:50,654 - PubAppln - INFO - PublisherMW - Sent is_ready request, waiting for reply...
+2023-04-18 13:33:50,655 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-04-18 13:33:50,711 - PubAppln - INFO - PublisherMW - Received reply of type 2
+2023-04-18 13:33:55,718 - PubAppln - INFO - PublisherMW - Disseminating - pressure 912
+2023-04-18 13:33:55,819 - PubAppln - INFO - PublisherMW - Disseminating - sound 44
+2023-04-18 13:33:55,921 - PubAppln - INFO - PublisherMW - Disseminating - weather icy
+2023-04-18 13:33:56,021 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-04-18 13:33:56,122 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:33:56,223 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1072
+2023-04-18 13:33:56,324 - PubAppln - INFO - PublisherMW - Disseminating - sound 53
+2023-04-18 13:33:56,425 - PubAppln - INFO - PublisherMW - Disseminating - weather foggy
+2023-04-18 13:33:56,526 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:33:56,627 - PubAppln - INFO - PublisherMW - Disseminating - location Africa
+2023-04-18 13:33:56,728 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1009
+2023-04-18 13:33:56,829 - PubAppln - INFO - PublisherMW - Disseminating - sound 74
+2023-04-18 13:33:56,930 - PubAppln - INFO - PublisherMW - Disseminating - weather cloudy
+2023-04-18 13:33:57,031 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:33:57,132 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-04-18 13:33:57,233 - PubAppln - INFO - PublisherMW - Disseminating - pressure 917
+2023-04-18 13:33:57,333 - PubAppln - INFO - PublisherMW - Disseminating - sound 34
+2023-04-18 13:33:57,434 - PubAppln - INFO - PublisherMW - Disseminating - weather sunny
+2023-04-18 13:33:57,535 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:33:57,636 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:33:57,737 - PubAppln - INFO - PublisherMW - Disseminating - pressure 972
+2023-04-18 13:33:57,838 - PubAppln - INFO - PublisherMW - Disseminating - sound 80
+2023-04-18 13:33:57,939 - PubAppln - INFO - PublisherMW - Disseminating - weather cloudy
+2023-04-18 13:33:58,039 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:33:58,140 - PubAppln - INFO - PublisherMW - Disseminating - location Australia
+2023-04-18 13:33:58,241 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1081
+2023-04-18 13:33:58,343 - PubAppln - INFO - PublisherMW - Disseminating - sound 77
+2023-04-18 13:33:58,444 - PubAppln - INFO - PublisherMW - Disseminating - weather foggy
+2023-04-18 13:33:58,544 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-04-18 13:33:58,645 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-04-18 13:33:58,746 - PubAppln - INFO - PublisherMW - Disseminating - pressure 894
+2023-04-18 13:33:58,847 - PubAppln - INFO - PublisherMW - Disseminating - sound 43
+2023-04-18 13:33:58,948 - PubAppln - INFO - PublisherMW - Disseminating - weather sunny
+2023-04-18 13:33:59,048 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:33:59,149 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:33:59,250 - PubAppln - INFO - PublisherMW - Disseminating - pressure 969
+2023-04-18 13:33:59,350 - PubAppln - INFO - PublisherMW - Disseminating - sound 32
+2023-04-18 13:33:59,451 - PubAppln - INFO - PublisherMW - Disseminating - weather cloudy
+2023-04-18 13:33:59,552 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:33:59,653 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:33:59,754 - PubAppln - INFO - PublisherMW - Disseminating - pressure 926
+2023-04-18 13:33:59,855 - PubAppln - INFO - PublisherMW - Disseminating - sound 39
+2023-04-18 13:33:59,956 - PubAppln - INFO - PublisherMW - Disseminating - weather rainy
+2023-04-18 13:34:00,057 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:34:00,158 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:34:00,258 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1012
+2023-04-18 13:34:00,359 - PubAppln - INFO - PublisherMW - Disseminating - sound 70
+2023-04-18 13:34:00,460 - PubAppln - INFO - PublisherMW - Disseminating - weather icy
+2023-04-18 13:34:00,561 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:34:00,662 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-04-18 13:34:00,763 - PubAppln - INFO - PublisherMW - Disseminating - pressure 905
+2023-04-18 13:34:00,864 - PubAppln - INFO - PublisherMW - Disseminating - sound 78
+2023-04-18 13:34:00,965 - PubAppln - INFO - PublisherMW - Disseminating - weather cloudy
+2023-04-18 13:34:01,066 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:34:01,167 - PubAppln - INFO - PublisherMW - Disseminating - location Australia
+2023-04-18 13:34:01,267 - PubAppln - INFO - PublisherMW - Disseminating - pressure 882
+2023-04-18 13:34:01,368 - PubAppln - INFO - PublisherMW - Disseminating - sound 82
+2023-04-18 13:34:01,468 - PubAppln - INFO - PublisherMW - Disseminating - weather foggy
+2023-04-18 13:34:01,569 - PubAppln - INFO - PublisherMW - Disseminating - light 1600
+2023-04-18 13:34:01,670 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-04-18 13:34:01,771 - PubAppln - INFO - PublisherMW - Disseminating - pressure 892
+2023-04-18 13:34:01,872 - PubAppln - INFO - PublisherMW - Disseminating - sound 59
+2023-04-18 13:34:01,973 - PubAppln - INFO - PublisherMW - Disseminating - weather foggy
+2023-04-18 13:34:02,073 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-04-18 13:34:02,174 - PubAppln - INFO - PublisherMW - Disseminating - location America
+2023-04-18 13:34:02,275 - PubAppln - INFO - PublisherMW - Disseminating - pressure 941
+2023-04-18 13:34:02,376 - PubAppln - INFO - PublisherMW - Disseminating - sound 90
+2023-04-18 13:34:02,476 - PubAppln - INFO - PublisherMW - Disseminating - weather icy
+2023-04-18 13:34:02,577 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-04-18 13:34:02,677 - PubAppln - INFO - PublisherMW - Disseminating - location Australia
+2023-04-18 13:34:02,778 - PubAppln - INFO - PublisherMW - Disseminating - pressure 987
+2023-04-18 13:34:02,879 - PubAppln - INFO - PublisherMW - Disseminating - sound 75
+2023-04-18 13:34:02,980 - PubAppln - INFO - PublisherMW - Disseminating - weather foggy
+2023-04-18 13:34:03,081 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:34:03,182 - PubAppln - INFO - PublisherMW - Disseminating - location America
+2023-04-18 13:34:03,283 - PubAppln - INFO - PublisherMW - Disseminating - pressure 964
+2023-04-18 13:34:03,384 - PubAppln - INFO - PublisherMW - Disseminating - sound 32
+2023-04-18 13:34:03,485 - PubAppln - INFO - PublisherMW - Disseminating - weather cloudy
+2023-04-18 13:34:03,586 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:34:03,687 - PubAppln - INFO - PublisherMW - Disseminating - location Australia
+2023-04-18 13:34:03,788 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1062
+2023-04-18 13:34:03,889 - PubAppln - INFO - PublisherMW - Disseminating - sound 59
+2023-04-18 13:34:03,990 - PubAppln - INFO - PublisherMW - Disseminating - weather rainy
+2023-04-18 13:34:04,091 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:34:04,192 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:34:04,292 - PubAppln - INFO - PublisherMW - Disseminating - pressure 912
+2023-04-18 13:34:04,393 - PubAppln - INFO - PublisherMW - Disseminating - sound 63
+2023-04-18 13:34:04,493 - PubAppln - INFO - PublisherMW - Disseminating - weather rainy
+2023-04-18 13:34:04,594 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-04-18 13:34:04,694 - PubAppln - INFO - PublisherMW - Disseminating - location America
+2023-04-18 13:34:04,795 - PubAppln - INFO - PublisherMW - Disseminating - pressure 884
+2023-04-18 13:34:04,896 - PubAppln - INFO - PublisherMW - Disseminating - sound 67
+2023-04-18 13:34:04,997 - PubAppln - INFO - PublisherMW - Disseminating - weather foggy
+2023-04-18 13:34:05,098 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-04-18 13:34:05,198 - PubAppln - INFO - PublisherMW - Disseminating - location Australia
+2023-04-18 13:34:05,299 - PubAppln - INFO - PublisherMW - Disseminating - pressure 1068
+2023-04-18 13:34:05,399 - PubAppln - INFO - PublisherMW - Disseminating - sound 92
+2023-04-18 13:34:05,500 - PubAppln - INFO - PublisherMW - Disseminating - weather sunny
+2023-04-18 13:34:05,601 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-04-18 13:34:05,701 - PubAppln - INFO - PublisherMW - Disseminating - location America
+2023-04-18 13:34:05,802 - PubAppln - INFO - PublisherAppln - Dissemination complete after 20 rounds

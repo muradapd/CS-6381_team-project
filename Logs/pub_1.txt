@@ -1,0 +1,8 @@
+2023-04-18 13:20:03,486 - PubAppln - INFO - Publisher app configured.
+2023-04-18 13:20:03,486 - PubAppln - INFO - App: pub1 - 10.0.0.7:5566; Topiclist: ['location', 'sound', 'temperature', 'pressure', 'light', 'airquality', 'humidity', 'weather']
+2023-04-18 13:20:03,486 - PubAppln - INFO - Registering app with discovery service.
+2023-04-18 13:20:03,541 - PubAppln - INFO - Publisher app registered.
+2023-04-18 13:20:03,541 - PubAppln - INFO - Waiting for all ready from discovery service.
+2023-04-18 13:20:06,578 - PubAppln - INFO - All sub and pub apps registered and ready.
+2023-04-18 13:20:08,625 - PubAppln - INFO - Disseminating info on our topics.
+2023-04-18 13:20:08,676 - PubAppln - INFO - Dissemination finished. Exiting.

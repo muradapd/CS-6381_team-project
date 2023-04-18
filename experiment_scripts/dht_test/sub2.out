@@ -1,3 +1,0 @@
-2023-04-17 21:54:21,245 - SubAppln - INFO - Subscriber app configured.
-2023-04-17 21:54:21,246 - SubAppln - INFO - App: sub1 - 10.0.0.7:5577; Topiclist: ['weather', 'location', 'light', 'airquality']
-2023-04-17 21:54:21,246 - SubAppln - INFO - Registering app with discovery service.

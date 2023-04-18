@@ -1,3 +1,0 @@
-2023-04-17 21:54:21,258 - PubAppln - INFO - Publisher app configured.
-2023-04-17 21:54:21,259 - PubAppln - INFO - App: pub1 - 10.0.0.5:5566; Topiclist: ['temperature']
-2023-04-17 21:54:21,259 - PubAppln - INFO - Registering app with discovery service.

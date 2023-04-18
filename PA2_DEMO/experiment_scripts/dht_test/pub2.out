@@ -1,0 +1,115 @@
+2023-04-18 13:33:45,110 - root - DEBUG - Main - acquire a child logger and then log messages in the child
+2023-04-18 13:33:45,111 - PubAppln - DEBUG - Main: parse command line arguments
+2023-04-18 13:33:45,119 - PubAppln - DEBUG - Main: resetting log level to 20
+2023-04-18 13:33:45,135 - PubAppln - INFO - PublisherMW - 10.0.0.12:7777 Configured Successfully
+2023-04-18 13:33:45,135 - PubAppln - INFO - PublisherAppln - pub2 configured with topics: ['humidity', 'light', 'airquality', 'altitude', 'location']
+2023-04-18 13:33:45,859 - PubAppln - INFO - PublisherAppln - Attempting to register with Discovery service
+2023-04-18 13:33:45,860 - PubAppln - INFO - PublisherMW - Sent register request to Discovery
+2023-04-18 13:33:45,860 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-04-18 13:33:45,897 - PubAppln - INFO - PublisherMW - Received reply of type 1
+2023-04-18 13:33:45,897 - PubAppln - INFO - Received 1/5 registration verifications
+2023-04-18 13:33:45,897 - PubAppln - INFO - PublisherAppln - Result of registration: success
+2023-04-18 13:33:50,904 - PubAppln - INFO - PublisherMW - Sent is_ready request, waiting for reply...
+2023-04-18 13:33:50,905 - PubAppln - INFO - PublisherMW - Waiting for events...
+2023-04-18 13:33:50,962 - PubAppln - INFO - PublisherMW - Received reply of type 2
+2023-04-18 13:33:55,965 - PubAppln - INFO - PublisherMW - Disseminating - humidity 96.97480481597832
+2023-04-18 13:33:56,066 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:33:56,167 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-04-18 13:33:56,268 - PubAppln - INFO - PublisherMW - Disseminating - altitude 13286
+2023-04-18 13:33:56,368 - PubAppln - INFO - PublisherMW - Disseminating - location America
+2023-04-18 13:33:56,469 - PubAppln - INFO - PublisherMW - Disseminating - humidity 85.33738029823516
+2023-04-18 13:33:56,570 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:33:56,671 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-04-18 13:33:56,772 - PubAppln - INFO - PublisherMW - Disseminating - altitude 779
+2023-04-18 13:33:56,872 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:33:56,973 - PubAppln - INFO - PublisherMW - Disseminating - humidity 66.10302665402398
+2023-04-18 13:33:57,074 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:33:57,175 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-04-18 13:33:57,276 - PubAppln - INFO - PublisherMW - Disseminating - altitude 2403
+2023-04-18 13:33:57,376 - PubAppln - INFO - PublisherMW - Disseminating - location Australia
+2023-04-18 13:33:57,477 - PubAppln - INFO - PublisherMW - Disseminating - humidity 25.517636069835177
+2023-04-18 13:33:57,578 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:33:57,679 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-04-18 13:33:57,780 - PubAppln - INFO - PublisherMW - Disseminating - altitude 16808
+2023-04-18 13:33:57,881 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-04-18 13:33:57,982 - PubAppln - INFO - PublisherMW - Disseminating - humidity 59.332419951891474
+2023-04-18 13:33:58,083 - PubAppln - INFO - PublisherMW - Disseminating - light 1600
+2023-04-18 13:33:58,184 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-04-18 13:33:58,284 - PubAppln - INFO - PublisherMW - Disseminating - altitude 30563
+2023-04-18 13:33:58,385 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:33:58,486 - PubAppln - INFO - PublisherMW - Disseminating - humidity 28.272583222046368
+2023-04-18 13:33:58,586 - PubAppln - INFO - PublisherMW - Disseminating - light 1600
+2023-04-18 13:33:58,687 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-04-18 13:33:58,788 - PubAppln - INFO - PublisherMW - Disseminating - altitude 28259
+2023-04-18 13:33:58,888 - PubAppln - INFO - PublisherMW - Disseminating - location America
+2023-04-18 13:33:58,989 - PubAppln - INFO - PublisherMW - Disseminating - humidity 65.76404312772686
+2023-04-18 13:33:59,090 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:33:59,190 - PubAppln - INFO - PublisherMW - Disseminating - airquality good
+2023-04-18 13:33:59,291 - PubAppln - INFO - PublisherMW - Disseminating - altitude 39054
+2023-04-18 13:33:59,391 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-04-18 13:33:59,492 - PubAppln - INFO - PublisherMW - Disseminating - humidity 71.00874131820281
+2023-04-18 13:33:59,592 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-04-18 13:33:59,693 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-04-18 13:33:59,794 - PubAppln - INFO - PublisherMW - Disseminating - altitude 25739
+2023-04-18 13:33:59,895 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-04-18 13:33:59,996 - PubAppln - INFO - PublisherMW - Disseminating - humidity 53.71847450677113
+2023-04-18 13:34:00,096 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:34:00,197 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-04-18 13:34:00,298 - PubAppln - INFO - PublisherMW - Disseminating - altitude 34474
+2023-04-18 13:34:00,399 - PubAppln - INFO - PublisherMW - Disseminating - location America
+2023-04-18 13:34:00,499 - PubAppln - INFO - PublisherMW - Disseminating - humidity 35.539796868220805
+2023-04-18 13:34:00,600 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:34:00,701 - PubAppln - INFO - PublisherMW - Disseminating - airquality good
+2023-04-18 13:34:00,801 - PubAppln - INFO - PublisherMW - Disseminating - altitude 30500
+2023-04-18 13:34:00,902 - PubAppln - INFO - PublisherMW - Disseminating - location America
+2023-04-18 13:34:01,003 - PubAppln - INFO - PublisherMW - Disseminating - humidity 38.59426605151259
+2023-04-18 13:34:01,104 - PubAppln - INFO - PublisherMW - Disseminating - light 1600
+2023-04-18 13:34:01,204 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-04-18 13:34:01,305 - PubAppln - INFO - PublisherMW - Disseminating - altitude 6275
+2023-04-18 13:34:01,406 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-04-18 13:34:01,507 - PubAppln - INFO - PublisherMW - Disseminating - humidity 83.89342277548074
+2023-04-18 13:34:01,607 - PubAppln - INFO - PublisherMW - Disseminating - light 1600
+2023-04-18 13:34:01,708 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-04-18 13:34:01,808 - PubAppln - INFO - PublisherMW - Disseminating - altitude 37186
+2023-04-18 13:34:01,909 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:34:02,010 - PubAppln - INFO - PublisherMW - Disseminating - humidity 30.341974640772104
+2023-04-18 13:34:02,110 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:34:02,211 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-04-18 13:34:02,312 - PubAppln - INFO - PublisherMW - Disseminating - altitude 22877
+2023-04-18 13:34:02,413 - PubAppln - INFO - PublisherMW - Disseminating - location Europe
+2023-04-18 13:34:02,513 - PubAppln - INFO - PublisherMW - Disseminating - humidity 93.9173132813383
+2023-04-18 13:34:02,614 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:34:02,714 - PubAppln - INFO - PublisherMW - Disseminating - airquality good
+2023-04-18 13:34:02,815 - PubAppln - INFO - PublisherMW - Disseminating - altitude 17015
+2023-04-18 13:34:02,915 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:34:03,016 - PubAppln - INFO - PublisherMW - Disseminating - humidity 82.6200139455116
+2023-04-18 13:34:03,117 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:34:03,217 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-04-18 13:34:03,318 - PubAppln - INFO - PublisherMW - Disseminating - altitude 36856
+2023-04-18 13:34:03,419 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:34:03,519 - PubAppln - INFO - PublisherMW - Disseminating - humidity 52.69900769062512
+2023-04-18 13:34:03,620 - PubAppln - INFO - PublisherMW - Disseminating - light 800
+2023-04-18 13:34:03,721 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-04-18 13:34:03,821 - PubAppln - INFO - PublisherMW - Disseminating - altitude 25652
+2023-04-18 13:34:03,922 - PubAppln - INFO - PublisherMW - Disseminating - location Australia
+2023-04-18 13:34:04,023 - PubAppln - INFO - PublisherMW - Disseminating - humidity 75.41754289471959
+2023-04-18 13:34:04,123 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:34:04,224 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-04-18 13:34:04,324 - PubAppln - INFO - PublisherMW - Disseminating - altitude 26930
+2023-04-18 13:34:04,425 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:34:04,525 - PubAppln - INFO - PublisherMW - Disseminating - humidity 28.329736376891788
+2023-04-18 13:34:04,626 - PubAppln - INFO - PublisherMW - Disseminating - light 450
+2023-04-18 13:34:04,726 - PubAppln - INFO - PublisherMW - Disseminating - airquality smog
+2023-04-18 13:34:04,827 - PubAppln - INFO - PublisherMW - Disseminating - altitude 30047
+2023-04-18 13:34:04,927 - PubAppln - INFO - PublisherMW - Disseminating - location Australia
+2023-04-18 13:34:05,028 - PubAppln - INFO - PublisherMW - Disseminating - humidity 44.61154796966188
+2023-04-18 13:34:05,128 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:34:05,229 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-04-18 13:34:05,329 - PubAppln - INFO - PublisherMW - Disseminating - altitude 12497
+2023-04-18 13:34:05,430 - PubAppln - INFO - PublisherMW - Disseminating - location Africa
+2023-04-18 13:34:05,530 - PubAppln - INFO - PublisherMW - Disseminating - humidity 26.969716716449216
+2023-04-18 13:34:05,631 - PubAppln - INFO - PublisherMW - Disseminating - light 1100
+2023-04-18 13:34:05,731 - PubAppln - INFO - PublisherMW - Disseminating - airquality poor
+2023-04-18 13:34:05,832 - PubAppln - INFO - PublisherMW - Disseminating - altitude 37569
+2023-04-18 13:34:05,932 - PubAppln - INFO - PublisherMW - Disseminating - location Asia
+2023-04-18 13:34:06,033 - PubAppln - INFO - PublisherAppln - Dissemination complete after 20 rounds

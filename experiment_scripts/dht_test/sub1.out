@@ -1,3 +1,0 @@
-2023-04-17 21:54:21,211 - SubAppln - INFO - Subscriber app configured.
-2023-04-17 21:54:21,212 - SubAppln - INFO - App: sub2 - 10.0.0.8:5577; Topiclist: ['location']
-2023-04-17 21:54:21,212 - SubAppln - INFO - Registering app with discovery service.

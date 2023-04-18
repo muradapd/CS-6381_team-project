@@ -1,0 +1,528 @@
+2023-04-18 13:33:45,220 - DiscoveryAppln - INFO - DiscoveryAppln: Configured as disc7
+2023-04-18 13:33:45,220 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,230 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,573 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:45,574 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x01\x129\n\tpublisher\x12\x08pressure\x1a\x05disc3"\x0810.0.0.3*\x047777B\x0b,006b8b4567']
+2023-04-18 13:33:45,574 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['pressure'], 'id': 'disc3', 'address': '10.0.0.3', 'port': '7777', 'successor': '', 'identity': b'130', 'chain': ['', '006b8b4567']}
+2023-04-18 13:33:45,574 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id disc3
+2023-04-18 13:33:45,575 - DiscoveryAppln - INFO - DiscoveryAppln: Successor: 
+2023-04-18 13:33:45,575 - DiscoveryAppln - INFO - Chain object: ['', '006b8b4567', '313330']
+2023-04-18 13:33:45,575 - DiscoveryAppln - INFO - Discovery: Hash 178 is with our successor (174, 210]
+2023-04-18 13:33:45,575 - DiscoveryAppln - INFO - DiscoveryMW - Sending register request to next DHT node disc6 for topic pressure
+2023-04-18 13:33:45,631 - DiscoveryAppln - INFO - DiscoveryMW - Sent register request to next DHT node: disc6
+2023-04-18 13:33:45,631 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,642 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,642 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:45,642 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x01\x12<\n\tpublisher\x12\x05sound\x1a\x05disc3"\x0810.0.0.3*\x0477772\x04TrueB\x0b,006b8b4567']
+2023-04-18 13:33:45,643 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['sound'], 'id': 'disc3', 'address': '10.0.0.3', 'port': '7777', 'successor': 'True', 'identity': b'130', 'chain': ['', '006b8b4567']}
+2023-04-18 13:33:45,643 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id disc3
+2023-04-18 13:33:45,643 - DiscoveryAppln - INFO - DiscoveryAppln: Successor: True
+2023-04-18 13:33:45,643 - DiscoveryAppln - INFO - DiscoveryAppln: We are responsible for topic: ['sound'] Storing it now.
+2023-04-18 13:33:45,644 - DiscoveryAppln - INFO - DiscoveryAppln: Current list of publishers: {'sound': [{'address': '10.0.0.3', 'port': '7777'}]}
+2023-04-18 13:33:45,644 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'130'
+2023-04-18 13:33:45,644 - DiscoveryAppln - INFO - New chain after that was removed: ['', '006b8b4567']
+2023-04-18 13:33:45,644 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,655 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,655 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:45,655 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x01\x128\n\tpublisher\x12\x07weather\x1a\x05disc3"\x0810.0.0.3*\x047777B\x0b,006b8b4567']
+2023-04-18 13:33:45,656 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['weather'], 'id': 'disc3', 'address': '10.0.0.3', 'port': '7777', 'successor': '', 'identity': b'130', 'chain': ['', '006b8b4567']}
+2023-04-18 13:33:45,656 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id disc3
+2023-04-18 13:33:45,656 - DiscoveryAppln - INFO - DiscoveryAppln: Successor: 
+2023-04-18 13:33:45,656 - DiscoveryAppln - INFO - Chain object: ['', '006b8b4567', '313330']
+2023-04-18 13:33:45,657 - DiscoveryAppln - INFO - Highest without going over: disc6:210
+2023-04-18 13:33:45,657 - DiscoveryAppln - INFO - DiscoveryMW - Sending register request to next DHT node disc6 for topic weather
+2023-04-18 13:33:45,661 - DiscoveryAppln - INFO - DiscoveryMW - Sent register request to next DHT node: disc6
+2023-04-18 13:33:45,661 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,671 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,672 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:45,672 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x01\x12?\n\tpublisher\x12\x08location\x1a\x05disc3"\x0810.0.0.3*\x0477772\x04TrueB\x0b,006b8b4567']
+2023-04-18 13:33:45,672 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['location'], 'id': 'disc3', 'address': '10.0.0.3', 'port': '7777', 'successor': 'True', 'identity': b'130', 'chain': ['', '006b8b4567']}
+2023-04-18 13:33:45,672 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id disc3
+2023-04-18 13:33:45,673 - DiscoveryAppln - INFO - DiscoveryAppln: Successor: True
+2023-04-18 13:33:45,673 - DiscoveryAppln - INFO - DiscoveryAppln: We are responsible for topic: ['location'] Storing it now.
+2023-04-18 13:33:45,673 - DiscoveryAppln - INFO - DiscoveryAppln: Current list of publishers: {'sound': [{'address': '10.0.0.3', 'port': '7777'}], 'location': [{'address': '10.0.0.3', 'port': '7777'}]}
+2023-04-18 13:33:45,673 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'130'
+2023-04-18 13:33:45,673 - DiscoveryAppln - INFO - New chain after that was removed: ['', '006b8b4567']
+2023-04-18 13:33:45,674 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,684 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,684 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:45,685 - DiscoveryAppln - INFO - DiscoveryAppln - {'register_result': '1', 'request_type': 'register_resp', 'chain': ['', '006b8b4567', '313330']}
+2023-04-18 13:33:45,685 - DiscoveryAppln - INFO - Made it to request type register resp logic 
+2023-04-18 13:33:45,685 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'130'
+2023-04-18 13:33:45,685 - DiscoveryAppln - INFO - New chain after that was removed: ['', '006b8b4567']
+2023-04-18 13:33:45,686 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,696 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,709 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:45,709 - DiscoveryAppln - INFO - DiscoveryAppln - {'register_result': '1', 'request_type': 'register_resp', 'chain': ['', '006b8b4567', '313330']}
+2023-04-18 13:33:45,709 - DiscoveryAppln - INFO - Made it to request type register resp logic 
+2023-04-18 13:33:45,710 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'130'
+2023-04-18 13:33:45,710 - DiscoveryAppln - INFO - New chain after that was removed: ['', '006b8b4567']
+2023-04-18 13:33:45,710 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,720 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,866 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:45,867 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x01\x12@\n\tpublisher\x12\x08humidity\x1a\x05disc3"\t10.0.0.12*\x0477772\x04TrueB\x0b,006b8b4568']
+2023-04-18 13:33:45,867 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['humidity'], 'id': 'disc3', 'address': '10.0.0.12', 'port': '7777', 'successor': 'True', 'identity': b'130', 'chain': ['', '006b8b4568']}
+2023-04-18 13:33:45,867 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id disc3
+2023-04-18 13:33:45,867 - DiscoveryAppln - INFO - DiscoveryAppln: Successor: True
+2023-04-18 13:33:45,867 - DiscoveryAppln - INFO - DiscoveryAppln: We are responsible for topic: ['humidity'] Storing it now.
+2023-04-18 13:33:45,868 - DiscoveryAppln - INFO - DiscoveryAppln: Current list of publishers: {'sound': [{'address': '10.0.0.3', 'port': '7777'}], 'location': [{'address': '10.0.0.3', 'port': '7777'}], 'humidity': [{'address': '10.0.0.12', 'port': '7777'}]}
+2023-04-18 13:33:45,868 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'130'
+2023-04-18 13:33:45,868 - DiscoveryAppln - INFO - New chain after that was removed: ['', '006b8b4568']
+2023-04-18 13:33:45,868 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,879 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,879 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:45,879 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x01\x12<\n\tpublisher\x12\nairquality\x1a\x05disc3"\t10.0.0.12*\x047777B\x0b,006b8b4568']
+2023-04-18 13:33:45,880 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['airquality'], 'id': 'disc3', 'address': '10.0.0.12', 'port': '7777', 'successor': '', 'identity': b'130', 'chain': ['', '006b8b4568']}
+2023-04-18 13:33:45,880 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id disc3
+2023-04-18 13:33:45,880 - DiscoveryAppln - INFO - DiscoveryAppln: Successor: 
+2023-04-18 13:33:45,880 - DiscoveryAppln - INFO - Chain object: ['', '006b8b4568', '313330']
+2023-04-18 13:33:45,881 - DiscoveryAppln - INFO - Highest without going over: disc6:210
+2023-04-18 13:33:45,881 - DiscoveryAppln - INFO - DiscoveryMW - Sending register request to next DHT node disc6 for topic airquality
+2023-04-18 13:33:45,937 - DiscoveryAppln - INFO - DiscoveryMW - Sent register request to next DHT node: disc6
+2023-04-18 13:33:45,937 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,947 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,948 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:45,948 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x01\x12:\n\tpublisher\x12\x08altitude\x1a\x05disc3"\t10.0.0.12*\x047777B\x0b,006b8b4568']
+2023-04-18 13:33:45,948 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['altitude'], 'id': 'disc3', 'address': '10.0.0.12', 'port': '7777', 'successor': '', 'identity': b'130', 'chain': ['', '006b8b4568']}
+2023-04-18 13:33:45,949 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id disc3
+2023-04-18 13:33:45,949 - DiscoveryAppln - INFO - DiscoveryAppln: Successor: 
+2023-04-18 13:33:45,949 - DiscoveryAppln - INFO - Chain object: ['', '006b8b4568', '313330']
+2023-04-18 13:33:45,949 - DiscoveryAppln - INFO - Discovery: Hash 176 is with our successor (174, 210]
+2023-04-18 13:33:45,949 - DiscoveryAppln - INFO - DiscoveryMW - Sending register request to next DHT node disc6 for topic altitude
+2023-04-18 13:33:45,954 - DiscoveryAppln - INFO - DiscoveryMW - Sent register request to next DHT node: disc6
+2023-04-18 13:33:45,954 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,964 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,964 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:45,965 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x01\x12@\n\tpublisher\x12\x08location\x1a\x05disc3"\t10.0.0.12*\x0477772\x04TrueB\x0b,006b8b4568']
+2023-04-18 13:33:45,965 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'register', 'role': 'publisher', 'topic_list': ['location'], 'id': 'disc3', 'address': '10.0.0.12', 'port': '7777', 'successor': 'True', 'identity': b'130', 'chain': ['', '006b8b4568']}
+2023-04-18 13:33:45,965 - DiscoveryAppln - INFO - DiscoveryAppln: Registering new publisher with id disc3
+2023-04-18 13:33:45,965 - DiscoveryAppln - INFO - DiscoveryAppln: Successor: True
+2023-04-18 13:33:45,965 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,976 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,976 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:45,976 - DiscoveryAppln - INFO - DiscoveryAppln - {'register_result': '1', 'request_type': 'register_resp', 'chain': ['', '006b8b4568', '313330']}
+2023-04-18 13:33:45,976 - DiscoveryAppln - INFO - Made it to request type register resp logic 
+2023-04-18 13:33:45,977 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'130'
+2023-04-18 13:33:45,977 - DiscoveryAppln - INFO - New chain after that was removed: ['', '006b8b4568']
+2023-04-18 13:33:45,977 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:45,987 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:45,988 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:45,988 - DiscoveryAppln - INFO - DiscoveryAppln - {'register_result': '1', 'request_type': 'register_resp', 'chain': ['', '006b8b4568', '313330']}
+2023-04-18 13:33:45,988 - DiscoveryAppln - INFO - Made it to request type register resp logic 
+2023-04-18 13:33:45,989 - DiscoveryAppln - INFO - DiscoveryMW: Verifying registration sending back to b'130'
+2023-04-18 13:33:45,989 - DiscoveryAppln - INFO - New chain after that was removed: ['', '006b8b4568']
+2023-04-18 13:33:45,989 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:46,000 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:46,839 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:46,839 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x02\x1a\x1d\n\x012\x12\x011\x1a\x010"\x05disc3*\x0b,006b8b4569']
+2023-04-18 13:33:46,839 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 2, 'num_subs': 1, 'broker': 0, 'initiator': 'disc3', 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:46,839 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 2, 'num_subs': 1, 'broker': 0, 'initiator': 'disc3', 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:46,840 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-04-18 13:33:46,843 - DiscoveryAppln - INFO - DiscoveryMW - Sent is_ready request to next DHT node: disc6
+2023-04-18 13:33:46,844 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:46,854 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:46,887 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:46,887 - DiscoveryAppln - INFO - DiscoveryMW - Received a socket reply of type is_ready: msg_type: ISREADY
+is_ready {
+  chain: ",006b8b4569,313330"
+}
+
+2023-04-18 13:33:46,888 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready_resp', 'is_ready_result': False, 'chain': ['', '006b8b4569', '313330']}
+2023-04-18 13:33:46,888 - DiscoveryAppln - INFO - DiscoveryAppln: Result object of send_is_ready_check: {'request_type': 'is_ready_resp', 'is_ready_result': False, 'chain': ['', '006b8b4569', '313330']} <class 'dict'>
+2023-04-18 13:33:46,888 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-04-18 13:33:46,888 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: False
+2023-04-18 13:33:46,888 - DiscoveryAppln - INFO - Current Chain: ['', '006b8b4569', '313330']
+2023-04-18 13:33:46,889 - DiscoveryAppln - INFO - Popped next target: b'130', new chain ['', '006b8b4569']
+2023-04-18 13:33:46,889 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:46,899 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,128 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:47,128 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x02\x1a\x1d\n\x012\x12\x012\x1a\x010"\x05disc3*\x0b,006b8b456a']
+2023-04-18 13:33:47,129 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 2, 'num_subs': 2, 'broker': 0, 'initiator': 'disc3', 'identity': b'130', 'chain': ['', '006b8b456a']}
+2023-04-18 13:33:47,129 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 2, 'num_subs': 2, 'broker': 0, 'initiator': 'disc3', 'identity': b'130', 'chain': ['', '006b8b456a']}
+2023-04-18 13:33:47,129 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-04-18 13:33:47,133 - DiscoveryAppln - INFO - DiscoveryMW - Sent is_ready request to next DHT node: disc6
+2023-04-18 13:33:47,133 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,143 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,176 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:47,177 - DiscoveryAppln - INFO - DiscoveryMW - Received a socket reply of type is_ready: msg_type: ISREADY
+is_ready {
+  reply: true
+  chain: ",006b8b456a,313330"
+}
+
+2023-04-18 13:33:47,177 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready_resp', 'is_ready_result': True, 'chain': ['', '006b8b456a', '313330']}
+2023-04-18 13:33:47,177 - DiscoveryAppln - INFO - DiscoveryAppln: Result object of send_is_ready_check: {'request_type': 'is_ready_resp', 'is_ready_result': True, 'chain': ['', '006b8b456a', '313330']} <class 'dict'>
+2023-04-18 13:33:47,177 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-04-18 13:33:47,177 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-04-18 13:33:47,178 - DiscoveryAppln - INFO - Current Chain: ['', '006b8b456a', '313330']
+2023-04-18 13:33:47,178 - DiscoveryAppln - INFO - Popped next target: b'130', new chain ['', '006b8b456a']
+2023-04-18 13:33:47,178 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,188 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,196 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:47,196 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"!\n\x0btemperature\x12\x05False\x1a\x0b,006b8b456a']
+2023-04-18 13:33:47,196 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "temperature"
+successor: "False"
+chain: ",006b8b456a"
+
+2023-04-18 13:33:47,197 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['temperature'], 'identity': b'130', 'chain': ['', '006b8b456a']}
+2023-04-18 13:33:47,197 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:47,197 - DiscoveryAppln - INFO - Highest without going over: disc6:210
+2023-04-18 13:33:47,197 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: False
+2023-04-18 13:33:47,197 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: False
+2023-04-18 13:33:47,201 - DiscoveryAppln - INFO - DiscoveryMW - Sent lookup request for topic 'temperature' to next DHT node: disc6
+2023-04-18 13:33:47,201 - DiscoveryAppln - INFO - DiscoveryMW - Waiting for lookup reply from disc6
+2023-04-18 13:33:47,201 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,212 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,238 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:47,238 - DiscoveryAppln - INFO - DiscoveryMW::handle_reply - received a lookup response: msg_type: LOOKUP_PUB_BY_TOPIC
+resp {
+  chain: ",006b8b456a,313330"
+}
+
+2023-04-18 13:33:47,239 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup_resp', 'pub_addresses': [''], 'chain': ['', '006b8b456a', '313330']}
+2023-04-18 13:33:47,239 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['']
+2023-04-18 13:33:47,239 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,249 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,256 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:47,256 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03" \n\nairquality\x12\x05False\x1a\x0b,006b8b456a']
+2023-04-18 13:33:47,256 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "airquality"
+successor: "False"
+chain: ",006b8b456a"
+
+2023-04-18 13:33:47,257 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['airquality'], 'identity': b'130', 'chain': ['', '006b8b456a']}
+2023-04-18 13:33:47,257 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:47,257 - DiscoveryAppln - INFO - Highest without going over: disc6:210
+2023-04-18 13:33:47,257 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: False
+2023-04-18 13:33:47,257 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: False
+2023-04-18 13:33:47,261 - DiscoveryAppln - INFO - DiscoveryMW - Sent lookup request for topic 'airquality' to next DHT node: disc6
+2023-04-18 13:33:47,261 - DiscoveryAppln - INFO - DiscoveryMW - Waiting for lookup reply from disc6
+2023-04-18 13:33:47,262 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,272 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,292 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:47,292 - DiscoveryAppln - INFO - DiscoveryMW::handle_reply - received a lookup response: msg_type: LOOKUP_PUB_BY_TOPIC
+resp {
+  pub_addresses: "10.0.0.12:7777"
+  chain: ",006b8b456a,313330"
+}
+
+2023-04-18 13:33:47,292 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup_resp', 'pub_addresses': ['10.0.0.12:7777'], 'chain': ['', '006b8b456a', '313330']}
+2023-04-18 13:33:47,293 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.12:7777']
+2023-04-18 13:33:47,293 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,303 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,309 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:47,310 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1e\n\x08altitude\x12\x05False\x1a\x0b,006b8b456a']
+2023-04-18 13:33:47,310 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "altitude"
+successor: "False"
+chain: ",006b8b456a"
+
+2023-04-18 13:33:47,310 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['altitude'], 'identity': b'130', 'chain': ['', '006b8b456a']}
+2023-04-18 13:33:47,310 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:47,311 - DiscoveryAppln - INFO - Discovery: Hash 176 is with our successor (174, 210]
+2023-04-18 13:33:47,311 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: True
+2023-04-18 13:33:47,311 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: True
+2023-04-18 13:33:47,315 - DiscoveryAppln - INFO - DiscoveryMW - Sent lookup request for topic 'altitude' to next DHT node: disc6
+2023-04-18 13:33:47,315 - DiscoveryAppln - INFO - DiscoveryMW - Waiting for lookup reply from disc6
+2023-04-18 13:33:47,316 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,326 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,326 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:47,327 - DiscoveryAppln - INFO - DiscoveryMW::handle_reply - received a lookup response: msg_type: LOOKUP_PUB_BY_TOPIC
+resp {
+  pub_addresses: "10.0.0.12:7777"
+  chain: ",006b8b456a,313330"
+}
+
+2023-04-18 13:33:47,327 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup_resp', 'pub_addresses': ['10.0.0.12:7777'], 'chain': ['', '006b8b456a', '313330']}
+2023-04-18 13:33:47,327 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.12:7777']
+2023-04-18 13:33:47,327 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,338 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,345 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:47,345 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1d\n\x08humidity\x12\x04True\x1a\x0b,006b8b456a']
+2023-04-18 13:33:47,345 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "humidity"
+successor: "True"
+chain: ",006b8b456a"
+
+2023-04-18 13:33:47,345 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': True, 'topicList': ['humidity'], 'identity': b'130', 'chain': ['', '006b8b456a']}
+2023-04-18 13:33:47,346 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:47,346 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.12:7777']
+2023-04-18 13:33:47,346 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,356 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,373 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:47,374 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1d\n\x08location\x12\x04True\x1a\x0b,006b8b456a']
+2023-04-18 13:33:47,374 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "location"
+successor: "True"
+chain: ",006b8b456a"
+
+2023-04-18 13:33:47,374 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': True, 'topicList': ['location'], 'identity': b'130', 'chain': ['', '006b8b456a']}
+2023-04-18 13:33:47,374 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:47,374 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.12:7777', '10.0.0.3:7777']
+2023-04-18 13:33:47,375 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,385 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,436 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:47,437 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1a\n\x05sound\x12\x04True\x1a\x0b,006b8b456a']
+2023-04-18 13:33:47,437 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "sound"
+successor: "True"
+chain: ",006b8b456a"
+
+2023-04-18 13:33:47,437 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': True, 'topicList': ['sound'], 'identity': b'130', 'chain': ['', '006b8b456a']}
+2023-04-18 13:33:47,437 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:47,438 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.3:7777']
+2023-04-18 13:33:47,438 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,448 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,464 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:47,465 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1e\n\x08pressure\x12\x05False\x1a\x0b,006b8b456a']
+2023-04-18 13:33:47,465 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "pressure"
+successor: "False"
+chain: ",006b8b456a"
+
+2023-04-18 13:33:47,465 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['pressure'], 'identity': b'130', 'chain': ['', '006b8b456a']}
+2023-04-18 13:33:47,465 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:47,465 - DiscoveryAppln - INFO - Discovery: Hash 178 is with our successor (174, 210]
+2023-04-18 13:33:47,466 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: True
+2023-04-18 13:33:47,466 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: True
+2023-04-18 13:33:47,469 - DiscoveryAppln - INFO - DiscoveryMW - Sent lookup request for topic 'pressure' to next DHT node: disc6
+2023-04-18 13:33:47,470 - DiscoveryAppln - INFO - DiscoveryMW - Waiting for lookup reply from disc6
+2023-04-18 13:33:47,470 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,480 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,481 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:47,481 - DiscoveryAppln - INFO - DiscoveryMW::handle_reply - received a lookup response: msg_type: LOOKUP_PUB_BY_TOPIC
+resp {
+  pub_addresses: "10.0.0.3:7777"
+  chain: ",006b8b456a,313330"
+}
+
+2023-04-18 13:33:47,481 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup_resp', 'pub_addresses': ['10.0.0.3:7777'], 'chain': ['', '006b8b456a', '313330']}
+2023-04-18 13:33:47,481 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.3:7777']
+2023-04-18 13:33:47,482 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,492 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,498 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:47,499 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1d\n\x07weather\x12\x05False\x1a\x0b,006b8b456a']
+2023-04-18 13:33:47,499 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "weather"
+successor: "False"
+chain: ",006b8b456a"
+
+2023-04-18 13:33:47,499 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['weather'], 'identity': b'130', 'chain': ['', '006b8b456a']}
+2023-04-18 13:33:47,499 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:47,500 - DiscoveryAppln - INFO - Highest without going over: disc6:210
+2023-04-18 13:33:47,500 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: False
+2023-04-18 13:33:47,500 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: False
+2023-04-18 13:33:47,504 - DiscoveryAppln - INFO - DiscoveryMW - Sent lookup request for topic 'weather' to next DHT node: disc6
+2023-04-18 13:33:47,504 - DiscoveryAppln - INFO - DiscoveryMW - Waiting for lookup reply from disc6
+2023-04-18 13:33:47,504 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,514 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:47,541 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:47,542 - DiscoveryAppln - INFO - DiscoveryMW::handle_reply - received a lookup response: msg_type: LOOKUP_PUB_BY_TOPIC
+resp {
+  pub_addresses: "10.0.0.3:7777"
+  chain: ",006b8b456a,313330"
+}
+
+2023-04-18 13:33:47,542 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup_resp', 'pub_addresses': ['10.0.0.3:7777'], 'chain': ['', '006b8b456a', '313330']}
+2023-04-18 13:33:47,542 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.3:7777']
+2023-04-18 13:33:47,542 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:47,553 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:50,660 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:50,660 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x02\x1a\x1d\n\x012\x12\x012\x1a\x010"\x05disc3*\x0b,006b8b4567']
+2023-04-18 13:33:50,660 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 2, 'num_subs': 2, 'broker': 0, 'initiator': 'disc3', 'identity': b'130', 'chain': ['', '006b8b4567']}
+2023-04-18 13:33:50,660 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 2, 'num_subs': 2, 'broker': 0, 'initiator': 'disc3', 'identity': b'130', 'chain': ['', '006b8b4567']}
+2023-04-18 13:33:50,660 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-04-18 13:33:50,664 - DiscoveryAppln - INFO - DiscoveryMW - Sent is_ready request to next DHT node: disc6
+2023-04-18 13:33:50,664 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:50,674 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:50,707 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:50,707 - DiscoveryAppln - INFO - DiscoveryMW - Received a socket reply of type is_ready: msg_type: ISREADY
+is_ready {
+  reply: true
+  chain: ",006b8b4567,313330"
+}
+
+2023-04-18 13:33:50,707 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready_resp', 'is_ready_result': True, 'chain': ['', '006b8b4567', '313330']}
+2023-04-18 13:33:50,708 - DiscoveryAppln - INFO - DiscoveryAppln: Result object of send_is_ready_check: {'request_type': 'is_ready_resp', 'is_ready_result': True, 'chain': ['', '006b8b4567', '313330']} <class 'dict'>
+2023-04-18 13:33:50,708 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-04-18 13:33:50,708 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-04-18 13:33:50,708 - DiscoveryAppln - INFO - Current Chain: ['', '006b8b4567', '313330']
+2023-04-18 13:33:50,708 - DiscoveryAppln - INFO - Popped next target: b'130', new chain ['', '006b8b4567']
+2023-04-18 13:33:50,708 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:50,719 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:50,909 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:50,910 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x02\x1a\x1d\n\x012\x12\x012\x1a\x010"\x05disc3*\x0b,006b8b4568']
+2023-04-18 13:33:50,910 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 2, 'num_subs': 2, 'broker': 0, 'initiator': 'disc3', 'identity': b'130', 'chain': ['', '006b8b4568']}
+2023-04-18 13:33:50,910 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 2, 'num_subs': 2, 'broker': 0, 'initiator': 'disc3', 'identity': b'130', 'chain': ['', '006b8b4568']}
+2023-04-18 13:33:50,910 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-04-18 13:33:50,914 - DiscoveryAppln - INFO - DiscoveryMW - Sent is_ready request to next DHT node: disc6
+2023-04-18 13:33:50,915 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:50,925 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:50,958 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:50,958 - DiscoveryAppln - INFO - DiscoveryMW - Received a socket reply of type is_ready: msg_type: ISREADY
+is_ready {
+  reply: true
+  chain: ",006b8b4568,313330"
+}
+
+2023-04-18 13:33:50,959 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready_resp', 'is_ready_result': True, 'chain': ['', '006b8b4568', '313330']}
+2023-04-18 13:33:50,959 - DiscoveryAppln - INFO - DiscoveryAppln: Result object of send_is_ready_check: {'request_type': 'is_ready_resp', 'is_ready_result': True, 'chain': ['', '006b8b4568', '313330']} <class 'dict'>
+2023-04-18 13:33:50,959 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-04-18 13:33:50,959 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-04-18 13:33:50,959 - DiscoveryAppln - INFO - Current Chain: ['', '006b8b4568', '313330']
+2023-04-18 13:33:50,960 - DiscoveryAppln - INFO - Popped next target: b'130', new chain ['', '006b8b4568']
+2023-04-18 13:33:50,960 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:50,970 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:51,902 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:51,902 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x02\x1a\x1d\n\x012\x12\x012\x1a\x010"\x05disc3*\x0b,006b8b4569']
+2023-04-18 13:33:51,902 - DiscoveryAppln - INFO - DiscoveryMW - received an is_ready request: {'request_type': 'is_ready', 'num_pubs': 2, 'num_subs': 2, 'broker': 0, 'initiator': 'disc3', 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:51,903 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready', 'num_pubs': 2, 'num_subs': 2, 'broker': 0, 'initiator': 'disc3', 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:51,903 - DiscoveryAppln - INFO - DiscoveryAppln - System is ready check
+2023-04-18 13:33:51,906 - DiscoveryAppln - INFO - DiscoveryMW - Sent is_ready request to next DHT node: disc6
+2023-04-18 13:33:51,906 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:51,917 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:51,950 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:51,950 - DiscoveryAppln - INFO - DiscoveryMW - Received a socket reply of type is_ready: msg_type: ISREADY
+is_ready {
+  reply: true
+  chain: ",006b8b4569,313330"
+}
+
+2023-04-18 13:33:51,950 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'is_ready_resp', 'is_ready_result': True, 'chain': ['', '006b8b4569', '313330']}
+2023-04-18 13:33:51,950 - DiscoveryAppln - INFO - DiscoveryAppln: Result object of send_is_ready_check: {'request_type': 'is_ready_resp', 'is_ready_result': True, 'chain': ['', '006b8b4569', '313330']} <class 'dict'>
+2023-04-18 13:33:51,950 - DiscoveryAppln - INFO - DiscoveryMW - is_ready response beginning
+2023-04-18 13:33:51,951 - DiscoveryAppln - INFO - DiscoveryMW - result of ready check: True
+2023-04-18 13:33:51,951 - DiscoveryAppln - INFO - Current Chain: ['', '006b8b4569', '313330']
+2023-04-18 13:33:51,951 - DiscoveryAppln - INFO - Popped next target: b'130', new chain ['', '006b8b4569']
+2023-04-18 13:33:51,951 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:51,962 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,004 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:52,004 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1e\n\x08pressure\x12\x05False\x1a\x0b,006b8b4569']
+2023-04-18 13:33:52,004 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "pressure"
+successor: "False"
+chain: ",006b8b4569"
+
+2023-04-18 13:33:52,004 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['pressure'], 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:52,005 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:52,005 - DiscoveryAppln - INFO - Discovery: Hash 178 is with our successor (174, 210]
+2023-04-18 13:33:52,005 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: True
+2023-04-18 13:33:52,005 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: True
+2023-04-18 13:33:52,009 - DiscoveryAppln - INFO - DiscoveryMW - Sent lookup request for topic 'pressure' to next DHT node: disc6
+2023-04-18 13:33:52,009 - DiscoveryAppln - INFO - DiscoveryMW - Waiting for lookup reply from disc6
+2023-04-18 13:33:52,009 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,020 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,020 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:52,020 - DiscoveryAppln - INFO - DiscoveryMW::handle_reply - received a lookup response: msg_type: LOOKUP_PUB_BY_TOPIC
+resp {
+  pub_addresses: "10.0.0.3:7777"
+  chain: ",006b8b4569,313330"
+}
+
+2023-04-18 13:33:52,020 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup_resp', 'pub_addresses': ['10.0.0.3:7777'], 'chain': ['', '006b8b4569', '313330']}
+2023-04-18 13:33:52,021 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.3:7777']
+2023-04-18 13:33:52,021 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,031 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,038 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:52,038 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1d\n\x07weather\x12\x05False\x1a\x0b,006b8b4569']
+2023-04-18 13:33:52,039 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "weather"
+successor: "False"
+chain: ",006b8b4569"
+
+2023-04-18 13:33:52,039 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['weather'], 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:52,039 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:52,039 - DiscoveryAppln - INFO - Highest without going over: disc6:210
+2023-04-18 13:33:52,039 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: False
+2023-04-18 13:33:52,040 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: False
+2023-04-18 13:33:52,043 - DiscoveryAppln - INFO - DiscoveryMW - Sent lookup request for topic 'weather' to next DHT node: disc6
+2023-04-18 13:33:52,044 - DiscoveryAppln - INFO - DiscoveryMW - Waiting for lookup reply from disc6
+2023-04-18 13:33:52,044 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,054 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,080 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:52,080 - DiscoveryAppln - INFO - DiscoveryMW::handle_reply - received a lookup response: msg_type: LOOKUP_PUB_BY_TOPIC
+resp {
+  pub_addresses: "10.0.0.3:7777"
+  chain: ",006b8b4569,313330"
+}
+
+2023-04-18 13:33:52,081 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup_resp', 'pub_addresses': ['10.0.0.3:7777'], 'chain': ['', '006b8b4569', '313330']}
+2023-04-18 13:33:52,081 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.3:7777']
+2023-04-18 13:33:52,081 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,091 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,098 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:52,098 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1d\n\x08location\x12\x04True\x1a\x0b,006b8b4569']
+2023-04-18 13:33:52,098 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "location"
+successor: "True"
+chain: ",006b8b4569"
+
+2023-04-18 13:33:52,098 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': True, 'topicList': ['location'], 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:52,099 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:52,099 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.12:7777', '10.0.0.3:7777']
+2023-04-18 13:33:52,099 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,109 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,125 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:52,126 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1a\n\x05sound\x12\x04True\x1a\x0b,006b8b4569']
+2023-04-18 13:33:52,126 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "sound"
+successor: "True"
+chain: ",006b8b4569"
+
+2023-04-18 13:33:52,126 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': True, 'topicList': ['sound'], 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:52,126 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:52,126 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.3:7777']
+2023-04-18 13:33:52,127 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,137 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,153 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:52,153 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1d\n\x08humidity\x12\x04True\x1a\x0b,006b8b4569']
+2023-04-18 13:33:52,154 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "humidity"
+successor: "True"
+chain: ",006b8b4569"
+
+2023-04-18 13:33:52,154 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': True, 'topicList': ['humidity'], 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:52,154 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:52,154 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.12:7777']
+2023-04-18 13:33:52,154 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,165 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,181 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:52,181 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03"\x1e\n\x08altitude\x12\x05False\x1a\x0b,006b8b4569']
+2023-04-18 13:33:52,181 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "altitude"
+successor: "False"
+chain: ",006b8b4569"
+
+2023-04-18 13:33:52,182 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['altitude'], 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:52,182 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:52,182 - DiscoveryAppln - INFO - Discovery: Hash 176 is with our successor (174, 210]
+2023-04-18 13:33:52,182 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: True
+2023-04-18 13:33:52,182 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: True
+2023-04-18 13:33:52,186 - DiscoveryAppln - INFO - DiscoveryMW - Sent lookup request for topic 'altitude' to next DHT node: disc6
+2023-04-18 13:33:52,186 - DiscoveryAppln - INFO - DiscoveryMW - Waiting for lookup reply from disc6
+2023-04-18 13:33:52,186 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,197 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,197 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:52,197 - DiscoveryAppln - INFO - DiscoveryMW::handle_reply - received a lookup response: msg_type: LOOKUP_PUB_BY_TOPIC
+resp {
+  pub_addresses: "10.0.0.12:7777"
+  chain: ",006b8b4569,313330"
+}
+
+2023-04-18 13:33:52,198 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup_resp', 'pub_addresses': ['10.0.0.12:7777'], 'chain': ['', '006b8b4569', '313330']}
+2023-04-18 13:33:52,198 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.12:7777']
+2023-04-18 13:33:52,198 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,208 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,214 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from our REP socket
+2023-04-18 13:33:52,215 - DiscoveryAppln - INFO - RECVD NEW REQUEST FROM PUB/SUB: [b'130', b'\x08\x03" \n\nairquality\x12\x05False\x1a\x0b,006b8b4569']
+2023-04-18 13:33:52,215 - DiscoveryAppln - INFO - DiscoveryMW - received a lookup request: topiclist: "airquality"
+successor: "False"
+chain: ",006b8b4569"
+
+2023-04-18 13:33:52,215 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup', 'successor': False, 'topicList': ['airquality'], 'identity': b'130', 'chain': ['', '006b8b4569']}
+2023-04-18 13:33:52,215 - DiscoveryAppln - INFO - Discovery Lookup Request: length of chain: 2, self.lookup: DHT, self.dissemination: Direct
+2023-04-18 13:33:52,215 - DiscoveryAppln - INFO - Highest without going over: disc6:210
+2023-04-18 13:33:52,216 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: False
+2023-04-18 13:33:52,216 - DiscoveryAppln - INFO - DiscoveryMW: Sending lookup request, successor: False
+2023-04-18 13:33:52,219 - DiscoveryAppln - INFO - DiscoveryMW - Sent lookup request for topic 'airquality' to next DHT node: disc6
+2023-04-18 13:33:52,219 - DiscoveryAppln - INFO - DiscoveryMW - Waiting for lookup reply from disc6
+2023-04-18 13:33:52,220 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,230 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop
+2023-04-18 13:33:52,250 - DiscoveryAppln - INFO - DiscoveryMW - Received an event from disc6
+2023-04-18 13:33:52,250 - DiscoveryAppln - INFO - DiscoveryMW::handle_reply - received a lookup response: msg_type: LOOKUP_PUB_BY_TOPIC
+resp {
+  pub_addresses: "10.0.0.12:7777"
+  chain: ",006b8b4569,313330"
+}
+
+2023-04-18 13:33:52,250 - DiscoveryAppln - INFO - DiscoveryAppln - {'request_type': 'lookup_resp', 'pub_addresses': ['10.0.0.12:7777'], 'chain': ['', '006b8b4569', '313330']}
+2023-04-18 13:33:52,250 - DiscoveryAppln - INFO - DiscoveryAppln: Sending all addresses: ['10.0.0.12:7777']
+2023-04-18 13:33:52,250 - DiscoveryAppln - INFO - DiscoveryAppln - Waiting for incoming things....
+2023-04-18 13:33:52,261 - DiscoveryAppln - INFO - DiscoveryMW - Running the MW event loop

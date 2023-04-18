@@ -88,7 +88,7 @@ class PublisherAppln():
       self.logger.info("Publisher app registered.")
       # Keep checking with the discovery service if we are ready to go
       self.logger.info("Waiting for all ready from discovery service.")
-      while(not self.mw_obj.is_ready()): time.sleep(random.uniform(0.0, 3.0))  # sleep between calls
+      while(not self.mw_obj.is_ready()): time.sleep(random.uniform(0.0, 1.0))  # sleep between calls
       self.logger.info("All sub and pub apps registered and ready.")
       time.sleep(random.uniform(2.0, 2.5)) # sleep for a bit to not overwhelm system
       # Now disseminate on our topics

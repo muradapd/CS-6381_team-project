@@ -11,7 +11,7 @@ sys.path.append(os.getcwd())
 from Apps.Common.common import handle_exception, \
     format_pubs, send_message, hash_func
 from Apps.Common import discovery_pb2
-from DHT_logic.DHT_vis_util import write_vis_command
+from Visualization.DHT_vis_util import write_vis_command
 
 """Discovery Middleware class"""
 class DistributedMW():
@@ -86,7 +86,7 @@ class DistributedMW():
             disc_req = discovery_pb2.DiscoveryReq()
             disc_req.msg_type = discovery_pb2.REGISTER
             disc_req.register_req.CopyFrom(register_req)
-            write_vis_command('commands.txt', 'request', node_id, next_id, 'register_dht')
+            write_vis_command('Visualization/commands.txt', 'request', node_id, next_id, 'register_dht')
             send_message(self.req, disc_req)
             # now go to our event loop to receive a response to this request
             res = self.event_loop()
@@ -287,6 +287,7 @@ class DistributedMW():
             # increase our reg_count by one
             self.reg_count += 1
             # tell our neighbor to update their reg_count
+            print(self.successor)
             if self.successor.node_id != start_node_id:
                 self.talk_to_neighbor(neighbor=self.successor, start_node_id=start_node_id)
         except Exception as e: handle_exception(e)
@@ -443,14 +444,15 @@ class DistributedMW():
             elif new_node.node_id < self.predecessor.node_id:
                 # recursively iterate through the ring and return the result once it is found
                 location_info = self.talk_to_neighbor(neighbor=self.predecessor, new_node=new_node)
-                predecessor = location_info["predecessor"]
-                successor = location_info["successor"]
+                print(location_info)
+                predecessor = location_info.predecessor
+                successor = location_info.successor
             # If the new_node is greater than our successor
             else:
                 # recursively iterate through the ring and return the result once it is found
                 location_info = self.talk_to_neighbor(neighbor=self.successor, new_node=new_node)
-                predecessor = location_info["predecessor"]
-                successor = location_info["successor"]
+                predecessor = location_info.predecessor
+                successor = location_info.successor
             return {"predecessor": predecessor, "successor": successor}
         except Exception as e: handle_exception(e)
 
@@ -577,14 +579,14 @@ class DistributedMW():
             update_req = discovery_pb2.UpdateReq()
             if which_neighbor: update_req.which_neighbor = which_neighbor
             if start_node_id: 
-                write_vis_command('commands.txt', 'request', self.node_id, next_id, 'update is_ready') 
+                write_vis_command('Visualization/commands.txt', 'request', self.node_id, next_id, 'update is_ready') 
                 update_req.start_node_id = start_node_id
             if broker: 
                 update_req.new_node.name = broker.name
                 update_req.new_node.ip = broker.ip
                 update_req.new_node.port = broker.port
             elif new_node:
-                write_vis_command('commands.txt', 'request', self.node_id, next_id, 'update neighbor') 
+                write_vis_command('Visualization/commands.txt', 'request', self.node_id, next_id, 'update neighbor') 
                 update_req.new_node.node_id = new_node.node_id
                 update_req.new_node.ip = new_node.ip
                 update_req.new_node.port = new_node.port
@@ -615,12 +617,12 @@ class DistributedMW():
                 locate_req.topic_info.app_id.port = topic_info.app_id.port
                 disc_req.msg_type = discovery_pb2.LOCATE_HASH_TABLE
             elif topic_hash:
-                write_vis_command('commands.txt', 'request', self.node_id, next_id, 'locate publisher') 
+                write_vis_command('Visualization/commands.txt', 'request', self.node_id, next_id, 'locate publisher') 
                 locate_req.topic_info.topic_hash = topic_hash
                 disc_req.msg_type = discovery_pb2.LOCATE_PUB_BY_TOPIC_HASH
             elif all_pubs: disc_req.msg_type = discovery_pb2.LOCATE_ALL_PUBS
             else: 
-                write_vis_command('commands.txt', 'request', self.node_id, next_id, 'locate new node') 
+                write_vis_command('Visualization/commands.txt', 'request', self.node_id, next_id, 'locate new node') 
                 disc_req.msg_type = discovery_pb2.LOCATE_NEW_NODE
             disc_req.locate_req.CopyFrom(locate_req)
             # send the message
