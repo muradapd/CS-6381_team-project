@@ -1,0 +1,13 @@
+2023-04-17 22:03:08,232 - SubAppln - INFO - Discovery app configured.
+2023-04-17 22:03:08,232 - SubAppln - INFO - Registering with DHT ring...
+2023-04-17 22:03:08,232 - SubAppln - INFO - Registered with DHT ring! Our node ID: 280459875139461
+2023-04-17 22:03:08,232 - SubAppln - INFO - We are the fist node in the ring!
+2023-04-17 22:03:08,232 - SubAppln - INFO - Listening for registration requests...
+2023-04-17 22:03:09,253 - SubAppln - INFO - New registration request from:  - 10.0.0.2:5555
+2023-04-17 22:03:09,253 - SubAppln - INFO - New predecessor node: 202033779735745:10.0.0.2:5555
+2023-04-17 22:03:09,253 - SubAppln - INFO - New successor node: 202033779735745:10.0.0.2:5555
+2023-04-17 22:03:09,254 - SubAppln - INFO - Registration request handled successfully.
+2023-04-17 22:03:10,320 - SubAppln - INFO - New successor node: 164901271403596:10.0.0.3:5555
+2023-04-17 22:03:11,273 - SubAppln - INFO - New successor node: 16751535460566:10.0.0.4:5555
+2023-04-17 22:03:12,273 - SubAppln - INFO - New registration request from: pub1 - 10.0.0.5:5566
+2023-04-17 22:03:12,289 - SubAppln - INFO - Registration request handled successfully.

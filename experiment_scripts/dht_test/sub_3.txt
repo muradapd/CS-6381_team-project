@@ -1,0 +1,14 @@
+2023-04-17 22:03:17,250 - SubAppln - INFO - Subscriber app configured.
+2023-04-17 22:03:17,250 - SubAppln - INFO - App: sub3 - 10.0.0.10:5577; Topiclist: ['weather']
+2023-04-17 22:03:17,250 - SubAppln - INFO - Registering app with discovery service.
+2023-04-17 22:03:17,267 - SubAppln - INFO - Subscriber app registered.
+2023-04-17 22:03:17,267 - SubAppln - INFO - Waiting for all ready from discovery service.
+2023-04-17 22:03:17,268 - SubAppln - INFO - All sub and pub apps registered and ready.
+2023-04-17 22:03:17,331 - SubAppln - INFO - Locating all publishers for our topics.
+2023-04-17 22:03:17,346 - SubAppln - INFO - Subscribing to relevant publishers.
+2023-04-17 22:03:17,346 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.5:5566
+2023-04-17 22:03:20,568 - SubAppln - INFO - Message from publisher: weather:sunny
+2023-04-17 22:03:20,568 - SubAppln - INFO - Message from publisher: weather:sunny
+2023-04-17 22:03:20,568 - SubAppln - INFO - Message from publisher: weather:rainy
+2023-04-17 22:03:20,568 - SubAppln - INFO - Message from publisher: weather:foggy
+2023-04-17 22:03:20,568 - SubAppln - INFO - Message from publisher: weather:cloudy

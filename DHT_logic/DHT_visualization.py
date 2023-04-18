@@ -20,6 +20,7 @@ dht_file = args.json
 
 # Initiate lockfile
 lock = FileLock(lockfile)
+empty_checks = 0 # the number of times that we check and there are no new commands
 
 node_info = {}
 subscriber_info = {}
@@ -94,7 +95,7 @@ def draw_arrow(source_id, destination_id, label=None, color='white'):
         label = canvas.create_text(text_x, text_y, text=label, fill='white')
 
     # Delete the line after 1 second
-    delay = 4000  # milliseconds
+    delay = 1500  # milliseconds
 
     def delete_line():
         canvas.delete(line)
@@ -209,14 +210,18 @@ def parse_command(command):
 # Generate base DHT nodes
 draw_dht_nodes(nodes_list)
 
-while True:
+while empty_checks < 300:
     time.sleep(animation_refresh_seconds)
 
     # Check the lockfile to see if there are new commands
     with lock:
         with open(infile, "r") as f:
-            for line in f.readlines():
-                commands_queue.append(line.strip())
+            lines = f.readlines()
+            if len(lines) == 0: empty_checks += 1
+            else:
+                for line in lines:
+                    commands_queue.append(line.strip())
+                    empty_checks = 0
 
         # Clear the lockfile
         with open(infile, "w") as f:

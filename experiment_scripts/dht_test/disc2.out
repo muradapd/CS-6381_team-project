@@ -1,1 +1,2 @@
-python3: can't open file 'DiscoveryAppln.py': [Errno 2] No such file or directory
+2023-04-17 21:54:21,163 - SubAppln - INFO - Discovery app configured.
+2023-04-17 21:54:21,164 - SubAppln - INFO - Registering with DHT ring...

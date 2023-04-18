@@ -1,1 +1,3 @@
-python3: can't open file 'PublisherAppln.py': [Errno 2] No such file or directory
+2023-04-17 21:54:21,247 - PubAppln - INFO - Publisher app configured.
+2023-04-17 21:54:21,247 - PubAppln - INFO - App: pub2 - 10.0.0.6:5566; Topiclist: ['humidity', 'light']
+2023-04-17 21:54:21,247 - PubAppln - INFO - Registering app with discovery service.

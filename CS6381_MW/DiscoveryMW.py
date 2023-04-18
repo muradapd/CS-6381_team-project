@@ -81,7 +81,7 @@ class DiscoveryMW ():
         try:
             self.logger.info(f"DiscoveryMW - Sending register request to next DHT node {next_name} for topic {topiclist}")
 
-            write_vis_command('vis_commands.txt', 'request', name, next_name, 'register')
+            write_vis_command('commands.txt', 'request', name, next_name, 'register')
 
             # first build a register req message
             register_req = discovery_pb2.RegisterReq()  # allocate
@@ -135,7 +135,7 @@ class DiscoveryMW ():
             # a real string
             buf2send = disc_req.SerializeToString()
 
-            write_vis_command('vis_commands.txt', 'request', name, next_name, 'is_ready')
+            write_vis_command('commands.txt', 'request', name, next_name, 'is_ready')
 
             self.req.get(next_name, 0).send_multipart([buf2send])
 
@@ -403,7 +403,7 @@ class DiscoveryMW ():
 
             # now send this to our discovery service
             # we use the "send" method of ZMQ that sends the bytes
-            write_vis_command('vis_commands.txt', 'request', name, next_name, 'lookup')
+            write_vis_command('commands.txt', 'request', name, next_name, 'lookup')
             self.req.get(next_name, 0).send_multipart([buf2send])
             
 
