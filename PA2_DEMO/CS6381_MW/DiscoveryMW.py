@@ -75,6 +75,18 @@ class DiscoveryMW ():
         except Exception as e:
             raise e
 
+    def register_animation(self, name, topic):
+        write_vis_command('PA2_DEMO/commands.txt', 'save', name, name, topic)
+
+    def new_actor_animation(self, name, new_actor_id, actor_type):
+        # Write a new configuration command and a lookup command animation from the new actor to the disc node
+
+        write_vis_command('PA2_DEMO/commands.txt', 'configure', new_actor_id, new_actor_id, actor_type)
+        write_vis_command('PA2_DEMO/commands.txt', 'request', new_actor_id, name, 'register')
+
+    def request_animation(self, name, source, cmd_type):
+        write_vis_command('PA2_DEMO/commands.txt', 'request', source, name, cmd_type)
+
     def register(self, next_name, name, addr, port, role, topiclist, successor, chain):
         ''' register the appln with the discovery service '''
 
