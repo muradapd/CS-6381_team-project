@@ -1,7 +1,139 @@
-2023-04-23 20:21:54,311 - SubAppln - INFO - Subscriber app configured.
-2023-04-23 20:21:54,311 - SubAppln - INFO - App: sub2 - 10.0.0.10:5577; Topiclist: ['weather', 'airquality', 'light', 'altitude', 'pressure', 'temperature']
-2023-04-23 20:21:54,311 - SubAppln - INFO - Registering app with discovery service.
-2023-04-23 20:21:54,378 - SubAppln - INFO - Subscriber app registered.
-2023-04-23 20:21:54,378 - SubAppln - INFO - Waiting for all ready from discovery service.
-2023-04-23 20:21:54,378 - SubAppln - INFO - All sub and pub apps registered and ready.
-2023-04-23 20:21:54,653 - SubAppln - INFO - Locating all publishers for our topics.
+2023-04-24 17:12:19,074 - SubAppln - INFO - Subscriber app configured.
+2023-04-24 17:12:19,074 - SubAppln - INFO - App: sub2 - 10.0.0.10:5577; Topiclist: ['light', 'humidity']
+2023-04-24 17:12:19,074 - SubAppln - INFO - Registering app with discovery service.
+2023-04-24 17:12:19,156 - SubAppln - INFO - Subscriber app registered.
+2023-04-24 17:12:19,156 - SubAppln - INFO - Waiting for all ready from discovery service.
+2023-04-24 17:12:19,157 - SubAppln - INFO - All sub and pub apps registered and ready.
+2023-04-24 17:12:19,214 - SubAppln - INFO - Locating all publishers for our topics.
+2023-04-24 17:12:19,296 - SubAppln - INFO - Subscribing to relevant publishers.
+2023-04-24 17:12:19,296 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.7:5566
+2023-04-24 17:12:19,296 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.8:5566
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:51.6543116408112
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:87.83514274887398
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:90.03891781021915
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:73.87652752075843
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:90.22182341926755
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:92.03825660066536
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:50.76963688322532
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:76.01049828751147
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:96.05529174182307
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:17.90339057168783
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:83.96108402177641
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:54.056806117982624
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,032 - SubAppln - INFO - Message from publisher: humidity:17.799715251708903
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:35.64365950781634
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:62.16569175315355
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:22.666626645239205
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:67.8482840852327
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:29.33965750715057
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:28.85332168708303
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:47.91108865931623
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:59.54537337332769
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:37.639625033531146
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:58.62556514720311
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:33.50983756974453
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:62.46302732090596
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:73.92121831898434
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:54.4752392111974
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:32.55437389357556
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:82.88641145221007
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:73.24113944724587
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:99.90812329923526
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:56.44040906554453
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:39.024723155620066
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:93.84359436460043
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:44.10308516378165
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:35.85830626055218
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:31.944108631906566
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:17.499642348447928
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:43.25080033969047
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:27.402670205698193
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:35.475581025942645
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:38.52209122522315
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,033 - SubAppln - INFO - Message from publisher: humidity:57.886934332308705
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:45.64958484992333
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:72.99020775064362
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:76.0845825695834
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:21.078793522549994
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:78.09304172105055
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:31.311165734294303
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:39.4610879867888
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:73.70673309838986
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:53.2428790721092
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:40.68239337961919
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:69.92496700505606
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:78.3840822708106
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:61.29221583086683
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:66.19898886806837
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:72.73607688924422
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:40.60541418979128
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:800
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:72.4429799635262
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:56.96485441349711
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:450
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:77.61316529273422
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:11.160001232117573
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-24 17:12:22,034 - SubAppln - INFO - Message from publisher: humidity:66.66892809805645
+2023-04-24 17:12:22,034 - SubAppl

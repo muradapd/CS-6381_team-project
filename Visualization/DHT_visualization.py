@@ -199,14 +199,15 @@ def save_topic(source, topic):
 
     source_x, source_y = node_info[source]
 
-    node_topics[source].append(topic)
-    num_topics = len(node_topics[source])
+    if not topic in node_topics[source]: 
+        node_topics[source].append(topic)
+        num_topics = len(node_topics[source])
 
-    topic_y = source_y + 30 + 15 * (num_topics + 1)
+        topic_y = source_y + 30 + 15 * (num_topics + 1)
 
-    canvas.create_text(source_x, topic_y, text=topic, fill='white')
-    window.update()
-    time.sleep(0.5)
+        canvas.create_text(source_x, topic_y, text=topic, fill='white')
+        window.update()
+        time.sleep(0.5)
 
 
 def parse_command(command):
@@ -245,8 +246,6 @@ def parse_command(command):
             save_topic(source, topic)
 
         elif cmd_type == 'configure':
-
-            print(command)
 
             name = splt[1]
             category = splt[2]

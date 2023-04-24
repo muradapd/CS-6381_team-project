@@ -40,6 +40,7 @@ class SubscriberMW():
     self.poller = None    # used to wait on incoming subscriptions
     self.addr = None      # advertised IP address (might not be necessary)
     self.port = None      # port num (might not be necessary)
+    self.name = None      # the name of this publisher
 
   """configure/initialize"""
   def configure(self, args):
@@ -48,6 +49,7 @@ class SubscriberMW():
       # retrieve our advertised IP addr and the publication port num
       self.port = args.port
       self.addr = args.addr
+      self.name = args.name
       # setup ZMQ
       context = zmq.Context()
       self.poller = zmq.Poller()
@@ -88,6 +90,7 @@ class SubscriberMW():
       # build the request message
       disc_req = discovery_pb2.DiscoveryReq()
       getpubs_msg = discovery_pb2.LookupPubByTopicReq()
+      getpubs_msg.name = self.name
       getpubs_msg.topiclist.extend(topiclist)
       disc_req.msg_type = discovery_pb2.LOOKUP_PUB_BY_TOPIC
       disc_req.topics.CopyFrom(getpubs_msg)

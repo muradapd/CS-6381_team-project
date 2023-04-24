@@ -1,8 +1,8 @@
-2023-04-23 20:21:52,290 - PubAppln - INFO - Publisher app configured.
-2023-04-23 20:21:52,290 - PubAppln - INFO - App: pub2 - 10.0.0.8:5566; Topiclist: ['temperature', 'pressure']
-2023-04-23 20:21:52,291 - PubAppln - INFO - Registering app with discovery service.
-2023-04-23 20:21:52,324 - PubAppln - INFO - Publisher app registered.
-2023-04-23 20:21:52,324 - PubAppln - INFO - Waiting for all ready from discovery service.
-2023-04-23 20:21:54,402 - PubAppln - INFO - All sub and pub apps registered and ready.
-2023-04-23 20:21:56,829 - PubAppln - INFO - Disseminating info on our topics.
-2023-04-23 20:21:56,835 - PubAppln - INFO - Dissemination finished. Exiting.
+2023-04-24 17:12:17,082 - PubAppln - INFO - Publisher app configured.
+2023-04-24 17:12:17,082 - PubAppln - INFO - App: pub2 - 10.0.0.8:5566; Topiclist: ['light', 'humidity', 'sound']
+2023-04-24 17:12:17,082 - PubAppln - INFO - Registering app with discovery service.
+2023-04-24 17:12:17,144 - PubAppln - INFO - Publisher app registered.
+2023-04-24 17:12:17,144 - PubAppln - INFO - Waiting for all ready from discovery service.
+2023-04-24 17:12:19,863 - PubAppln - INFO - All sub and pub apps registered and ready.
+2023-04-24 17:12:22,031 - PubAppln - INFO - Disseminating info on our topics.
+2023-04-24 17:12:22,045 - PubAppln - INFO - Dissemination finished. Exiting.

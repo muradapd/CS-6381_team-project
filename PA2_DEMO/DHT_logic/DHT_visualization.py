@@ -110,7 +110,7 @@ def draw_arrow(source_id, destination_id, label=None, color='white'):
         text_x, text_y = midpoint((source_x, source_y), (des_x, des_y))
         label = canvas.create_text(text_x, text_y, text=label, fill='white')
 
-    # Delete the line after 1 second
+    # Delete the line after 1.5 seconds
     delay = 1500  # milliseconds
 
     def delete_line():
@@ -199,12 +199,13 @@ def save_topic(source, topic):
 
     source_x, source_y = node_info[source]
 
-    node_topics[source].append(topic)
-    num_topics = len(node_topics[source])
+    if not topic in list(node_topics[source]): 
+        list(node_topics[source]).append(topic)
+        num_topics = len(node_topics[source])
 
-    topic_y = source_y + 30 + 15 * (num_topics + 1)
+        topic_y = source_y + 30 + 15 * (num_topics + 1)
 
-    canvas.create_text(source_x, topic_y, text=topic, fill='white')
+        canvas.create_text(source_x, topic_y, text=topic, fill='white')
     window.update()
     time.sleep(0.5)
 
