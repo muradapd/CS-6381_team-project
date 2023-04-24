@@ -254,8 +254,8 @@ def parse_command(command):
 # Generate base DHT nodes
 draw_dht_nodes(nodes_list)
 
-# while empty_checks < 300:
-while True:
+while empty_checks < 300:
+# while True:
     time.sleep(animation_refresh_seconds)
 
     # Check the lockfile to see if there are new commands
