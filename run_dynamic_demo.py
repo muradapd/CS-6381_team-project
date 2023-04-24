@@ -10,7 +10,7 @@ RUN_BROKER = 'python3 Apps/Broker/application.py'
 PIPE_OUTPUT = '2>&1 | tee Logs/'
 
 def start_visualization():
-    cmd_str = "python3 ./Visualization/DHT_visualization.py -j Visualization/dynamic.json -i Visualization/commands.txt -d 600"
+    cmd_str = "python3 ./Visualization/DHT_visualization.py -j Visualization/dynamic.json -i Visualization/commands.txt -d 700"
     subprocess.run(cmd_str, shell=True)
 
 def run_demo_experiment():

@@ -23,6 +23,7 @@ lock = FileLock(lockfile)
 empty_checks = 0 # the number of times that we check and there are no new commands
 
 node_info = {}
+node_topics = {}
 subscriber_info = {}
 publisher_info = {}
 commands_queue = []
@@ -31,6 +32,12 @@ commands_queue = []
 animation_window_width = 800
 animation_window_height = 600
 animation_refresh_seconds = 0.01
+
+pub_y_increment = animation_window_height / 6
+sub_y_increment = animation_window_height / 6
+pub_x = 75
+sub_x = animation_window_width - 75
+radius = 15
 
 # The main window of the animation
 window = tk.Tk()
@@ -85,8 +92,17 @@ def draw_arrow(source_id, destination_id, label=None, color='white'):
         with an optional label in the center of the arrow
     '''
 
-    source_x, source_y = node_info[source_id]
-    des_x, des_y = node_info[destination_id]
+    coords = node_info.get(source_id, 0) or publisher_info.get(source_id, 0) or subscriber_info.get(source_id, 0)
+    if not coords:
+        print(f'Error: invalid ID {source_id}')
+        return
+    source_x, source_y = coords
+
+    coords = node_info.get(destination_id, 0) or publisher_info.get(destination_id, 0) or subscriber_info.get(destination_id, 0)
+    if not coords:
+        print(f'Error: invalid ID {destination_id}')
+        return
+    des_x, des_y = coords
 
     line = canvas.create_line(source_x, source_y, des_x, des_y, arrow='last', fill=color)
 
@@ -133,13 +149,13 @@ def draw_dht_nodes(dht_nodes):
     points = points_on_circle(len(dht_nodes), 200)
     x_origin = animation_window_width/2
     y_origin = animation_window_height/2
-    radius = 15
 
     for i in range(len(points)):
         x = x_origin + points[i][0]
         y = y_origin + points[i][1]
 
         node_info[dht_nodes[i][0]] = (x, y)
+        node_topics[dht_nodes[i][0]] = []
 
         # x1, y1, x2, y2
         canvas.create_oval(x - radius, y - radius, x + radius, y + radius, fill="blue", outline="white", width=4)
@@ -154,18 +170,45 @@ def draw_actor(name, category):
     '''
 
     if category == 'publisher':
-        pass
+
+        num_pubs = len(publisher_info) + 1
+
+        y = num_pubs * pub_y_increment
+        publisher_info[name] = (pub_x, y)
+
+        canvas.create_oval(pub_x - radius, y - radius, pub_x + radius, y + radius, fill="orange", outline="white", width=4)
+        canvas.create_text(pub_x, y + 25, text=name, fill='white')
+
     elif category == 'subscriber':
-        pass
+        
+        num_subs = len(subscriber_info) + 1
+
+        y = num_subs * sub_y_increment
+        subscriber_info[name] = (sub_x, y)
+
+        canvas.create_oval(sub_x - radius, y - radius, sub_x + radius, y + radius, fill="green", outline="white", width=4)
+        canvas.create_text(sub_x, y + 25, text=name, fill='white')
+
     elif category == 'broker':
         pass
 
 def save_topic(source, topic):
     '''
-        TODO: Adds a topic to a DHT node and draws it underneath the node name
+        Adds a topic to a DHT node and draws it underneath the node name
     '''
 
-    pass
+    source_x, source_y = node_info[source]
+
+    if not topic in node_topics[source]: 
+        node_topics[source].append(topic)
+        num_topics = len(node_topics[source])
+
+        topic_y = source_y + 30 + 15 * (num_topics + 1)
+
+        canvas.create_text(source_x, topic_y, text=topic, fill='white')
+        window.update()
+        time.sleep(0.5)
+
 
 def parse_command(command):
     '''
@@ -203,6 +246,7 @@ def parse_command(command):
             save_topic(source, topic)
 
         elif cmd_type == 'configure':
+
             name = splt[1]
             category = splt[2]
             draw_actor(name, category)
@@ -211,6 +255,7 @@ def parse_command(command):
 draw_dht_nodes(nodes_list)
 
 while empty_checks < 300:
+# while True:
     time.sleep(animation_refresh_seconds)
 
     # Check the lockfile to see if there are new commands

@@ -163,6 +163,7 @@ class DiscoveryAppln ():
                             if role == "subscriber":
                                 self.subscribers[id] = topiclist
                                 self.sub_count += 1
+                                self.mw_obj.new_actor_animation(self.id, id.split(':')[0], 'subscriber')
                                 self.mw_obj.verify_registration(identity, True)
 
                             elif role == "publisher":
@@ -178,6 +179,7 @@ class DiscoveryAppln ():
                                         self.publishers[topiclist[0]].append({'address': address, 'port': port})
                                     else:
                                         self.logger.info(f'DiscoveryAppln: We are responsible for topic: {topiclist} Storing it now.')
+                                        self.mw_obj.register_animation(self.id, topiclist[0])
                                         self.publishers[topiclist[0]] = [{'address': address, 'port': port}]
                                         self.logger.info(f'DiscoveryAppln: Current list of publishers: {self.publishers}')
                                         self.mw_obj.verify_registration(identity, True, result.get('chain'))
@@ -187,6 +189,8 @@ class DiscoveryAppln ():
                                     if 'pub' in id.split(':')[0]:
                                         self.logger.info('DiscoveryAppln: Received a new register request from a publisher, incrementing pub count')
                                         self.pub_count += 1
+
+                                        self.mw_obj.new_actor_animation(self.id, id.split(':')[0], 'publisher')
 
 
                                     self.logger.info(f'Chain object: {chain}')

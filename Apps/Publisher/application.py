@@ -68,7 +68,8 @@ class PublisherAppln():
       self.dissemination = config["Dissemination"]["Strategy"]
       # Get our topic list of interest
       ts = TopicSelector()
-      self.topiclist = ts.interest()
+      # self.topiclist = ts.interest()
+      self.topiclist = ["light", "humidity", "sound"]
       # Setup up our underlying middleware object
       self.mw_obj = PublisherMW(self.logger)
       self.mw_obj.configure(args) # pass remainder of args to middleware

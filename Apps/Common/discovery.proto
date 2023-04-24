@@ -56,9 +56,10 @@ message RegisterResp
 message LocateReq
 {
         message TopicInfo {
-                int64 topic_hash = 1;
-                ID app_id = 2;
-                string app_type = 3;
+                string topic = 1;
+                int64 topic_hash = 2;
+                ID app_id = 3;
+                string app_type = 4;
         }
         ID new_node = 1;
         TopicInfo topic_info = 2;
@@ -111,7 +112,8 @@ message IsReadyResp
 // message types
 message LookupPubByTopicReq
 {
-        repeated string topiclist = 1;
+        string name = 1;
+        repeated string topiclist = 2;
 }
 
 // Have a corresponding response to the lookupPubByTopic request

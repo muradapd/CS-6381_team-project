@@ -54,7 +54,8 @@ class SubscriberAppln():
       self.dissemination = config["Dissemination"]["Strategy"]
       # Now get our topic list of interest
       ts = TopicSelector()
-      self.topiclist = ts.interest()
+      # self.topiclist = ts.interest()
+      self.topiclist = ["light", "humidity"]
       # Now setup up our underlying middleware object
       self.mw_obj = SubscriberMW(self.logger)
       self.mw_obj.configure(args)      
