@@ -2,7 +2,7 @@
 
 A simple script to visualize requests/responses between nodes in a distributed hash table implementation as described in the [MIT Chord Algorithm Paper](https://pdos.csail.mit.edu/papers/chord:sigcomm01/chord_sigcomm.pdf).
 
-![tkinter vis screenshot](/images/dht_vis_screenshot.png?raw=true "tkinter Visualization")
+![tkinter vis screenshot](./images/dht_vis_screenshot.png?raw=true "tkinter Visualization")
 
 ## Installation
 
@@ -24,7 +24,7 @@ There are two parts to implementing this visualization:
 
 While `DHT_visualization.py` is running it will be looking at the file specified by the `-i` flag. Any program that imports and uses the `write_vis_command()` function from `DHT_vis_util.py` can write commands to that file that will be shown in sequential order in the tkinter visualization. A diagram of this logic is shown below:
 
-![tkinter vis diagram](/images/dht_vis_diagram.png?raw=true "Logic Breakdown")
+![tkinter vis diagram](./images/dht_vis_diagram.png?raw=true "Logic Breakdown")
 
 ### Importing the command logic
 This is to be done in files such as a DiscoveryNode, Subscriber, or Publisher. When the actor performs a request/response, they will need to write this command to a shared file to be picked up by the DHT Tkinter Visualization. Writing an example register request is shown below:
