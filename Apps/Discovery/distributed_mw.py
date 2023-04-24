@@ -193,8 +193,12 @@ class DistributedMW():
             dht_info = None
 
             if register_req.role == discovery_pb2.RegisterReq().Role.PUBLISHER:
+                write_vis_command('Visualization/commands.txt', 'configure', id.name, id.port, "publisher")
+                write_vis_command('Visualization/commands.txt', 'request', id.port, self.node_id, 'register_pub')
                 self.register_topic_hashes(register_req, app_type="PUB")
             elif register_req.role == discovery_pb2.RegisterReq().Role.SUBSCRIBER:
+                write_vis_command('Visualization/commands.txt', 'configure', id.name, id.port, "subscriber")
+                write_vis_command('Visualization/commands.txt', 'request', id.port, self.node_id, 'register_sub')
                 self.register_topic_hashes(register_req, app_type="SUB")
             elif register_req.role == discovery_pb2.RegisterReq().Role.BROKER:
                 self.register_broker(register_req.id, self.node_id)

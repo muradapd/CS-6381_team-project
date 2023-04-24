@@ -1,16 +1,16 @@
-2023-04-18 13:19:57,477 - SubAppln - INFO - Discovery app configured.
-2023-04-18 13:19:57,477 - SubAppln - INFO - Registering with DHT ring...
-2023-04-18 13:19:57,477 - SubAppln - INFO - Registered with DHT ring! Our node ID: 280459875139461
-2023-04-18 13:19:57,477 - SubAppln - INFO - We are the fist node in the ring!
-2023-04-18 13:19:57,478 - SubAppln - INFO - Listening for registration requests...
-2023-04-18 13:19:58,477 - SubAppln - INFO - New registration request from:  - 10.0.0.2:5555
-2023-04-18 13:19:58,477 - SubAppln - INFO - New predecessor node: 202033779735745:10.0.0.2:5555
-2023-04-18 13:19:58,477 - SubAppln - INFO - New successor node: 202033779735745:10.0.0.2:5555
-2023-04-18 13:19:58,477 - SubAppln - INFO - Registration request handled successfully.
-2023-04-18 13:19:59,486 - SubAppln - INFO - New successor node: 164901271403596:10.0.0.3:5555
-2023-04-18 13:20:00,488 - SubAppln - INFO - New successor node: 16751535460566:10.0.0.4:5555
-2023-04-18 13:20:01,479 - SubAppln - INFO - New registration request from:  - 10.0.0.5:5555
-2023-04-18 13:20:01,484 - SubAppln - INFO - New predecessor node: 275888628112818:10.0.0.5:5555
-2023-04-18 13:20:01,484 - SubAppln - INFO - Registration request handled successfully.
-2023-04-18 13:20:03,486 - SubAppln - INFO - New registration request from: pub1 - 10.0.0.7:5566
-2023-04-18 13:20:03,541 - SubAppln - INFO - Registration request handled successfully.
+2023-04-23 20:21:45,317 - SubAppln - INFO - Discovery app configured.
+2023-04-23 20:21:45,318 - SubAppln - INFO - Registering with DHT ring...
+2023-04-23 20:21:45,318 - SubAppln - INFO - Registered with DHT ring! Our node ID: 280459875139461
+2023-04-23 20:21:45,318 - SubAppln - INFO - We are the fist node in the ring!
+2023-04-23 20:21:45,318 - SubAppln - INFO - Listening for registration requests...
+2023-04-23 20:21:46,294 - SubAppln - INFO - New registration request from:  - 10.0.0.2:5555
+2023-04-23 20:21:46,294 - SubAppln - INFO - New predecessor node: 202033779735745:10.0.0.2:5555
+2023-04-23 20:21:46,294 - SubAppln - INFO - New successor node: 202033779735745:10.0.0.2:5555
+2023-04-23 20:21:46,294 - SubAppln - INFO - Registration request handled successfully.
+2023-04-23 20:21:47,292 - SubAppln - INFO - New successor node: 164901271403596:10.0.0.3:5555
+2023-04-23 20:21:48,303 - SubAppln - INFO - New successor node: 16751535460566:10.0.0.4:5555
+2023-04-23 20:21:49,306 - SubAppln - INFO - New registration request from:  - 10.0.0.5:5555
+2023-04-23 20:21:49,311 - SubAppln - INFO - New predecessor node: 275888628112818:10.0.0.5:5555
+2023-04-23 20:21:49,311 - SubAppln - INFO - Registration request handled successfully.
+2023-04-23 20:21:51,317 - SubAppln - INFO - New registration request from: pub1 - 10.0.0.7:5566
+2023-04-23 20:21:51,372 - SubAppln - INFO - Registration request handled successfully.
